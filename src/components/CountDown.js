@@ -3,10 +3,6 @@ import React,{useRef,useState} from "react";
 
 
 function CountDown() {
-const[timerDays,setTimerDays]=useState('00')
-const[timerHours,setTimerHours]=useState('00')
-const[timerMinutes,setTimerMinutes]=useState('00')
-const[timerSeconds,setTimerDaysSecond]=useState('00')
 
   
   return (
