@@ -1,3 +1,7 @@
+*{margin: 0;
+padding:0;}
+
+
 body{
   background-color:#020032 ;
   background-image:url("/img/background-star.png");
@@ -39,5 +43,21 @@ section{
   &:hover{
     background-color: #1B1464;
     color:#fff;
+  }
+}
+
+.contador{
+  color:white;
+  display: flex;
+  padding: 1rem;
+  font-weight: lighter;
+  span{font-weight: bold; font-size: 3rem;}
+  text-align: center;
+
+  .contenedor-contador{
+    display: flex;
+    .col{
+      padding: 1rem;
+    }
   }
 }
