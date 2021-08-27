@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+import Imparables from './img/imparables.png';
+import Evento from './img/evento.png';
+import './scss/Index.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <section>
+       {/* <img src={logo} alt="Baxter Somos" /> */}
+       <img src={Imparables} alt="Baxter Somos" />
+       <br />
+       {/* <button className="btn-primary">Entrar</button> */}
+       <br />
+       <img src={Evento} alt="Baxter Somos" />
+     </section>
+    
     </div>
   );
 }

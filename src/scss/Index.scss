@@ -1,0 +1,43 @@
+body{
+  background-color:#020032 ;
+  background-image:url("/img/background-star.png");
+  background-position:top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.App{
+  color:black;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-flow: column;
+
+}
+
+section{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.btn-primary{
+  cursor: pointer;
+  border: none;
+  border-radius:1rem;
+  background-color:#020032 ;
+  text-transform: uppercase;
+  padding:1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background-color: #FED100;
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    background-color: #1B1464;
+    color:#fff;
+  }
+}
