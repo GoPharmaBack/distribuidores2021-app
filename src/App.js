@@ -9,11 +9,11 @@ function App() {
     <div className="App">
       <section>
         {/* <img src={logo} alt="Baxter Somos" /> */}
-        <img src={Imparables} alt="Baxter Somos" />
+        <img className="img-hero" src={Imparables} alt="Baxter Somos" />
 
         <CountDown />
         {/* <button className="btn-primary">Entrar</button> */}
-
+        
         <img src={Evento} alt="Baxter Somos" />
       </section>
       <section>

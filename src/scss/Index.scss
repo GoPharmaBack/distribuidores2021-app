@@ -27,8 +27,12 @@ section{
   align-items: center;
   justify-content: center;
   flex-flow: column;
+  box-sizing: border-box;
+  padding: 1rem;
 }
-
+.img-hero{
+  max-width: 300px;
+}
 .btn-primary{
   cursor: pointer;
   border: none;
@@ -47,17 +51,25 @@ section{
 }
 
 .contador{
-  color:white;
-  display: flex;
-  padding: 1rem;
-  font-weight: lighter;
-  span{font-weight: bold; font-size: 3rem;}
-  text-align: center;
-
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
   .contenedor-contador{
     display: flex;
+    align-items: center;
+    justify-content: center;
     .col{
+      p{
+        font-weight: bold;
+        font-size: 3rem;
+      }
+      text-align: center;
       padding: 1rem;
+      display: flex;
+      flex-flow: column;
+      color:#fff;
     }
   }
 }
+

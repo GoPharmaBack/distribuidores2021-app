@@ -1,33 +1,13 @@
 import React from "react";
-
+import Clock from "./Clock";
 
 
 function CountDown() {
-
+  let deadline = "October, 19, 2021";
   
   return (
-    <div className="contador">
-      <br />
-      <div className="contenedor-contador">
-        <div className="col">
-          <span>24</span>
-          <p>Días</p>
-        </div>
-        <div className="col">
-          <span>24</span>
-          <p>Horas</p>
-        </div>
-        <div className="col">
-          <span>24</span>
-          <p>Minutos</p>
-        </div>
-        <div className="col">
-          <span>24</span>
-          <p>Segundos</p>
-        </div>
-      </div>
-    </div>
-  );
+    <Clock   deadline={deadline} />
+    );
 }
 
 export default CountDown;
