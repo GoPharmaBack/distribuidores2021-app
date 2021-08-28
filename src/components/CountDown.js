@@ -6,7 +6,9 @@ function CountDown() {
   let deadline = "October, 19, 2021";
   
   return (
+    <>
     <Clock   deadline={deadline} />
+    </>
     );
 }
 

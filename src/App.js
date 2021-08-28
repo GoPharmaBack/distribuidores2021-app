@@ -1,4 +1,4 @@
-//import logo from './logo.svg';
+import logo from './logo.svg';
 import Imparables from "./img/imparables.png";
 import Evento from "./img/evento.png";
 import CountDown from "./components/CountDown";
@@ -7,19 +7,17 @@ import "./scss/Index.scss";
 function App() {
   return (
     <div className="App">
-      <section>
-        {/* <img src={logo} alt="Baxter Somos" /> */}
+      <section className="start">
+         <img src={logo} alt="Baxter Somos" /> 
+        <br />
         <img className="img-hero" src={Imparables} alt="Baxter Somos" />
-
+<br/>
         <CountDown />
-        {/* <button className="btn-primary">Entrar</button> */}
-        
-        <img src={Evento} alt="Baxter Somos" />
+       
+        <img className="img-hero" src={Evento} alt="Baxter Somos" />
+        {/*  <button className="btn-primary">Entrar</button>  */}
       </section>
-      <section>
-        <h2>section 2</h2>
-      </section>
-      <section>section 3</section>
+     
     </div>
   );
 }

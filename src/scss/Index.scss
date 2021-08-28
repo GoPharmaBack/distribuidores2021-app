@@ -1,13 +1,14 @@
 *{margin: 0;
 padding:0;}
 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
 body{
   background-color:#020032 ;
   background-image:url("/img/background-star.png");
   background-position:top;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -30,8 +31,21 @@ section{
   box-sizing: border-box;
   padding: 1rem;
 }
+.start{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  box-sizing: border-box;
+  padding: 1rem;
+
+}
 .img-hero{
-  max-width: 300px;
+  width: 100%;
+  height:auto;
+  max-width: 657.42px;
 }
 .btn-primary{
   cursor: pointer;
@@ -62,13 +76,15 @@ section{
     .col{
       p{
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 3.5rem;
+        color: #FED100;
       }
       text-align: center;
-      padding: 1rem;
+      padding: 0.7rem;
       display: flex;
       flex-flow: column;
       color:#fff;
+      text-transform: uppercase;
     }
   }
 }
