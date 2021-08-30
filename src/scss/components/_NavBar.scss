@@ -1,0 +1,160 @@
+
+
+.navbar {
+  top: 0px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 9%;
+  background-color: rgb(255, 255, 255);
+  color: $app-1;
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+ 
+
+  .navbar-icon {
+    position: relative;
+    display: none;
+
+    @include tablet {
+      display: block;
+      color: $app-2;
+    }
+  }
+
+  &_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    img {
+      max-height: 35px;
+      max-width: auto;
+      margin-right: 0.2rem;
+    }
+
+    @include phone {
+      img {
+        margin-right: 6px;
+        max-height: 25px;
+        max-width: auto;
+      }
+    }
+  }
+
+  &_menu {
+    position: relative;
+    display: flex;
+    list-style: none;
+    max-width: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row;
+   
+
+    a {
+      font-weight: 300;
+      color: $app-1;
+      cursor: pointer;
+
+      &:hover {
+        li {
+          color: $app-2 !important;
+        }
+      }
+    }
+
+    @include tablet {
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 1px 3px rgba(139, 139, 139, 0.12),
+        0 1px 2px rgba(110, 110, 110, 0.24);
+      display: flex;
+      position: absolute;
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+  }
+  .nav-transparent {
+    height: 65px;
+    background-color: white;
+  }
+  & .active {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
+    top: 64px;
+    flex-flow: column;
+    position: absolute;
+    background-color: #000000;
+    height: calc(100vh - 54px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+    z-index: 0;
+    font-size: 1.5rem;
+    overflow: hidden;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    li {
+      box-sizing: border-box;
+    }
+
+    a {
+      text-align: center;
+      font-weight: bold;
+      padding: 1rem;
+      width: 100%;
+      height: auto;
+      color: white !important;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.nav-colored {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0.5% 5%;
+  position: fixed;
+  top: 0;
+  height: 55px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  .navbar_logo {
+    display: flex;
+
+    img {
+      max-height: 30px;
+    }
+  }
+}
+
+.btn-navbar {
+  padding: 0.3rem 0.9rem;
+  color: white !important;
+  background-color: $app-1;
+
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: $app-1 !important;
+
+    background-color: $app-2;
+  }
+}
+
