@@ -51,7 +51,7 @@ section{
 .img-hero{
   width: 100%;
   height:auto;
-  max-width: 657.42px;
+  max-width: 542px;
 }
 .btn-primary{
   cursor: pointer;
@@ -82,8 +82,9 @@ section{
     .col{
       p{
         font-weight: bold;
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         color: #FED100;
+        margin-bottom: -8px!important;
       }
       text-align: center;
       padding: 0.7rem;

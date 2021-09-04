@@ -15,7 +15,8 @@ function Home() {
       <br />
      <Link to="/login"><button className="btn-primary">Entrar</button> </Link>
       <img className="img-hero" src={Evento} alt="Baxter Somos" />
-      
+      <br />
+      <br />
       <img src={LogoHome} alt="Baxter" />
       
     </section>
