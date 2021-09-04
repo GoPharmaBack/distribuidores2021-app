@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Landing() {
   return (
     <section>
       <h1>Landing</h1>
     </section>
-  )
+  );
 }
 
-export default Landing
+export default Landing;

@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Imparables from "../img/imparables.png";
 import Evento from "../img/evento.png";
 import CountDown from "../components/CountDown";
-import LogoHome from "../img/logo.svg"
+import LogoHome from "../img/logo.svg";
 
 function Home() {
   return (
@@ -13,11 +13,12 @@ function Home() {
       <br />
       <CountDown />
       <br />
-     <Link to="/login"><button className="btn-primary">Entrar</button> </Link>
+      <Link to="/login">
+        <button className="btn-primary">Entrar</button>{" "}
+      </Link>
       <img className="img-hero" src={Evento} alt="Baxter Somos" />
-      
+
       <img src={LogoHome} alt="Baxter" />
-      
     </section>
   );
 }
