@@ -1,11 +1,28 @@
 import React from "react";
-
+import {withRouter} from "react-router-dom"
+import Imparables from "../img/imparables.png";
+import CountDown from "../components/CountDown";
 function Landing() {
+  
   return (
+
+   <>
     <section>
-      <h1>Landing</h1>
+      
+      <img className="img-hero" src={Imparables} alt="Baxter Somos" />
+      <ul>
+        <li>time:place</li>
+        <li>time:place</li>
+        <li>time:place</li>
+        <li>time:place</li>
+      </ul>
+      <CountDown/>
     </section>
+    <section>
+      <h2>Section2</h2>
+    </section>
+   </>
   );
 }
 
-export default Landing;
+export default withRouter (Landing);

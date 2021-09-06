@@ -1,33 +1,33 @@
-
-
 @import "libs/mixins";
 @import "libs/variables";
 @import "libs/type";
 @import "components/navbar";
-*{margin: 0;
-padding:0;}
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
-body{
-  background-color:#020032 ;
-  background-image:url("/img/background-star.png");
-  background-position:top;
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none !important;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+body {
+  background-color: #020032;
+  background-image: url("/img/background-star.png");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
 
-.App{
-  color:black;
-  display:flex;
-  justify-content:center;
+.App {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-flow: column;
-
 }
 
-section{
+section {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -37,7 +37,7 @@ section{
   box-sizing: border-box;
   padding: 1rem;
 }
-.start{
+.start {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -46,53 +46,118 @@ section{
   flex-flow: column;
   box-sizing: border-box;
   padding: 1rem;
-
 }
-.img-hero{
+.img-hero {
   width: 100%;
-  height:auto;
+  height: auto;
   max-width: 542px;
 }
-.btn-primary{
+.btn-primary {
   cursor: pointer;
   border: none;
-  border-radius:1rem;
-  background-color:#020032 ;
+  border-radius: 1rem;
+  background-color: #020032;
   text-transform: uppercase;
-  padding:1rem;
+  padding: 1rem;
   font-weight: bold;
   font-size: 1.4rem;
-  background-color: #FED100;
+  background-color: #fed100;
   transition: all 0.2s ease-in-out;
-  &:hover{
-    background-color: #1B1464;
-    color:#fff;
+  &:hover {
+    background-color: #1b1464;
+    color: #fff;
   }
 }
+.btn-secondary {
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  background-color: #020032;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #fff;
 
-.contador{
-  display:flex;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #1b1464;
+    color: #fff;
+  }
+}
+.contador {
+  display: flex;
   align-items: center;
   justify-content: center;
-  
-  .contenedor-contador{
+
+  .contenedor-contador {
     display: flex;
     align-items: center;
     justify-content: center;
-    .col{
-      p{
+    .col {
+      p {
         font-weight: bold;
         font-size: 4.5rem;
-        color: #FED100;
-        margin-bottom: -8px!important;
+        color: #fed100;
+        margin-bottom: -8px !important;
+        @include phone {
+          font-size: 2rem;
+        }
       }
       text-align: center;
       padding: 0.7rem;
       display: flex;
       flex-flow: column;
-      color:#fff;
+      color: #fff;
       text-transform: uppercase;
+      @include phone {
+        span {
+          font-size: 0.75rem !important;
+        }
+      }
     }
   }
 }
+.login {
+  h1 {
+    color: #fff;
+  }
+  .contenedor-login {
+    background-color: #ffd12f;
+    max-width: 420px;
+    border-radius: 16px;
+    padding: 2rem 2rem;
+    width: 100%;
+    .formulario {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
 
+      .form-grupo {
+        font-weight: bold;
+        text-transform: uppercase;
+
+        label {
+          margin-bottom: 0.6rem;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+          padding: 0.6rem;
+          font-size: 0.7rem;
+        }
+
+        padding-bottom: 1rem;
+        flex-flow: column;
+        display: flex;
+        width: 100%;
+      }
+    }
+
+    @include phone {
+      margin-top: 11rem;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .contenedor-contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .col {
+      p {
+        font-weight: bold;
+        font-size: 4.5rem;
+        color: #fed100;
+        margin-bottom: -8px !important;
+        @include phone {
+          font-size: 2rem;
+        }
+      }
+      text-align: center;
+      padding: 0.7rem;
+      display: flex;
+      flex-flow: column;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+}
