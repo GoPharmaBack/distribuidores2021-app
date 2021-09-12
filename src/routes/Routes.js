@@ -21,11 +21,12 @@ if (setIsAuth === "true"){
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={Login} isAuth={isAuth}/>
+        <Route exact path="/login" component={Login}/>
         {/* <Route exact path="/landing" component={Landing} /> */}
         <ProtectedRoutes path="/landing" component={Landing} isAuth={isAuth} />
+        
         <Route exact path="/ups" component={Error} />
-         <ProtectedRoutes exact path="/landing" component={Error} />
+        
       </Switch>
     </Router>
   );

@@ -56,7 +56,6 @@ function Navbar() {
         >
           <li> Contact </li>
         </Link>
-        
       </ul>
       <div className="navbar-icon" onClick={handleClick}>
         {click ? <FaIcons.FaTimes /> : <FaIcons.FaBars />}

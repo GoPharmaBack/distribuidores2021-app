@@ -7,13 +7,13 @@ class Login extends Component {
   constructor() {
     super();
     this.state = {
-      loggedInStatus: "No_logeado",
-      email: "carlossanchez@go-pharma.mx",
-      password: "12345",
+      
+      email: "",
+      password: "",
       message: "",
       status: "Entrar",
       code: "",
-      isAuth:"false"
+      isAuth: "false",
     };
   }
   inicioSesion(event) {

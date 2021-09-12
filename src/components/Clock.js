@@ -32,12 +32,20 @@ const Clock = ({ deadline }) => {
   }, [deadline]);
 
   return (
-    <div className ="contador">
+    <div className="contador">
       <div className="contenedor-contador">
-      <div className="Clock-days col"><p>{leading0(days)}</p>  <span>Días</span> </div>
-      <div className="Clock-hours col"><p>{leading0(hours)}</p> <span> Horas</span></div>
-      <div className="Clock-minutes col"><p>{leading0(minutes)}</p> <span> Minutos</span></div>
-      <div className="Clock-seconds col"><p>{leading0(seconds)}</p> <span>Segundos</span></div>
+        <div className="Clock-days col">
+          <p>{leading0(days)}</p> <span>Días</span>{" "}
+        </div>
+        <div className="Clock-hours col">
+          <p>{leading0(hours)}</p> <span> Horas</span>
+        </div>
+        <div className="Clock-minutes col">
+          <p>{leading0(minutes)}</p> <span> Minutos</span>
+        </div>
+        <div className="Clock-seconds col">
+          <p>{leading0(seconds)}</p> <span>Segundos</span>
+        </div>
       </div>
     </div>
   );

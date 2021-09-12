@@ -9,7 +9,8 @@ function Landing() {
    <>
     <section>
       
-      <img className="img-hero" src={Imparables} alt="Baxter Somos" />
+    <div className="left">
+    <img className="img-hero" src={Imparables} alt="Baxter Somos" />
       <ul>
         <li>time:place</li>
         <li>time:place</li>
@@ -17,6 +18,10 @@ function Landing() {
         <li>time:place</li>
       </ul>
       <CountDown/>
+    </div>
+    <div className="right">
+      <img src="/" alt="img"/>
+    </div>
     </section>
     <section>
       <h2>Section2</h2>
