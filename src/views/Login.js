@@ -35,6 +35,7 @@ class Login extends Component {
           //si rebotamos dentro del mismo sitio va este
           console.log("acceso")
           this.props.history.push("/landing");
+          
           //Si redirigimos va este codigo
           //window.location = "campus.botoxbootcamp.com.mx"
           console.log("Session Iniciada");

@@ -11,7 +11,7 @@ import ProtectedRoutes from "./ProtectedRoutes";
  
 function Routes() {
 
-  const [isAuth,setIsAuth] = useState(true)
+  const [isAuth,setIsAuth] = useState()
 if (setIsAuth === "Auth succesful"){
   console.log("hola");
 }else {
