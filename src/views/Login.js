@@ -13,7 +13,7 @@ class Login extends Component {
       message: "",
       status: "Entrar",
       code: "",
-      isAuth: "false",
+      
     };
   }
   inicioSesion(event) {
@@ -23,7 +23,7 @@ class Login extends Component {
     });
     axios({
       method: "post",
-      url: "https://distribuidores2021.herokuapp.com/",
+      url: "https://distribuidores2021.herokuapp.com/api/auth/login",
       headers: {
         "Content-Type": "application/json",
       },
@@ -31,8 +31,9 @@ class Login extends Component {
     })
       .then((response) => {
         console.log("token", response);
-        if (response.data.isAuth === "true") {
+        if (response.data.message === "Auth succesful") {
           //si rebotamos dentro del mismo sitio va este
+          console.log("acceso")
           this.props.history.push("/landing");
           //Si redirigimos va este codigo
           //window.location = "campus.botoxbootcamp.com.mx"

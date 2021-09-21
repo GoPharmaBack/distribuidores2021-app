@@ -8,10 +8,11 @@ import Error from "../views/Error";
 import ProtectedRoutes from "./ProtectedRoutes";
 
 
+ 
 function Routes() {
 
-  const [isAuth,setIsAuth] = useState(false)
-if (setIsAuth === "true"){
+  const [isAuth,setIsAuth] = useState(true)
+if (setIsAuth === "Auth succesful"){
   console.log("hola");
 }else {
   console.log("adios")
