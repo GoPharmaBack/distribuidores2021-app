@@ -7,13 +7,12 @@ class Login extends Component {
   constructor() {
     super();
     this.state = {
-      
       email: "",
       password: "",
       message: "",
+      username: "",
       status: "Entrar",
       code: "",
-      
     };
   }
   inicioSesion(event) {
@@ -32,25 +31,33 @@ class Login extends Component {
       .then((response) => {
         const cookies = new Cookies();
         console.log("token", response);
+        localStorage.setItem("token", response, JSON.stringify(response.data));
         if (response.data.message === "Auth succesful") {
           //si rebotamos dentro del mismo sitio va este
-          console.log("acceso")
-          this.props.history.push("/landing");
-          
+          console.log("redireccionado");
+          window.location.href = "./landing";
+
           //Si redirigimos va este codigo
           //window.location = "campus.botoxbootcamp.com.mx"
           console.log("Session Iniciada");
           var respuesta = response.data;
-          cookies.set("message", respuesta.message, {
-             path: "/"
-             ,
+          console.log(respuesta.message);
+         
+          cookies.set("username", respuesta.username, {
+            path: "/",
           });
-          // cookies.set("name", respuesta.name, {
-          //   path: "/",
-          // });
-           const userDetails = { mesage: this.state.mesage }
-          localStorage.setItem('userDetails', JSON.stringify(userDetails));
-           console.log(userDetails)
+
+          const userDetails = {
+            message: respuesta.message,
+          };
+
+          const userSession = {
+         
+            username: respuesta.username,
+          };
+
+          localStorage.setItem("userDetails", JSON.stringify(userDetails));
+          localStorage.setItem("userSession", JSON.stringify(userSession));
         } else if (response.data.code === 401) {
           window.location.href = "./ups";
         }
@@ -73,7 +80,6 @@ class Login extends Component {
       });
     }
   }
-
 
   render() {
     let buttonText = this.state.status;
@@ -112,7 +118,6 @@ class Login extends Component {
               <button className="btn-secondary" type="submit">
                 {buttonText}
               </button>
-
             </form>
           </div>
         </section>
