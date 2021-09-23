@@ -7,13 +7,11 @@ class Login extends Component {
   constructor() {
     super();
     this.state = {
-      
       email: "",
       password: "",
       message: "",
       status: "Entrar",
       code: "",
-      
     };
   }
   inicioSesion(event) {
@@ -34,23 +32,22 @@ class Login extends Component {
         console.log("token", response);
         if (response.data.message === "Auth succesful") {
           //si rebotamos dentro del mismo sitio va este
-          console.log("acceso")
+          console.log("acceso");
           this.props.history.push("/landing");
-          
+
           //Si redirigimos va este codigo
           //window.location = "campus.botoxbootcamp.com.mx"
           console.log("Session Iniciada");
           var respuesta = response.data;
           cookies.set("message", respuesta.message, {
-             path: "/"
-             ,
+            path: "/",
           });
           // cookies.set("name", respuesta.name, {
           //   path: "/",
           // });
-           const userDetails = { mesage: this.state.mesage }
-          localStorage.setItem('userDetails', JSON.stringify(userDetails));
-           console.log(userDetails)
+          const userDetails = { mesage: this.state.mesage };
+          localStorage.setItem("userDetails", JSON.stringify(userDetails));
+          console.log(userDetails);
         } else if (response.data.code === 401) {
           window.location.href = "./ups";
         }
@@ -73,7 +70,6 @@ class Login extends Component {
       });
     }
   }
-
 
   render() {
     let buttonText = this.state.status;
@@ -112,7 +108,6 @@ class Login extends Component {
               <button className="btn-secondary" type="submit">
                 {buttonText}
               </button>
-
             </form>
           </div>
         </section>
