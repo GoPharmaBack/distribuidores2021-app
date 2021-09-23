@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React ,{ useState }from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "../views/Home";
@@ -10,13 +10,15 @@ import ProtectedRoutes from "./ProtectedRoutes";
 
  
 function Routes() {
-
-  const [isAuth,setIsAuth] = useState()
-if (setIsAuth === "Auth succesful"){
-  console.log("hola");
-}else {
-  console.log("adios")
-}
+  
+  
+   
+  const [isAuth,setIsAuth] = useState(localStorage.getItem('userDetails'))
+ if (setIsAuth === "Auth succesful"){
+   console.log("veridicado");
+ }else {
+   console.log("no verificado")
+ }
 
   return (
     <Router>
@@ -24,7 +26,8 @@ if (setIsAuth === "Auth succesful"){
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login}/>
         {/* <Route exact path="/landing" component={Landing} /> */}
-        <ProtectedRoutes path="/landing" component={Landing} isAuth={isAuth} />
+        {/* isAuth={isAuth} */}
+        <ProtectedRoutes path="/landing" component={Landing} isAuth={isAuth}/>
         
         <Route exact path="/ups" component={Error} />
         

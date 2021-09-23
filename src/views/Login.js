@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { withRouter } from "react-router";
-//import Cookies from "universal-cookie";
+import Cookies from "universal-cookie";
 
 class Login extends Component {
   constructor() {
@@ -30,6 +30,7 @@ class Login extends Component {
       data: this.state,
     })
       .then((response) => {
+        const cookies = new Cookies();
         console.log("token", response);
         if (response.data.message === "Auth succesful") {
           //si rebotamos dentro del mismo sitio va este
@@ -39,16 +40,17 @@ class Login extends Component {
           //Si redirigimos va este codigo
           //window.location = "campus.botoxbootcamp.com.mx"
           console.log("Session Iniciada");
-          //var respuesta = response.data;
-          // cookies.set("message", respuesta.message, {
-          //   path: "/",
-          // });
+          var respuesta = response.data;
+          cookies.set("message", respuesta.message, {
+             path: "/"
+             ,
+          });
           // cookies.set("name", respuesta.name, {
           //   path: "/",
           // });
-          // const userDetails = { correo: this.state.email }
-          // localStorage.setItem('userDetails', JSON.stringify(userDetails));
-          // console.log(userDetails)
+           const userDetails = { mesage: this.state.mesage }
+          localStorage.setItem('userDetails', JSON.stringify(userDetails));
+           console.log(userDetails)
         } else if (response.data.code === 401) {
           window.location.href = "./ups";
         }
@@ -71,6 +73,8 @@ class Login extends Component {
       });
     }
   }
+
+
   render() {
     let buttonText = this.state.status;
     return (
@@ -108,6 +112,7 @@ class Login extends Component {
               <button className="btn-secondary" type="submit">
                 {buttonText}
               </button>
+
             </form>
           </div>
         </section>

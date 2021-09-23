@@ -11,12 +11,14 @@ function Landing() {
       
     <div className="left">
     <img className="img-hero" src={Imparables} alt="Baxter Somos" />
-      <ul>
-        <li>time:place</li>
-        <li>time:place</li>
-        <li>time:place</li>
-        <li>time:place</li>
-      </ul>
+     
+      <ul className="horarios">
+     <li> 09:00 h <span> Centroamérica</span></li>
+     <li> 09:00 h <span> México</span></li>
+     <li> 09:00 h <span> Puerto Rico</span></li>
+     </ul>
+
+     
       <CountDown/>
     </div>
     <div className="right">
