@@ -13,12 +13,9 @@ function Home() {
       <br />
       <CountDown />
       <br />
-
-      <br />
-      {/* <Link to="/login">
-        <button className="btn-primary">Iniciar Sesion</button>{" "}
-      </Link> */}
-
+      <Link to="/login">
+      {/* <button className="btn-primary">Entrar</button> */}
+      </Link>
       <img className="img-hero" src={Evento} alt="Baxter Somos" />
       <br />
       <br />
