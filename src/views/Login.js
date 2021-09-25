@@ -93,7 +93,7 @@ class Login extends Component {
               onSubmit={this.inicioSesion.bind(this)}
             >
               <div className="form-grupo">
-                <label> *E-mail: </label>
+                
                 <input
                   placeholder="Correo electrónico"
                   type="email"
@@ -104,7 +104,7 @@ class Login extends Component {
                 />
               </div>
               <div className="form-grupo">
-                <label> *password: </label>
+               
                 <input
                   placeholder="Password"
                   type="password"
