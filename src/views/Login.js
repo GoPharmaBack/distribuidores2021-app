@@ -10,7 +10,6 @@ class Login extends Component {
       email: "",
       password: "",
       message: "",
-      username: "",
       status: "Entrar",
       code: "",
     };
@@ -31,33 +30,24 @@ class Login extends Component {
       .then((response) => {
         const cookies = new Cookies();
         console.log("token", response);
-        localStorage.setItem("token", response, JSON.stringify(response.data));
         if (response.data.message === "Auth succesful") {
           //si rebotamos dentro del mismo sitio va este
-          console.log("redireccionado");
-          window.location.href = "./landing";
+          console.log("acceso");
+          this.props.history.push("/landing");
 
           //Si redirigimos va este codigo
           //window.location = "campus.botoxbootcamp.com.mx"
           console.log("Session Iniciada");
           var respuesta = response.data;
-          console.log(respuesta.message);
-         
-          cookies.set("username", respuesta.username, {
+          cookies.set("message", respuesta.message, {
             path: "/",
           });
-
-          const userDetails = {
-            message: respuesta.message,
-          };
-
-          const userSession = {
-         
-            username: respuesta.username,
-          };
-
+          // cookies.set("name", respuesta.name, {
+          //   path: "/",
+          // });
+          const userDetails = { mesage: this.state.mesage };
           localStorage.setItem("userDetails", JSON.stringify(userDetails));
-          localStorage.setItem("userSession", JSON.stringify(userSession));
+          console.log(userDetails);
         } else if (response.data.code === 401) {
           window.location.href = "./ups";
         }
