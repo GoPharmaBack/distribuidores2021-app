@@ -7,6 +7,7 @@ const cookies = new Cookies();
 
 function logout() {
   cookies.remove("message");
+  cookies.remove("rooms");
   window.location.href = "./";
   console.log("borrar");
 }
