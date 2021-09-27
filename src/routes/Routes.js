@@ -8,17 +8,18 @@ import Landing from "../views/Landing";
 import Error from "../views/Error";
 import ProtectedRoutes from "./ProtectedRoutes";
 import Mexico from "../views/SalaMx"
-
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
  
 function Routes() {
  
-  let x =  localStorage.getItem("userDetails")
-   console.log(x)
-  const [isAuth,setIsAuth] = useState(x)
- if (setIsAuth === "Auth succesful"){
-   console.log("veridicado");
+  let x =  cookies.get('message')
+  const [isAuth] = useState(x)
+
+ if (isAuth === "Auth succesful"){
+   console.log("acceso ✨");
  }else {
-   console.log("no verificado")
+   console.log("Acceso Fail 🤨")
  }
 
   return (
@@ -26,8 +27,6 @@ function Routes() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login}/>
-        {/* <Route exact path="/landing" component={Landing} /> */}
-        {/* isAuth={isAuth} */}
         <ProtectedRoutes path="/landing" component={Landing} isAuth={isAuth}/>
         <ProtectedRoutes path="/mx" component={Mexico} isAuth={isAuth}/>
         

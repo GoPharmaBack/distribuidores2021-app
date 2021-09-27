@@ -42,7 +42,12 @@ class Login extends Component {
           console.log("Session Iniciada");
           var respuesta = response.data;
           console.log(respuesta.message);
-         
+          cookies.set("roles", respuesta.roles, {
+            path: "/",
+          });
+          cookies.set("message", respuesta.message, {
+            path: "/",
+          });
           cookies.set("username", respuesta.username, {
             path: "/",
           });
@@ -55,6 +60,8 @@ class Login extends Component {
          
             username: respuesta.username,
           };
+
+          
 
           localStorage.setItem("userDetails", JSON.stringify(userDetails));
           localStorage.setItem("userSession", JSON.stringify(userSession));
