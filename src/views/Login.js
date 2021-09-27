@@ -13,6 +13,7 @@ class Login extends Component {
       username: "",
       status: "Entrar",
       code: "",
+      roles: "",
     };
   }
   inicioSesion(event) {
@@ -38,13 +39,11 @@ class Login extends Component {
           window.location.href = "./landing";
 
           //Si redirigimos va este codigo
-          //window.location = "campus.botoxbootcamp.com.mx"
+
           console.log("Session Iniciada");
           var respuesta = response.data;
           console.log(respuesta.message);
-          cookies.set("roles", respuesta.roles, {
-            path: "/",
-          });
+          
           cookies.set("message", respuesta.message, {
             path: "/",
           });
@@ -52,19 +51,29 @@ class Login extends Component {
             path: "/",
           });
 
+          cookies.set("roles", respuesta.roles, {
+            path: "/",
+          });
+          cookies.set("rooms", respuesta.rooms, {
+            path: "/",
+          });
+          
           const userDetails = {
             message: respuesta.message,
+            roles: respuesta.roles,
           };
 
           const userSession = {
-         
             username: respuesta.username,
           };
 
-          
+          const userRoles ={
+            roles: respuesta.roles,
+          }
 
           localStorage.setItem("userDetails", JSON.stringify(userDetails));
           localStorage.setItem("userSession", JSON.stringify(userSession));
+          localStorage.setItem("userRoles", JSON.stringify(userRoles));
         } else if (response.data.code === 401) {
           window.location.href = "./ups";
         }

@@ -5,21 +5,23 @@ import CountDown from "../components/CountDown";
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
- function logout(){
-  window.localStorage.clear(); 
- 
+function logout() {
+  cookies.remove("message");
   window.location.href = "./";
-  console.log("borrar")
+  console.log("borrar");
 }
+var hola = cookies.get("rooms")
+var rol = JSON.stringify(cookies.get("roles"))
+console.log(hola)
+
+
+
 
 function Landing() {
- 
-
-
   return (
     <>
       <section>
-        <h1>{cookies.get('username')}</h1>
+        <h1>{cookies.get("username")}</h1>
         <div className="left">
           <img className="img-hero" src={Imparables} alt="Baxter Somos" />
 
@@ -34,7 +36,7 @@ function Landing() {
               09:00 h <span> Puerto Rico</span>
             </li>
           </ul>
-<button onClick={logout}>logout</button>
+          <button onClick={logout}>logout</button>
           <CountDown />
         </div>
         <div className="right">
@@ -42,7 +44,10 @@ function Landing() {
         </div>
       </section>
       <section>
-        <h2>Section2</h2>
+      
+      <h2>{hola}</h2>
+      <h2>{rol}</h2>
+       
       </section>
     </>
   );
