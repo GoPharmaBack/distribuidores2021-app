@@ -1,3 +1,7 @@
 {
-  "button.start": "Entrar"
+  "button.start": "Entrar",
+  "component.day": "Días",
+  "component.hours": "Horas",
+  "component.minutes": "Minutos",
+  "component.seconds": "Segundos"
 }

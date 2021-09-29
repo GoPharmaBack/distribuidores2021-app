@@ -1,9 +1,15 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import axios from "axios";
 import { withRouter } from "react-router";
 import Cookies from "universal-cookie";
+import { FormattedMessage } from "react-intl";
 
+
+
+
+ 
 class Login extends Component {
+  
   constructor() {
     super();
     this.state = {
@@ -16,6 +22,10 @@ class Login extends Component {
       roles: "",
     };
   }
+
+  
+
+
   inicioSesion(event) {
     event.preventDefault();
     this.setState({
@@ -98,7 +108,7 @@ class Login extends Component {
   }
 
   render() {
-    let buttonText = this.state.status;
+    
     return (
       <React.Fragment>
         <section className="login">
@@ -132,7 +142,8 @@ class Login extends Component {
                 />
               </div>
               <button className="btn-secondary" type="submit">
-                {buttonText}
+                
+                <FormattedMessage id="button.start" defaultMessage="Entrar" />
               </button>
             </form>
           </div>

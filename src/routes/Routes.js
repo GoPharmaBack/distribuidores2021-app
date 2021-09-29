@@ -11,8 +11,8 @@ import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
 function Routes() {
-  let x = cookies.get("message");
-  const [isAuth] = useState(x);
+  let Autorizado = cookies.get("message");
+  const [isAuth] = useState(Autorizado);
 
   if (isAuth === "Auth succesful") {
     console.log("acceso ✨");
