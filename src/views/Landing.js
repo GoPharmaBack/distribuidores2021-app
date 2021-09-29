@@ -9,14 +9,12 @@ function logout() {
   cookies.remove("message");
   cookies.remove("rooms");
   window.location.href = "./";
+  localStorage.setItem("lang", "en");
   console.log("borrar");
 }
-var hola = cookies.get("rooms")
-var rol = JSON.stringify(cookies.get("roles"))
-console.log(hola)
-
-
-
+var hola = cookies.get("rooms");
+var rol = JSON.stringify(cookies.get("roles"));
+console.log(hola);
 
 function Landing() {
   return (
@@ -45,10 +43,8 @@ function Landing() {
         </div>
       </section>
       <section>
-      
-      <h2>{hola}</h2>
-      <h2>{rol}</h2>
-       
+        <h2>{hola}</h2>
+        <h2>{rol}</h2>
       </section>
     </>
   );

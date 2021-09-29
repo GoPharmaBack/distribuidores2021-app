@@ -1,14 +1,16 @@
-
-import React from 'react';
+import React from "react";
 import "./scss/Index.scss";
 
-import Routes from './routes/Routes'
+import Routes from "./routes/Routes";
+
+import { LangProvider } from "./context/LangContext";
+
 function App() {
   return (
     <div className="App">
-     
-      <Routes/>
-     
+      <LangProvider>
+        <Routes />
+      </LangProvider>
     </div>
   );
 }
