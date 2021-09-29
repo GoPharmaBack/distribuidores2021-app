@@ -9,7 +9,9 @@ function logout() {
   cookies.remove("message");
   cookies.remove("rooms");
   window.location.href = "./";
+  localStorage.clear();
   localStorage.setItem("lang", "en");
+  
   console.log("borrar");
 }
 var hola = cookies.get("rooms");
