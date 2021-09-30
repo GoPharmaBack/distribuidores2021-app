@@ -38,28 +38,28 @@ const Clock = ({ deadline }) => {
         <div className="Clock-days col">
           <p>{leading0(days)}</p>{" "}
           <span>
-            <FormattedMessage id="component.hours" />
+            <FormattedMessage id="component.day" />
           </span>{" "}
         </div>
         <div className="Clock-hours col">
           <p>{leading0(hours)}</p>{" "}
           <span>
             {" "}
-            <FormattedMessage id="component.minutes" />
+            <FormattedMessage id="component.hours" />
           </span>
         </div>
         <div className="Clock-minutes col">
           <p>{leading0(minutes)}</p>{" "}
           <span>
             {" "}
-            <FormattedMessage id="component.seconds" />
+            <FormattedMessage id="component.minutes" />
           </span>
         </div>
         <div className="Clock-seconds col">
           <p>{leading0(seconds)}</p>{" "}
           <span>
             {" "}
-            <FormattedMessage id="component.day" />
+            <FormattedMessage id="component.seconds" />
           </span>
         </div>
       </div>
