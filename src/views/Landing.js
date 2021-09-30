@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
 import Imparables from "../img/imparables.png";
 import CountDown from "../components/CountDown";
-import { LangContext } from "../context/LangContext";
+//import { LangContext } from "../context/LangContext";
 import Cookies from "universal-cookie";
 import Evento from "../img/evento.png";
 //imagenes no lenguaje
@@ -18,8 +18,8 @@ function logout() {
 
   console.log("borrar");
 }
-var hola = cookies.get("rooms");
-var rol = JSON.stringify(cookies.get("roles"));
+//var hola = cookies.get("rooms");
+//var rol = JSON.stringify(cookies.get("roles"));
 
 function Landing() {
   //const idioma = useContext(LangContext);
