@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { withRouter } from "react-router-dom";
 import Imparables from "../img/imparables.png";
 import CountDown from "../components/CountDown";
+import { LangContext } from "../context/LangContext";
 import Cookies from "universal-cookie";
+import Evento from "../img/evento.png";
+//imagenes no lenguaje 
+import ImagenHero from "../img/img-hero.png"
 const cookies = new Cookies();
 
 function logout() {
@@ -16,16 +20,35 @@ function logout() {
 }
 var hola = cookies.get("rooms");
 var rol = JSON.stringify(cookies.get("roles"));
-console.log(hola);
+
+
 
 function Landing() {
+  //const idioma = useContext(LangContext);
+  //const lang = localStorage.getItem("lang");
+
+  // if (lang) {
+  //   if (lang === "es") {
+  //     imageLogo = Imparables;
+  //     EventImage = Evento;
+  //   } else if (lang === "en") {
+  //     imageLogo = Unstoppable;
+  //     EventImage = Event;
+  //   } else {
+  //     imageLogo = Unstoppable;
+  //     EventImage = Event;
+  //   }
+  // }
+
   return (
     <>
-      <section>
-        <h1>{cookies.get("username")}</h1>
-        <div className="left">
+      <section className="landing-hero">
+      
+     <div className="contenedor">
+       
+     <div className="left">
           <img className="img-hero" src={Imparables} alt="Baxter Somos" />
-
+  
           <ul className="horarios">
             <li>
               09:00 h <span> Centroamérica</span>
@@ -37,16 +60,24 @@ function Landing() {
               09:00 h <span> Puerto Rico</span>
             </li>
           </ul>
-          <button onClick={logout}>logout</button>
+          
           <CountDown />
         </div>
-        <div className="right">
-          <img src="/" alt="img" />
+        <div  className="right">
+          <img className="img-hero"  src={ImagenHero} alt="img" />
         </div>
-      </section>
+     
+       
+       </div> 
+       <div className="savethedate">
+         <p>SAVE THE DATE</p>
+         <h2>19 - 21 OCTUBRE</h2>
+         <img className="img-landing" src={Evento} alt="" />
+       </div>
+       </section>
       <section>
-        <h2>{hola}</h2>
-        <h2>{rol}</h2>
+       
+        <button onClick={logout}>logout</button>
       </section>
     </>
   );

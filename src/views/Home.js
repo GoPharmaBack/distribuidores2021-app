@@ -15,7 +15,7 @@ function Home() {
  var EventImage;
   const idioma = useContext(LangContext);
   const lang = localStorage.getItem("lang");
-  localStorage.setItem("lang", "en");
+ 
   if (lang) {
     if (lang === "es") {
       imageLogo = Imparables;

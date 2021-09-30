@@ -14,7 +14,7 @@ body {
   background-color: #020032;
   background-image: url("/img/background-star.png");
   background-position: top;
-  background-size: cover;
+  background-size: fill;
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
 }
@@ -161,18 +161,85 @@ section {
     }
   }
 }
-.idiomas{
+.idiomas {
   position: absolute;
   top: 0;
   right: 8%;
-  
-  .btn-primary{
+
+  .btn-primary {
     font-size: 18px;
-   padding:0.3rem !important;
+    padding: 0.3rem !important;
     margin: 1rem;
   }
 }
 
-.img-logo{
+.img-logo {
   margin-top: 2rem;
+}
+
+.landing-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:auto !important;
+  margin-top: 6rem;
+
+  .img-landing{
+    width: 100%;
+    @include phone {
+      max-width:310px !important;
+    }
+  }
+  .contenedor {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-flow: row;
+    max-width: 1080px;
+    justify-content: space-around;
+    box-sizing:border-box;
+    margin-bottom: 1rem;
+@include tablet {
+  flex-flow: column;
+}
+    .left {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-around;
+     
+      
+
+      .horarios{
+        font-size:1.2rem;
+        padding: 1rem;
+        list-style-type: none;
+        list-style: none;
+        span{
+          color:$app-2;
+
+        }
+      }
+    }
+
+    .right{
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      .img-hero{
+        width: 100%;
+        @include phone {
+          max-width:320px !important;
+        }
+      }
+    }
+  }
+  .savethedate{
+    font-weight: bold;
+    text-align: center;
+    line-height:1.8;
+    h2,p{
+      font-weight: bold;
+      margin: 0 !important;}
+  }
 }

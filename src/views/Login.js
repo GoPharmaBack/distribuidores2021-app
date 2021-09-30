@@ -81,7 +81,7 @@ class Login extends Component {
             roles: respuesta.roles,
           }
 
-          localStorage.setItem("userDetails", JSON.stringify(userDetails));
+          localStorage.setItem("userDetails",JSON.stringify(userDetails));
           localStorage.setItem("userSession", JSON.stringify(userSession));
           localStorage.setItem("userRoles", JSON.stringify(userRoles));
         } else if (response.data.code === 401) {
