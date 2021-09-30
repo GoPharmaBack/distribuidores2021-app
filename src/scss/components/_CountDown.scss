@@ -11,7 +11,7 @@
       p {
         font-weight: bold;
         font-size: 4.5rem;
-        color: #fed100;
+        color: $app-2;
         margin-bottom: -8px !important;
         @include phone {
           font-size: 2rem;

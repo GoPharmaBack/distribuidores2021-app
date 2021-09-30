@@ -12,10 +12,10 @@ import { LangContext } from "../context/LangContext";
 
 function Home() {
   var imageLogo;
- var EventImage;
+  var EventImage;
   const idioma = useContext(LangContext);
   const lang = localStorage.getItem("lang");
- 
+
   if (lang) {
     if (lang === "es") {
       imageLogo = Imparables;
@@ -45,11 +45,22 @@ function Home() {
       <img className="img-hero" src={EventImage} alt="Baxter Somos" />
       <br />
       <br />
-      
+
       <img className="img-logo" src={LogoHome} alt="Baxter" />
       <div className="idiomas">
-        <button className="btn-primary" onClick={() => idioma.establecerLenguaje("es")}> 🇲🇽</button>
-        <button className="btn-primary" onClick={() => idioma.establecerLenguaje("en")}>🇬🇧</button>
+        <button
+          className="btn-primary"
+          onClick={() => idioma.establecerLenguaje("es")}
+        >
+          {" "}
+          🇲🇽
+        </button>
+        <button
+          className="btn-primary"
+          onClick={() => idioma.establecerLenguaje("en")}
+        >
+          🇬🇧
+        </button>
       </div>
     </section>
   );

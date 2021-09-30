@@ -5,8 +5,8 @@ import CountDown from "../components/CountDown";
 import { LangContext } from "../context/LangContext";
 import Cookies from "universal-cookie";
 import Evento from "../img/evento.png";
-//imagenes no lenguaje 
-import ImagenHero from "../img/img-hero.png"
+//imagenes no lenguaje
+import ImagenHero from "../img/img-hero.png";
 const cookies = new Cookies();
 
 function logout() {
@@ -15,13 +15,11 @@ function logout() {
   window.location.href = "./";
   localStorage.clear();
   localStorage.setItem("lang", "en");
-  
+
   console.log("borrar");
 }
 var hola = cookies.get("rooms");
 var rol = JSON.stringify(cookies.get("roles"));
-
-
 
 function Landing() {
   //const idioma = useContext(LangContext);
@@ -43,40 +41,35 @@ function Landing() {
   return (
     <>
       <section className="landing-hero">
-      
-     <div className="contenedor">
-       
-     <div className="left">
-          <img className="img-hero" src={Imparables} alt="Baxter Somos" />
-  
-          <ul className="horarios">
-            <li>
-              09:00 h <span> Centroamérica</span>
-            </li>
-            <li>
-              09:00 h <span> México</span>
-            </li>
-            <li>
-              09:00 h <span> Puerto Rico</span>
-            </li>
-          </ul>
-          
-          <CountDown />
+        <div className="contenedor">
+          <div className="left">
+            <img className="img-hero" src={Imparables} alt="Baxter Somos" />
+
+            <ul className="horarios">
+              <li>
+                09:00 h <span> Centroamérica</span>
+              </li>
+              <li>
+                09:00 h <span> México</span>
+              </li>
+              <li>
+                09:00 h <span> Puerto Rico</span>
+              </li>
+            </ul>
+
+            <CountDown />
+          </div>
+          <div className="right">
+            <img className="img-hero" src={ImagenHero} alt="img" />
+          </div>
         </div>
-        <div  className="right">
-          <img className="img-hero"  src={ImagenHero} alt="img" />
+        <div className="savethedate">
+          <p>SAVE THE DATE</p>
+          <h2>19 - 21 OCTUBRE</h2>
+          <img className="img-landing" src={Evento} alt="" />
         </div>
-     
-       
-       </div> 
-       <div className="savethedate">
-         <p>SAVE THE DATE</p>
-         <h2>19 - 21 OCTUBRE</h2>
-         <img className="img-landing" src={Evento} alt="" />
-       </div>
-       </section>
+      </section>
       <section>
-       
         <button onClick={logout}>logout</button>
       </section>
     </>
