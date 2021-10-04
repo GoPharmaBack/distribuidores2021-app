@@ -42,14 +42,16 @@ section {
 }
 .start {
   
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  box-sizing: border-box;
-  padding: 1rem;
-  position: relative;
+  height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    box-sizing: border-box;
+    padding: 1rem;
+    position: relative;
+    min-height: 86vh;
   @include phone{
     padding-top: 50px !important;
   }
