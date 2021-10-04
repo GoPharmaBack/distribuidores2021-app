@@ -1,15 +1,10 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 import axios from "axios";
 import { withRouter } from "react-router";
 import Cookies from "universal-cookie";
 import { FormattedMessage } from "react-intl";
 
-
-
-
- 
 class Login extends Component {
-  
   constructor() {
     super();
     this.state = {
@@ -22,9 +17,6 @@ class Login extends Component {
       roles: "",
     };
   }
-
-  
-
 
   inicioSesion(event) {
     event.preventDefault();
@@ -53,7 +45,7 @@ class Login extends Component {
           console.log("Session Iniciada");
           var respuesta = response.data;
           console.log(respuesta.message);
-          
+
           cookies.set("message", respuesta.message, {
             path: "/",
           });
@@ -67,7 +59,7 @@ class Login extends Component {
           cookies.set("rooms", respuesta.rooms, {
             path: "/",
           });
-          
+
           const userDetails = {
             message: respuesta.message,
             roles: respuesta.roles,
@@ -77,11 +69,11 @@ class Login extends Component {
             username: respuesta.username,
           };
 
-          const userRoles ={
+          const userRoles = {
             roles: respuesta.roles,
-          }
+          };
 
-          localStorage.setItem("userDetails",JSON.stringify(userDetails));
+          localStorage.setItem("userDetails", JSON.stringify(userDetails));
           localStorage.setItem("userSession", JSON.stringify(userSession));
           localStorage.setItem("userRoles", JSON.stringify(userRoles));
         } else if (response.data.code === 401) {
@@ -108,7 +100,6 @@ class Login extends Component {
   }
 
   render() {
-    
     return (
       <React.Fragment>
         <section className="login">
@@ -142,7 +133,6 @@ class Login extends Component {
                 />
               </div>
               <button className="btn-secondary" type="submit">
-                
                 <FormattedMessage id="button.start" defaultMessage="Entrar" />
               </button>
             </form>

@@ -47,11 +47,19 @@ section {
   box-sizing: border-box;
   padding: 1rem;
 }
-.img-hero {
+.img-hero,.img-inicio {
   width: 100%;
   height: auto;
   max-width: 542px;
 }
+
+.img-hero2,.img-inicio2 {
+  width: 100%;
+  height: auto;
+  max-width: 378px;
+}
+
+
 .btn-primary {
   cursor: pointer;
   border: none;
@@ -241,4 +249,8 @@ section {
       margin: 0 !important;
     }
   }
+}
+
+.animation-in{
+  transition:all 0.3s ease;
 }
