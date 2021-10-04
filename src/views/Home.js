@@ -36,7 +36,7 @@ function Home() {
         <br />
         <img className="img-inicio" src={imageLogo} alt="Baxter Somos" />
         <br />
-        <Fade effect="fadeInUp">
+        <Fade >
           <CountDown />
         </Fade>
         <br />
