@@ -6,6 +6,9 @@
   margin: 0;
   padding: 0;
 }
+.app {
+  position: relative;
+}
 a {
   text-decoration: none !important;
 }
@@ -38,7 +41,8 @@ section {
   padding: 1rem;
 }
 .start {
-  height: 100vh;
+  margin-top: 7vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -47,18 +51,19 @@ section {
   box-sizing: border-box;
   padding: 1rem;
 }
-.img-hero,.img-inicio {
+.img-hero,
+.img-inicio {
   width: 100%;
   height: auto;
   max-width: 542px;
 }
 
-.img-hero2,.img-inicio2 {
+.img-hero2,
+.img-inicio2 {
   width: 100%;
   height: auto;
   max-width: 378px;
 }
-
 
 .btn-primary {
   cursor: pointer;
@@ -74,6 +79,26 @@ section {
   &:hover {
     background-color: #1b1464;
     color: #fff;
+  }
+}
+
+.btn-lang {
+  cursor: pointer;
+  border: none;
+  background-color: #1b1464;
+ padding:0.1rem 0.2rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0.2rem;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 1rem;
+  color: #fff;
+  border-radius:6px;
+  border: 0.6px solid $app-2;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $app-2;
+    color: $app-1;
   }
 }
 .btn-secondary {
@@ -135,6 +160,7 @@ section {
     max-width: 420px;
     border-radius: 16px;
     padding: 2rem 2rem;
+    margin: 1rem;
     width: 100%;
     .formulario {
       display: flex;
@@ -165,7 +191,7 @@ section {
     }
 
     @include phone {
-      margin-top: 11rem;
+      max-width: 265px;
     }
   }
 }
@@ -174,10 +200,10 @@ section {
   top: 0;
   right: 8%;
 
-  .btn-primary {
-    font-size: 18px;
-    padding: 0.3rem !important;
-    margin: 1rem;
+  
+  @include phone {
+    position: relative;
+    right: auto;
   }
 }
 
@@ -251,6 +277,26 @@ section {
   }
 }
 
-.animation-in{
-  transition:all 0.3s ease;
+.animation-in {
+  transition: all 0.3s ease;
+}
+footer {
+ 
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  hr {
+    margin-top: 1rem;
+    border: 1px solid white !important;
+    width: 320px;
+  }
+  p {
+    margin: 1rem 0 5% 0 !important;
+  }
 }

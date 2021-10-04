@@ -3,5 +3,7 @@
   "component.day": "Days",
   "component.hours": "Hours ",
   "component.minutes": "Minutes",
-  "component.seconds": "Seconds"
+  "component.seconds": "Seconds",
+  "save.date":"SAVE THE DATE",
+  "footer.copy":" Baxter. All rights reserved."
 }

@@ -3,5 +3,7 @@
   "component.day": "Días",
   "component.hours": "Horas",
   "component.minutes": "Minutos",
-  "component.seconds": "Segundos"
+  "component.seconds": "Segundos",
+  "save.date":"RESERVA LA FECHA",
+  "footer.copy":" Baxter. Todos los derechos Reservados."
 }
