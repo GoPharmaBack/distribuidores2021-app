@@ -50,20 +50,20 @@ function Home() {
         <br />
         <br />
 
-       
+        {/*  Baje la norma ISO 639-2 */}
         <div className="idiomas">
           <button
             className="btn-lang"
             onClick={() => idioma.establecerLenguaje("es")}
           >
             {" "}
-            🇪🇸 es
+            🇪🇸 spa
           </button>
           <button
             className="btn-lang"
             onClick={() => idioma.establecerLenguaje("en")}
           >
-            🇬🇧 en
+            🇬🇧 eng
           </button>
         </div>
         <img className="img-logo" src={LogoHome} alt="Baxter" />
