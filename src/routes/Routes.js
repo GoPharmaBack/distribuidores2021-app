@@ -13,11 +13,12 @@ const cookies = new Cookies();
 function Routes() {
   let Autorizado = cookies.get("message");
   const [isAuth] = useState(Autorizado);
-
+ 
   if (isAuth === "Auth succesful") {
     console.log("acceso ✨");
   } else {
     console.log("Sin Acceso 😅");
+    localStorage.setItem("lang", "en");
   }
 
   return (
