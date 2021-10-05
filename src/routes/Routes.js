@@ -5,6 +5,7 @@ import Home from "../views/Home";
 import Login from "../views/Login";
 import Landing from "../views/Landing";
 import Error from "../views/Error";
+import Navbar from "../components/NavBar/NavBar";
 import ProtectedRoutes from "./ProtectedRoutes";
 import Mexico from "../views/SalaMx";
 import Cookies from "universal-cookie";
@@ -23,15 +24,16 @@ function Routes() {
 
   return (
     <Router>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
+
         <ProtectedRoutes path="/landing" component={Landing} isAuth={isAuth} />
         <ProtectedRoutes path="/mx" component={Mexico} isAuth={isAuth} />
 
         <Route exact path="/ups" component={Error} />
       </Switch>
-      
     </Router>
   );
 }

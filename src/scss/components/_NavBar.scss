@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 1% 9%;
-  background-color: rgb(255, 255, 255);
-  color: $app-1;
+  background-color: $app-1;
+  color: white;
   width: 100%;
   z-index: 1;
   box-sizing: border-box;
@@ -54,7 +54,7 @@
 
     a {
       font-weight: 300;
-      color: $app-1;
+      color: white !important;
       cursor: pointer;
 
       &:hover {
@@ -76,7 +76,7 @@
   }
   .nav-transparent {
     height: 65px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
   }
   & .active {
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
@@ -117,7 +117,7 @@
 }
 
 .nav-colored {
-  background-color: rgb(255, 255, 255);
+  background-color: #020032c0;
   width: 100%;
   padding: 0.5% 5%;
   position: fixed;

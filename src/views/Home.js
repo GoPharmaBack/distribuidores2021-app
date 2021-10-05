@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useEffect, useContext } from "react";
 //import { Link } from "react-router-dom";
 import Imparables from "../img/imparables.png";
 import Unstoppable from "../img/unstoppable.png";
@@ -12,6 +12,12 @@ import Fade from "react-reveal/Fade";
 import { LangContext } from "../context/LangContext";
 
 function Home() {
+  useEffect(() => {
+    ocultar();
+  });
+  function ocultar() {
+    document.getElementById("navScr").style.display = "none";
+  }
   var imageLogo;
   var EventImage;
   const idioma = useContext(LangContext);
@@ -36,7 +42,7 @@ function Home() {
         <br />
         <img className="img-inicio" src={imageLogo} alt="Baxter Somos" />
         <br />
-        <Fade >
+        <Fade>
           <CountDown />
         </Fade>
         <br />
@@ -67,7 +73,7 @@ function Home() {
           </button>
         </div>
         <img className="img-logo" src={LogoHome} alt="Baxter" />
-          </section>
+      </section>
     </Fade>
   );
 }

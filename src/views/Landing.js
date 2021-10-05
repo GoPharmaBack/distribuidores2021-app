@@ -1,10 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-
 import CountDown from "../components/CountDown";
-
 import Cookies from "universal-cookie";
-
 import { FormattedMessage } from "react-intl";
 //imagenes establecerLenguaje
 import Imparables from "../img/imparables.png";
@@ -33,7 +30,7 @@ function Landing() {
   var EventImage;
 
   const lang = localStorage.getItem("lang");
-   
+
   if (lang) {
     if (lang === "es") {
       imageLogo = Imparables;
@@ -71,11 +68,45 @@ function Landing() {
             <img className="img-hero" src={ImagenHero} alt="img" />
           </div>
         </div>
+        <br />
         <div className="savethedate">
-          <p><FormattedMessage id="save.date" /></p>
-          
+          <p>
+            <FormattedMessage id="save.date" />
+          </p>
+
           <h2>19 - 21 OCTUBRE</h2>
           <img className="img-landing" src={EventImage} alt="" />
+        </div>
+        <br />
+        <br />
+        <div className="actividades">
+          <div className="col">
+            <span>20+</span> <p>Ponentes nacionales e internacionales</p>
+          </div>
+          <div className="col">
+            <span>25+</span> <p>Ponencias</p>
+          </div>
+          <div className="col">
+            <span>6</span>{" "}
+            <p>
+              Líneas principales
+              <br />
+              de negocio.
+            </p>
+          </div>
+          <div className="col">
+            <span>100+</span>{" "}
+            <p>
+              Productos de <br />
+              nuestro portafolio
+            </p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div className="imparables">
+          <p>imparables de hoy</p>
+          <h3>PONENTES</h3>
         </div>
       </section>
       <section>

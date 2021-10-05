@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import Cookies from "universal-cookie";
 import * as FaIcons from "react-icons/fa";
 import LogoNav from "../../img/logo.svg";
 //import Logo from "../../img/logo.png";
@@ -27,34 +27,53 @@ function Navbar() {
       }
     };
   };
+  const cookies = new Cookies();
+  function logout() {
+    cookies.remove("message");
+    cookies.remove("rooms");
+    window.location.href = "./";
+    localStorage.clear();
+    localStorage.setItem("lang", "en");
+
+    console.log("borrar");
+  }
 
   return (
     <nav id="navScr" className="navbar ">
-      <Link to="/" className="navbar_logo" onClick={closeMobileMenu}>
-        <img src={LogoNav} alt="Carlos Boyzo Oregon" />
+      <Link to="/landing" className="navbar_logo" onClick={closeMobileMenu}>
+        <img src={LogoNav} alt="Baxter distribuidores 2021" />
         <span> </span>
       </Link>
       <ul className={click ? "navbar_menu active " : "navbar_menu"}>
-        <Link to="work" className="navbar_menu_link" onClick={closeMobileMenu}>
-          <li> Work </li> {/* {dropdown && <Dropdown />} */}
-        </Link>
-        <Link to="about" className="navbar_menu_link" onClick={closeMobileMenu}>
-          <li> About </li>
-        </Link>
-
         <Link
-          to="resume-design"
-          className="navbar_menu_button navbar_menu_link"
+          to="landing"
+          className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> CV </li>
+          <li> Agenda</li> {/* {dropdown && <Dropdown />} */}
         </Link>
+        <Link
+          to="landing"
+          className="navbar_menu_link"
+          onClick={closeMobileMenu}
+        >
+          <li> Salas </li>
+        </Link>
+
         <Link
           to="contact"
           className="navbar_menu_button navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> Contact </li>
+          <li> Contacto </li>
+        </Link>
+
+        <Link
+          to="contact"
+          className="navbar_menu_button navbar_menu_link btn-lang"
+          onClick={logout}
+        >
+          <li> Logout </li>
         </Link>
       </ul>
       <div className="navbar-icon" onClick={handleClick}>

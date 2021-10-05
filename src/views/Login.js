@@ -7,6 +7,7 @@ import { FormattedMessage } from "react-intl";
 class Login extends Component {
   constructor() {
     super();
+
     this.state = {
       email: "",
       password: "",
@@ -20,6 +21,7 @@ class Login extends Component {
 
   inicioSesion(event) {
     event.preventDefault();
+
     this.setState({
       status: "Enviando...",
     });
@@ -98,6 +100,9 @@ class Login extends Component {
       });
     }
   }
+  componentDidMount() {
+    document.getElementById("navScr").style.display = "none";
+  }
 
   render() {
     return (
@@ -110,9 +115,11 @@ class Login extends Component {
               onSubmit={this.inicioSesion.bind(this)}
             >
               <div className="form-grupo">
-                <label> *E-mail: </label>
+                <label>
+                  <FormattedMessage id="button.start" />{" "}
+                </label>
                 <input
-                  placeholder="Correo electrónico"
+                  placeholder="user@baxter.com"
                   type="email"
                   id="email"
                   value={this.state.email}
@@ -121,9 +128,12 @@ class Login extends Component {
                 />
               </div>
               <div className="form-grupo">
-                <label> *password: </label>
+                <label>
+                  {" "}
+                  <FormattedMessage id="button.start" />{" "}
+                </label>
                 <input
-                  placeholder="Password"
+                  placeholder="*******"
                   type="password"
                   id="password"
                   name="currrent-password"

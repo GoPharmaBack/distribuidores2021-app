@@ -1,7 +1,13 @@
 import React from "react";
 import Iframe from "react-iframe";
+import Navbar from "../components/NavBar/NavBar";
+import Fade from "react-reveal/Fade";
+
 function SalaMx() {
   return (
+    <>
+     <Navbar />
+    <Fade>
     <section className="sala">
       <div className="contenedor">
         <h1>Sala MX</h1>
@@ -38,7 +44,12 @@ function SalaMx() {
         />
       </div>
     </section>
-  );
+  
+    
+    
+    </Fade>
+    </>
+    );
 }
 
 export default SalaMx;
