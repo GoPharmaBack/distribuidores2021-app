@@ -326,8 +326,6 @@ footer {
     max-width: 1080px;
     box-sizing: border-box;
 
-    max-width: 1080px;
-    box-sizing: border-box;
     iframe {
       width: 100% !important;
       max-width: 1080px !important;
@@ -335,16 +333,17 @@ footer {
       box-sizing: border-box;
     }
     .video {
-      height: 322px;
-      width: 100% !important;
+      position: relative;
+      height: auto;
+      width: 1080px;
     }
-
+   
     .chat {
       border: none;
       padding: 1rem;
       overflow: visible;
-      width: 100%;
-      height: 600px !important;
+      width: 50vw !important;
+      height: 400px !important;
     }
   }
 }

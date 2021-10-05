@@ -57,7 +57,7 @@ function Navbar() {
           className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> Salas </li>
+          <li> Sala </li>
         </Link>
 
         <Link

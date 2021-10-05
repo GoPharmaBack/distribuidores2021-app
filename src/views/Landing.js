@@ -107,6 +107,7 @@ function Landing() {
         <div className="imparables">
           <p>imparables de hoy</p>
           <h3>PONENTES</h3>
+          
         </div>
       </section>
       <section>
