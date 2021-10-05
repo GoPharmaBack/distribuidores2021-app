@@ -2,7 +2,7 @@ import React from "react";
 import "./scss/Index.scss";
 
 import Routes from "./routes/Routes";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 import { LangProvider } from "./context/LangContext";
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
         <Routes />
         <Footer />
       </LangProvider>
-      
     </div>
   );
 }
