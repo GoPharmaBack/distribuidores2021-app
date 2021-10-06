@@ -50,7 +50,7 @@ function Navbar() {
           className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> Agenda</li> {/* {dropdown && <Dropdown />} */}
+          <li> Agenda</li> 
         </Link>
         <Link
           to="landing"
@@ -70,10 +70,10 @@ function Navbar() {
 
         <Link
           to="contact"
-          className="navbar_menu_button navbar_menu_link btn-lang"
+         
           onClick={logout}
         >
-          <li> Logout </li>
+          <li  className=" btn-lang"> Logout </li>
         </Link>
       </ul>
       <div className="navbar-icon" onClick={handleClick}>

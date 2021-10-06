@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import CountDown from "../components/CountDown";
-import Cookies from "universal-cookie";
+
 import { FormattedMessage } from "react-intl";
 //imagenes establecerLenguaje
 import Imparables from "../img/imparables.png";
@@ -10,18 +10,11 @@ import Evento from "../img/evento.png";
 import Event from "../img/event.png";
 //imagenes no lenguaje
 import ImagenHero from "../img/img-hero.png";
+import Fade from "react-reveal/Fade";
 
-const cookies = new Cookies();
 
-function logout() {
-  cookies.remove("message");
-  cookies.remove("rooms");
-  window.location.href = "./";
-  localStorage.clear();
-  localStorage.setItem("lang", "en");
 
-  console.log("borrar");
-}
+
 //var hola = cookies.get("rooms");
 //var rol = JSON.stringify(cookies.get("roles"));
 
@@ -45,6 +38,7 @@ function Landing() {
   }
   return (
     <>
+     <Fade>
       <section className="landing-hero">
         <div className="contenedor">
           <div className="left">
@@ -107,12 +101,23 @@ function Landing() {
         <div className="imparables">
           <p>imparables de hoy</p>
           <h3>PONENTES</h3>
-          
+          <div className="contenedor-ponentes">
+            <div className="ponente">
+              <img src={""} alt="ponente" />
+              <p>lorem</p>
+            </div>
+            <div className="ponente">
+              <img src={""} alt="ponente" />
+              <p>lorem</p>
+            </div>
+            <div className="ponente">
+              <img src={""} alt="ponente" />
+              <p>lorem</p>
+            </div>
+          </div>
         </div>
       </section>
-      <section>
-        <button onClick={logout}>logout</button>
-      </section>
+      </Fade>
     </>
   );
 }

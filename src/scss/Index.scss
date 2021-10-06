@@ -103,9 +103,9 @@ section {
   border-radius: 6px;
   border: 0.6px solid $app-2;
   transition: all 0.2s ease-in-out;
-  &:hover {
+  li &:hover {
     background-color: $app-2;
-    color: $app-1;
+    color: $app-1 !important;
   }
 }
 .btn-secondary {
@@ -381,4 +381,13 @@ a {
     font-weight: bold;
     color: $app-2;
   }
+}
+
+
+.imparables{
+  display: flex !important;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
 }
