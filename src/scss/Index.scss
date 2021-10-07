@@ -396,33 +396,102 @@ a {
     grid-template-rows: auto;
     align-items: center;
     gap: 1rem;
+    .ponente {
+      display: flex !important;
+      flex-flow: column;
+      min-width: 220px;
+      p{font-size:1.2rem;}
+      &:hover{
+        cursor: pointer;
+        
+      }
+    }
   }
-  .ponente{
-    min-width: 220px;
-  }
+ 
 }
-.contenedor-video{
+.contenedor-video {
   width: 100%;
 }
 
-.contenedor-botones{
+.contenedor-botones {
   display: flex !important;
   border: 1px solid red;
-  max-width: 900px;
+  max-width: 1080px;
   width: 100%;
-  a{padding:1rem;}
-
+  a {
+    padding: 1rem;
+  }
 }
 
-.botones-salas{
+.botones-salas {
   display: flex !important;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-
-
 }
 
-.scrollTop{
+.scrollTop {
   position: absolute !important;
+  bottom: 3rem;
 }
+
+
+
+.sibling-fade {
+  visibility: hidden;
+
+  > * {
+  
+    visibility: visible;
+    transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
+  }
+
+  &:hover > * {
+    opacity: 0.4;
+    transform: scale(0.9);
+    z-index: 0;
+    
+  }
+
+  
+
+  > *:hover {
+    
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0ms, 0ms;
+    position: relative;
+   
+  }
+}
+
+
+
+
+
+
+
+
+
+.contenedor-ponenetes {position: relative; display: flex; height: 100%; }
+
+
+.sibling-fade {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sibling-fade > * {
+  
+  padding: 1em;
+  flex: auto;
+  margin: 0.3em;
+  text-align: center;
+  color: $app-2;
+  font-size: 1.5em;
+  text-decoration: none;
+  position: relative;
+  small{color:#fff !important;}
+}
+
+

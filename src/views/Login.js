@@ -108,7 +108,7 @@ class Login extends Component {
     return (
       <React.Fragment>
         <section className="login">
-          <h1>Login</h1>
+          <h1><FormattedMessage id="login.title" /></h1>
           <div className="contenedor-login">
             <form
               className="formulario"
@@ -116,7 +116,7 @@ class Login extends Component {
             >
               <div className="form-grupo">
                 <label>
-                  <FormattedMessage id="button.start" />{" "}
+                  <FormattedMessage id="login.email" />{" "}
                 </label>
                 <input
                   placeholder="user@baxter.com"
@@ -130,10 +130,10 @@ class Login extends Component {
               <div className="form-grupo">
                 <label>
                   {" "}
-                  <FormattedMessage id="button.start" />{" "}
+                  <FormattedMessage id="login.password" />{" "}
                 </label>
                 <input
-                  placeholder="*******"
+                  placeholder=""
                   type="password"
                   id="password"
                   name="currrent-password"

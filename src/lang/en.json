@@ -5,5 +5,9 @@
   "component.minutes": "Minutes",
   "component.seconds": "Seconds",
   "save.date":"SAVE THE DATE",
-  "footer.copy":" Baxter. All rights reserved."
-}
+  "footer.copy":" Baxter. All rights reserved.",
+  "login.email": "E-mail",
+  "login.password": "password",
+  "login.title":"Login"
+  
+} 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
 import * as FaIcons from "react-icons/fa";
 import LogoNav from "../../img/logo.svg";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 //import Logo from "../../img/logo.png";
 function Navbar() {
   const [click, setClick] = useState(false);

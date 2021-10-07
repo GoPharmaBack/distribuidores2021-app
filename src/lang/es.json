@@ -5,5 +5,8 @@
   "component.minutes": "Minutos",
   "component.seconds": "Segundos",
   "save.date":"RESERVA LA FECHA",
-  "footer.copy":" Baxter. Todos los derechos Reservados."
+  "footer.copy":" Baxter. Todos los derechos Reservados.",
+  "login.email": "Correo electrónico",
+  "login.password": "contraseña",
+  "login.title":"Acceso"
 }
