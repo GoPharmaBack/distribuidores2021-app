@@ -8,6 +8,10 @@ import Error from "../views/Error";
 import Navbar from "../components/NavBar/NavBar";
 import ProtectedRoutes from "./ProtectedRoutes";
 import Mexico from "../views/SalaMx";
+import Cam from "../views/SalaCam";
+import Car from "../views/SalaCar"
+import Pr from "../views/SalaPr"
+import ScrollToTop from "../components/ScrollToTop"
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
@@ -24,6 +28,7 @@ function Routes() {
 
   return (
     <Router>
+        <ScrollToTop />
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -31,6 +36,9 @@ function Routes() {
 
         <ProtectedRoutes path="/landing" component={Landing} isAuth={isAuth} />
         <ProtectedRoutes path="/mx" component={Mexico} isAuth={isAuth} />
+        <ProtectedRoutes path="/cam" component={Cam} isAuth={isAuth} />
+        <ProtectedRoutes path="/car" component={Car} isAuth={isAuth} />
+        <ProtectedRoutes path="/Pr" component={Pr} isAuth={isAuth} />
 
         <Route exact path="/ups" component={Error} />
       </Switch>

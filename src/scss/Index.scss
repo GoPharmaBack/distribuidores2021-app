@@ -337,7 +337,7 @@ footer {
       height: auto;
       width: 1080px;
     }
-   
+
     .chat {
       border: none;
       padding: 1rem;
@@ -383,11 +383,21 @@ a {
   }
 }
 
-
-.imparables{
+.imparables {
   display: flex !important;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  
+  .contenedor-ponentes {
+    max-width: 1080px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 1rem;
+  }
+  .ponente{
+    min-width: 220px;
+  }
 }

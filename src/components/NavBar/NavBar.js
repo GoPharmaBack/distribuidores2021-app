@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
 import * as FaIcons from "react-icons/fa";
 import LogoNav from "../../img/logo.svg";
+import { HashLink } from 'react-router-hash-link';
 //import Logo from "../../img/logo.png";
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -50,15 +51,15 @@ function Navbar() {
           className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> Agenda</li> 
+          <li> Agenda</li>
         </Link>
-        <Link
-          to="landing"
+        <HashLink
+          to="#salas"
           className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
           <li> Sala </li>
-        </Link>
+        </HashLink>
 
         <Link
           to="contact"
@@ -68,12 +69,8 @@ function Navbar() {
           <li> Contacto </li>
         </Link>
 
-        <Link
-          to="contact"
-         
-          onClick={logout}
-        >
-          <li  className=" btn-lang"> Logout </li>
+        <Link to="contact" onClick={logout}>
+          <li className=" btn-lang"> Logout </li>
         </Link>
       </ul>
       <div className="navbar-icon" onClick={handleClick}>

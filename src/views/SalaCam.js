@@ -44,8 +44,6 @@ function SalaMx() {
               src="https://minnit.chat/MX?embed&&nickname="
               allowTransparency="true"
             />
-
-            
           </div>
         </section>
       </Fade>
