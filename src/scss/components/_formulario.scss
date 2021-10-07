@@ -1,0 +1,68 @@
+.formulario {
+  margin-bottom: 1rem;
+  background-color: $app-1;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+  padding: 1.4em;
+  min-width: 280px;
+  border-radius: 6px;
+  max-width: 400px;
+  div,
+  input,
+  textarea {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    width: 100%;
+    margin: 0.1em 0 0.1em;
+    padding:4px;
+    box-sizing: border-box;
+  }
+  textarea{
+    height: 4rem;
+  }
+  label {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  &__button {
+    cursor: pointer;
+    width: 100%;
+    &:hover{
+      background-color:#00a2ff;
+      color: white;
+    }
+  }
+}
+
+small{
+
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 11px;
+  max-width: 800px;
+
+  font-weight: lighter !important;
+  text-align: justify;
+}
+a li{ 
+  &:hover{
+    color: #c300ff;
+  }
+}
+.btn{
+  margin: auto;
+  width: 220px;
+  @include phone{
+    width: 100% !important;
+  }
+}
+
+p{margin: 0 !important;}

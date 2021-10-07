@@ -1,7 +1,11 @@
 @import "libs/mixins";
 @import "libs/variables";
 @import "libs/type";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import "components/formulario";
+@import "~bootstrap/scss/bootstrap";
 @import "components/NavBar";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +16,7 @@
 a {
   text-decoration: none !important;
 }
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+
 body {
   background-color: $app-1 !important;
   background-image: url("/img/background-star.png");
@@ -81,7 +85,7 @@ section {
   padding: 1rem;
   font-weight: bold;
   font-size: 1.4rem;
-  
+
   background-color: $app-2 !important;
   transition: all 0.2s ease-in-out;
   &:hover {
@@ -401,14 +405,14 @@ a {
       display: flex !important;
       flex-flow: column;
       min-width: 220px;
-      p{font-size:1.2rem;}
-      &:hover{
+      p {
+        font-size: 1.2rem !important;
+      }
+      &:hover {
         cursor: pointer;
-        
       }
     }
   }
- 
 }
 .contenedor-video {
   width: 100%;
@@ -436,13 +440,10 @@ a {
   bottom: 3rem;
 }
 
-
-
 .sibling-fade {
   visibility: hidden;
 
   > * {
-  
     visibility: visible;
     transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
   }
@@ -451,31 +452,21 @@ a {
     opacity: 0.4;
     transform: scale(0.9);
     z-index: 0;
-    
   }
 
-  
-
   > *:hover {
-    
     opacity: 1;
     transform: scale(1);
     transition-delay: 0ms, 0ms;
     position: relative;
-   
   }
 }
 
-
-
-
-
-
-
-
-
-.contenedor-ponenetes {position: relative; display: flex; height: 100%; }
-
+.contenedor-ponenetes {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
 
 .sibling-fade {
   display: flex;
@@ -483,7 +474,6 @@ a {
 }
 
 .sibling-fade > * {
-  
   padding: 1em;
   flex: auto;
   margin: 0.3em;
@@ -492,7 +482,31 @@ a {
   font-size: 1.5em;
   text-decoration: none;
   position: relative;
-  small{color:#fff !important;}
+  small {
+    font-size: 0.7rem;
+    color: #fff !important;
+  }
 }
 
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fecf005e !important;
+}
 
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: $app-1 !important;
+  background-clip: padding-box;
+
+  border-radius: 0.3rem;
+  outline: 0;
+}

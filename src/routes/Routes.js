@@ -13,6 +13,7 @@ import Car from "../views/SalaCar"
 import Pr from "../views/SalaPr"
 import ScrollToTop from "../components/ScrollToTop"
 import Cookies from "universal-cookie";
+import Sucess from "../views/Sucess";
 const cookies = new Cookies();
 
 function Routes() {
@@ -41,6 +42,7 @@ function Routes() {
         <ProtectedRoutes path="/Pr" component={Pr} isAuth={isAuth} />
 
         <Route exact path="/ups" component={Error} />
+        <Route exact path="/sucess" component={Sucess} />
       </Switch>
     </Router>
   );
