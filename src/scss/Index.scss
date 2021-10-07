@@ -14,7 +14,7 @@ a {
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
 body {
-  background-color: $app-1;
+  background-color: $app-1 !important;
   background-image: url("/img/background-star.png");
   background-position: top;
   background-size: fill;
@@ -76,16 +76,17 @@ section {
   cursor: pointer;
   border: none;
   border-radius: 1rem;
-  background-color: $app-1;
+  color: $app-1 !important;
   text-transform: uppercase;
   padding: 1rem;
   font-weight: bold;
   font-size: 1.4rem;
-  background-color: $app-2;
+  
+  background-color: $app-2 !important;
   transition: all 0.2s ease-in-out;
   &:hover {
-    background-color: #1b1464;
-    color: #fff;
+    background-color: #1b1464 !important;
+    color: #fff !important;
   }
 }
 
