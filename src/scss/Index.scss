@@ -401,3 +401,28 @@ a {
     min-width: 220px;
   }
 }
+.contenedor-video{
+  width: 100%;
+}
+
+.contenedor-botones{
+  display: flex !important;
+  border: 1px solid red;
+  max-width: 900px;
+  width: 100%;
+  a{padding:1rem;}
+
+}
+
+.botones-salas{
+  display: flex !important;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.scrollTop{
+  position: absolute !important;
+}

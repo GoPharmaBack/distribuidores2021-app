@@ -1,7 +1,7 @@
-import React from "react";
+import React,{useState} from "react";
 import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import {FaArrowCircleUp} from 'react-icons/fa';
 import CountDown from "../components/CountDown";
 import Cookies from "universal-cookie";
 
@@ -22,7 +22,18 @@ console.log(rooms);
 function Landing() {
   var imageLogo;
   var EventImage;
-
+  const [showScroll, setShowScroll] = useState(false)
+  const checkScrollTop = () => {    
+     if (!showScroll && window.pageYOffset > 400){
+        setShowScroll(true)    
+     } else if (showScroll && window.pageYOffset <= 400){
+        setShowScroll(false)    
+     }  
+  };
+  const scrollTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+ };
+  window.addEventListener('scroll', checkScrollTop)
   const lang = localStorage.getItem("lang");
 
   if (lang) {
@@ -155,14 +166,25 @@ function Landing() {
           </div>
           <div className="agenda">agenda</div>
 
-          <div className="salas" id="salas">
+          <div className="botones-salas" id="salas">
             <p>
               <FormattedMessage id="save.date" />
             </p>
             <h4>SALAS</h4>
-            {"ListRooms "}
+            <div className="contenedor-botones">
+              {rooms.map((room) => (
+                <Link key={room} to={room}>
+                  <button className="btn-primary">{room}</button>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
+    <p>    <FaArrowCircleUp 
+   className="scrollTop" 
+   onClick={scrollTop} 
+   style={{ display: showScroll ? 'flex' : 'none'}}
+/></p>
       </Fade>
     </>
   );

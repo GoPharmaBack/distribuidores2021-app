@@ -9,8 +9,8 @@ function SalaMx() {
       <Fade>
         <section className="sala">
           <div className="contenedor">
-            <h1>Sala MX</h1>
-            <div>
+            <h1>Sala CAM</h1>
+            <div className="contenedor-video">
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
                   title="Sala Mexico"

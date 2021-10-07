@@ -41,7 +41,7 @@ function Navbar() {
 
   return (
     <nav id="navScr" className="navbar ">
-      <Link to="/landing" className="navbar_logo" onClick={closeMobileMenu}>
+      <Link to="/" className="navbar_logo" onClick={closeMobileMenu}>
         <img src={LogoNav} alt="Baxter distribuidores 2021" />
         <span> </span>
       </Link>
