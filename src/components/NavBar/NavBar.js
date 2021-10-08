@@ -48,7 +48,7 @@ function Navbar() {
       </Link>
       <ul className={click ? "navbar_menu active " : "navbar_menu"}>
         <Link
-          to="landing"
+          to="#agenda"
           className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
@@ -63,7 +63,7 @@ function Navbar() {
         </HashLink>
 
         <Link
-          to="contact"
+          to="#contact"
           className="navbar_menu_button navbar_menu_link"
           onClick={closeMobileMenu}
         >

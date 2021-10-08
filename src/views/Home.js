@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Imparables from "../img/imparables.png";
 import Unstoppable from "../img/unstoppable.png";
 import Evento from "../img/evento.png";
@@ -8,7 +8,7 @@ import CountDown from "../components/CountDown";
 import LogoHome from "../img/logo.svg";
 import Fade from "react-reveal/Fade";
 
-//import { FormattedMessage } from "react-intl";
+import { FormattedMessage } from "react-intl";
 import { LangContext } from "../context/LangContext";
 
 function Home() {
@@ -47,11 +47,11 @@ function Home() {
         </Fade>
         <br />
         <br />
-        {/* <Link to="/login">
+        <Link to="/login">
         <button className="btn-primary">
           <FormattedMessage id="button.start" defaultMessage="Entrar" />
         </button>
-      </Link> */}
+      </Link>
         <img className="img-inicio2" src={EventImage} alt="Baxter Somos" />
         <br />
         <br />

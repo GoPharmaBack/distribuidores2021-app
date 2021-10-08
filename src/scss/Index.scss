@@ -619,3 +619,31 @@ a {
   padding: 4rem;
   text-align: center !important;
 }
+
+
+.form-footer{
+  display: none !important;
+}
+
+.form-line {
+  margin-top: 12px !important;
+  margin-bottom: -30px !important;
+}
+
+.dudas{
+  text-align: center;
+  margin-top: 2rem;
+  .contenedor-personal{
+    max-width:1080px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around !important;
+   .col{
+     padding: 1rem;
+    width: 320px;
+     margin:1rem;
+     background-color:#1b1464;
+   }
+
+  }
+}

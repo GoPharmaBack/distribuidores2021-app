@@ -356,7 +356,12 @@ function Landing() {
               </div>
             </div>
           </div>
-          <div className="agenda">agenda</div>
+          <section className="agenda">
+            <h3>Agenda</h3>
+            <div className="contenedor-boton-agenda">
+              <button className="btn-primary">19-oct</button><button className="btn-primary"> 20-oct </button>
+            </div>
+          </section>
           <br />
           <div className="botones-salas" id="salas">
             <h4>SALAS</h4>
