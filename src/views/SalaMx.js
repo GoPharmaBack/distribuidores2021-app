@@ -1,15 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Iframe from "react-iframe";
-
+import { Modal, Button } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
 function SalaMx() {
+  useEffect(() => {
+    setModalShow(true);
+  },[]);
+  
+  let [modalShow, setModalShow] = useState(false);
+
+  function MyVerticallyCenteredModal(props) {
+    return (
+      <div onClick={(e) => e.stopPropagation()}>
+        <Modal
+          {...props}
+          size="lg"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+        >
+
+<iframe id="JotFormIFrame-212609285006048" title="Certificado de Asistencia - Distribuidores" onload="window.parent.scrollTo(0,0)"  allow="geolocation; microphone; camera" src="https://form.jotform.com/212609285006048" frameBorder={0} style={{minWidth: '100%', height: 539, border: 'none'}} scrolling="no">
+</iframe>
+
+          <Button onClick={props.onHide}>cerrar</Button>
+          <br />
+        </Modal>
+      </div>
+    );
+  }
   return (
     <>
       <Fade>
         <section className="sala">
           <div className="contenedor">
             <h1>Sala MX</h1>
+            
             <div className="contenedor-video">
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
@@ -45,7 +71,10 @@ function SalaMx() {
               allowTransparency="true"
             />
 
-            
+            <MyVerticallyCenteredModal
+              show={modalShow}
+              onHide={() => setModalShow(false)}
+            />
           </div>
         </section>
       </Fade>

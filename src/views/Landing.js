@@ -15,9 +15,12 @@ import Evento from "../img/evento.png";
 import Event from "../img/event.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 //imagenes no lenguaje
+import PonenteEspecial from "../img/VICTOR_GOMEZ.png";
 import ImagenHero from "../img/img-hero.png";
 import Fade from "react-reveal/Fade";
 import User from "../img/Piero-Novello.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-image-gallery/styles/scss/image-gallery.scss";
 const cookies = new Cookies();
 var rooms = cookies.get("rooms");
 //var rol = JSON.stringify(cookies.get("roles"));
@@ -243,17 +246,114 @@ function Landing() {
 
           <div className="ponencia-especial">
             <div className="texto">
-              <h3>Fecha</h3>
+              <h3>19 OCTUBRE</h3>
               <small>Ponencia especial</small>
-
-              <ul>
-                <li>horario</li>
-                <li>horario</li>
-                <li>horario</li>
+              <p className="ponente">Víctor Gómez</p>
+              <ul className="horarios">
+                <li>
+                  09:00 h <span> Centroamérica</span>
+                </li>
+                <li>
+                  10:00 h <span> México</span>
+                </li>
+                <li>
+                  11:00 h <span> Puerto Rico</span>
+                </li>
+                <li>
+                  11:00 h <span> Puerto Rico</span>
+                </li>
               </ul>
             </div>
             <div className="imagen">
-              <img src="/" alt="ponencia especial" />
+              <img src={PonenteEspecial} alt="ponencia especial" />
+            </div>
+          </div>
+
+          <div className="imparables">
+            <p>imparables de hoy</p>
+            <h3>PONENTES</h3>
+            <div className="contenedor-ponentes sibling-fade">
+              {/* ponente */}
+              <div className="ponente" onClick={() => setModalShow(true)}>
+                <img src={User} alt="ponente" />
+                <small>Director General LATAM</small>
+                <p>Piero Novello</p>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
+              </div>
+              {/* ponente */}
+              <div className="ponente" onClick={() => setModalShow(true)}>
+                <img src={User} alt="ponente" />
+                <small>Director General LATAM</small>
+                <p>Piero Novello</p>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
+              </div>
+              {/* ponente */}
+              <div className="ponente" onClick={() => setModalShow(true)}>
+                <img src={User} alt="ponente" />
+                <small>Director General LATAM</small>
+                <p>Piero Novello</p>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
+              </div>
+
+              {/* ponente */}
+              <div className="ponente" onClick={() => setModalShow(true)}>
+                <img src={User} alt="ponente" />
+                <small>Director General LATAM</small>
+                <p>Piero Novello</p>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
+              </div>
+              {/* ponente */}
+              <div className="ponente" onClick={() => setModalShow(true)}>
+                <img src={User} alt="ponente" />
+                <small>Director General LATAM</small>
+                <p>Piero Novello</p>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
+              </div>
+              {/* ponente */}
+              <div className="ponente" onClick={() => setModalShow(true)}>
+                <img src={User} alt="ponente" />
+                <small>Director General LATAM</small>
+                <p>Piero Novello</p>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
+              </div>
+              {/* ponente */}
+              <div className="ponente" onClick={() => setModalShow(true)}>
+                <img src={User} alt="ponente" />
+                <small>Director General LATAM</small>
+                <p>Piero Novello</p>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
+              </div>
+              {/* ponente */}
+              <div className="ponente" onClick={() => setModalShow(true)}>
+                <img src={User} alt="ponente" />
+                <small>Director General LATAM</small>
+                <p>Piero Novello</p>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
+              </div>
             </div>
           </div>
           <div className="agenda">agenda</div>
@@ -275,12 +375,15 @@ function Landing() {
         </section>
 
         <div className="contenedor-galeria">
+          <hr />
+          <p>Galería</p>
+          <h3>Cuidado Renal</h3>
           <Galeria />
         </div>
-        <br />
+      
         <div className="dudas">
           <p>Dudas o sugerencias</p>
-          <h5>Informes</h5>
+          <h3>INFORMES</h3>
 
           <div className="contenedor-personal">
             <div className="col">
@@ -305,6 +408,8 @@ function Landing() {
         </div>
 
         <div className="contacto">
+          <p>Escríbenos</p>
+          <h3>Estamos para ayudarte</h3>
           <Contacto />
         </div>
 

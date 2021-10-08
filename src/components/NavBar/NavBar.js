@@ -4,6 +4,7 @@ import Cookies from "universal-cookie";
 import * as FaIcons from "react-icons/fa";
 import LogoNav from "../../img/logo.svg";
 import { HashLink } from "react-router-hash-link";
+import { FormattedMessage } from "react-intl";
 //import Logo from "../../img/logo.png";
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -41,7 +42,7 @@ function Navbar() {
 
   return (
     <nav id="navScr" className="navbar ">
-      <Link to="/" className="navbar_logo" onClick={closeMobileMenu}>
+      <Link to="/landing" className="navbar_logo" onClick={closeMobileMenu}>
         <img src={LogoNav} alt="Baxter distribuidores 2021" />
         <span> </span>
       </Link>
@@ -51,14 +52,14 @@ function Navbar() {
           className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> Agenda</li>
+          <li> <FormattedMessage id="menu.agenda" /></li>
         </Link>
         <HashLink
           to="#salas"
           className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> Sala </li>
+          <li> <FormattedMessage id="menu.rooms" /> </li>
         </HashLink>
 
         <Link
@@ -66,7 +67,7 @@ function Navbar() {
           className="navbar_menu_button navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> Contacto </li>
+          <li> <FormattedMessage id="menu.contact" /> </li>
         </Link>
 
         <Link to="contact" onClick={logout}>

@@ -8,5 +8,8 @@
   "footer.copy":" Baxter. Todos los derechos Reservados.",
   "login.email": "Correo electrónico",
   "login.password": "contraseña",
-  "login.title":"Acceso"
+  "login.title":"Acceso",
+  "menu.agenda":"Agenda",
+  "menu.rooms":"Sala",
+  "menu.contact":"Contacto "
 }

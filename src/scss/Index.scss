@@ -1,9 +1,9 @@
 @import "libs/mixins";
 @import "libs/variables";
 @import "libs/type";
-@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
 @import "components/formulario";
-@import "~bootstrap/scss/bootstrap";
+
 @import "components/NavBar";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
 * {
@@ -228,7 +228,8 @@ section {
   }
   .contenedor {
     width: 100%;
-    border: 1px solid red;
+    
+    //border: 1px solid red;
     display: flex;
     flex-flow: row;
     max-width: 1080px;
@@ -375,7 +376,7 @@ a {
 }
 
 .actividades {
-  border: 1px solid red;
+  //border: 1px solid red;
   margin: auto;
   display: grid;
   max-width: 1080px;
@@ -411,6 +412,16 @@ a {
       &:hover {
         cursor: pointer;
       }
+
+      small,
+      .small {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        font-size: 11px;
+        max-width: 800px;
+        font-weight: lighter !important;
+        text-align: center !important;
+      }
     }
   }
 }
@@ -420,7 +431,7 @@ a {
 
 .contenedor-botones {
   display: flex !important;
-  border: 1px solid red;
+  //border: 1px solid red;
   max-width: 1080px;
   width: 100%;
   a {
@@ -433,11 +444,6 @@ a {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-}
-
-.scrollTop {
-  position: absolute !important;
-  bottom: 3rem;
 }
 
 .sibling-fade {
@@ -509,4 +515,107 @@ a {
 
   border-radius: 0.3rem;
   outline: 0;
+  @include phone {
+    max-width: 320px;
+    min-height: 100vh;
+    margin: 1rem;
+    font-size: 0.4rem !important;
+    overflow: scroll;
+  }
+}
+
+#JotFormIFrame-212609285006048 {
+  box-sizing: border-box;
+  min-height: 85vh !important;
+  height: auto !important;
+}
+
+.contenedor-formulario {
+  margin: 1rem;
+  background-color: #fed100;
+  padding: 1rem;
+  border-radius: 20px;
+  min-width: 320px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.label-group {
+  display: flex;
+}
+
+.scrollTop {
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.ponencia-especial {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 900px;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  .texto {
+    h3 {
+      color: #fed100;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: none !important;
+      line-height: 0.6 !important;
+    }
+    .ponente {
+      font-size: 2.8rem;
+      line-height: 0.9 !important;
+    }
+  }
+  .imagen {
+    display: flex;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.horarios {
+  font-size: 1.2rem;
+  padding: 1rem;
+  list-style-type: none;
+  list-style: none;
+  span {
+    color: $app-2;
+  }
+}
+
+.contenedor-personal {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4rem;
+  text-align: center !important;
 }

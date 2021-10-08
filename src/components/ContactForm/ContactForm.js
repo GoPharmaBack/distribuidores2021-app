@@ -54,14 +54,15 @@ class ContactForm extends Component {
   render() {
     let buttonText = this.state.status;
     return (
-      <div className="div">
-        <div className="titulo">Déjanos un mensaje:</div>
+      <div className="contenedor-formulario">
+  
         <form
         className="formulario"
         onSubmit={this.handleSubmit.bind(this)}
         method="POST"
       >
-        <div className="labelArea">
+       <div className="label-group">
+       <div className="labelArea">
         <label htmlFor="Nombre"> Nombre</label>
           <input
             placeholder="Nombre completo"
@@ -83,6 +84,7 @@ class ContactForm extends Component {
             required
           />
         </div>
+       </div>
         <div>
           <label htmlFor="email"> Correo electrónico</label>
           <input
