@@ -45,18 +45,7 @@ function Home() {
         <Fade>
           <CountDown />
         </Fade>
-        <br />
-        <br />
-        <Link to="/login">
-        <button className="btn-primary">
-          <FormattedMessage id="button.start" defaultMessage="Entrar" />
-        </button>
-      </Link>
-        <img className="img-inicio2" src={EventImage} alt="Baxter Somos" />
-        <br />
-        <br />
-
-        {/*  Baje la norma ISO 639-2 */}
+      
         <div className="idiomas">
           <button
             className="btn-lang"
@@ -72,6 +61,18 @@ function Home() {
             🇬🇧 eng
           </button>
         </div>
+      
+        <Link to="/login">
+        <button className="btn-primary">
+          <FormattedMessage id="button.start" defaultMessage="Entrar" />
+        </button>
+      </Link>
+        <img className="img-inicio2" src={EventImage} alt="Baxter Somos" />
+        <br />
+        <br />
+
+        {/*  Baje la norma ISO 639-2 */}
+ 
         <img className="img-logo" src={LogoHome} alt="Baxter" />
       </section>
     </Fade>

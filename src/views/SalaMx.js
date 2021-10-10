@@ -26,7 +26,7 @@ function SalaMx() {
             allow="geolocation; microphone; camera"
             src="https://form.jotform.com/212609285006048"
             frameBorder={0}
-            style={{ minWidth: "100%", height: 539, border: "none" }}
+            style={{ minWidth: "100%", height: 439, border: "none" }}
             scrolling="no"
           ></iframe>
 <br />

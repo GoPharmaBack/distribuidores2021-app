@@ -117,7 +117,7 @@ section {
   cursor: pointer;
   border: none;
   border-radius: 1rem;
-  background-color: $app-1;
+  background-color: $app-1 !important;
   text-transform: uppercase;
   padding: 1rem;
   font-weight: bold;
@@ -126,8 +126,8 @@ section {
 
   transition: all 0.2s ease-in-out;
   &:hover {
-    background-color: #1b1464;
-    color: #fff;
+    background-color: $app-2 !important;
+    color: rgb(3, 5, 126) !important;
   }
 }
 .contador {
@@ -228,7 +228,7 @@ section {
   }
   .contenedor {
     width: 100%;
-    
+
     //border: 1px solid red;
     display: flex;
     flex-flow: row;
@@ -303,9 +303,9 @@ footer {
   }
 }
 .idiomas {
-  position: absolute;
+  position: relative;
   top: 0 !important;
-  right: 8%;
+  margin: auto;
 
   @include phone {
     .btn-lang {
@@ -350,6 +350,9 @@ footer {
       overflow: visible;
       width: 50vw !important;
       height: 400px !important;
+      @include phone {
+        width: 100% !important;
+      }
     }
   }
 }
@@ -387,6 +390,8 @@ a {
     font-weight: bold;
     color: $app-2;
   }
+  grid-template-columns:  1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .imparables {
@@ -402,6 +407,9 @@ a {
     grid-template-rows: auto;
     align-items: center;
     gap: 1rem;
+    @include phone{
+      grid-template-columns: auto;
+    }
     .ponente {
       display: flex !important;
       flex-flow: column;
@@ -434,8 +442,13 @@ a {
   //border: 1px solid red;
   max-width: 1080px;
   width: 100%;
-  a {
+  a { margin: auto;
     padding: 1rem;
+  }
+  @include phone{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    
   }
 }
 
@@ -444,6 +457,7 @@ a {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .sibling-fade {
@@ -526,8 +540,11 @@ a {
 
 #JotFormIFrame-212609285006048 {
   box-sizing: border-box;
-  min-height: 85vh !important;
+  min-height: 100vh !important;
   height: auto !important;
+  @include phone {
+    min-height: 170vh !important;
+  }
 }
 
 .contenedor-formulario {
@@ -535,9 +552,11 @@ a {
   background-color: #fed100;
   padding: 1rem;
   border-radius: 20px;
-  min-width: 320px;
-  max-width: 600px;
+ 
   width: 100%;
+  @include phone{
+    width: 300px;
+  }
 }
 
 .label-group {
@@ -580,6 +599,9 @@ a {
   width: 100%;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  @include phone{
+    flex-flow: column-reverse;
+  }
   .texto {
     h3 {
       color: #fed100;
@@ -594,6 +616,7 @@ a {
     }
   }
   .imagen {
+    margin-bottom: 1rem;
     display: flex;
     img {
       width: 100%;
@@ -612,16 +635,9 @@ a {
   }
 }
 
-.contenedor-personal {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 4rem;
-  text-align: center !important;
-}
 
 
-.form-footer{
+.form-footer {
   display: none !important;
 }
 
@@ -630,20 +646,36 @@ a {
   margin-bottom: -30px !important;
 }
 
-.dudas{
+.dudas {
   text-align: center;
   margin-top: 2rem;
-  .contenedor-personal{
-    max-width:1080px;
+  .contenedor-personal {
+    max-width: 1080px;
     display: flex;
     align-items: center;
-    justify-content:space-around !important;
-   .col{
-     padding: 1rem;
-    width: 320px;
-     margin:1rem;
-     background-color:#1b1464;
-   }
-
+    justify-content: space-around !important;
+    
   }
+
+  .contenedor-personal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem;
+    text-align: center !important; 
+    .col {
+      padding: 1rem;
+      width: 320px;
+      margin: 1rem;
+      background-color: #1b1464;
+    }
+    @include phone{
+      flex-flow: column;
+      padding: 0rem;
+    }
+  }
+}
+
+.form-line {
+  padding: 3px 36px !important;
 }
