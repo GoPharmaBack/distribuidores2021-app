@@ -46,6 +46,7 @@ section {
   padding: 1rem;
 }
 .start {
+  
   height: auto;
   width: 100%;
   display: flex;
@@ -53,8 +54,9 @@ section {
   justify-content: center;
   flex-flow: column;
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 7rem 1rem;
   position: relative;
+
   min-height: 86vh;
   .navbar {
     display: none !important;
@@ -558,27 +560,34 @@ a {
 
 #JotFormIFrame-212609285006048 {
   box-sizing: border-box;
-  min-height: 100vh !important;
+  min-height: 80vh !important;
   height: auto !important;
   @include phone {
-    min-height: 170vh !important;
+    min-height: 159vh !important;
   }
 }
 
 .contenedor-formulario {
-  margin: 1rem;
+
   background-color: #fed100;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 20px;
- 
   width: 100%;
+
   @include phone{
     width: 300px;
+
   }
 }
 
 .label-group {
   display: flex;
+  @include phone {
+    
+      flex-flow: column;
+      display: flex;
+  
+  }
 }
 
 .scrollTop {
@@ -593,6 +602,7 @@ a {
   animation: fadeIn 0.3s;
   transition: opacity 0.4s;
   opacity: 0.5;
+  margin-top: 4rem;
 }
 
 .scrollTop:hover {
@@ -692,3 +702,24 @@ a {
 .form-line {
   padding: 3px 36px !important;
 }
+.contacto{
+  text-align: center;
+}
+
+.modal-header{
+  color:white !important;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  outline: 0;
+  max-width: 600px;
+  margin: auto;}

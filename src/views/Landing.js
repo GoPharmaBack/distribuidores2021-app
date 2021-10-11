@@ -66,26 +66,14 @@ function Landing() {
           centered
         >
           <Modal.Header closeButton>
-            <Modal.Title id="contained-modal-title-vcenter">
+            <Modal.Title id="contained-modal-title-vcenter modal-texto">
               <small>Director General LATAM</small>
               <p>Piero Novello</p>
+              <p>user.baxter@baxter.com</p>
+              <p>5538880939</p>
             </Modal.Title>
           </Modal.Header>
-          <Modal.Body>
-            <div className="contenedor-card">
-              <div className="imagen">
-                <img src="" alt="foto" />
-              </div>
-              <div className="texto">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Vitae molestiae sint repellendus, velit enim hic, quis dolorum
-                  quibusdam cum ab beatae amet magnam, debitis repudiandae
-                  tempore exercitationem dolore aperiam quasi!
-                </p>
-              </div>
-            </div>
-          </Modal.Body>
+         
           <Modal.Footer>
             <Button onClick={props.onHide}>Close</Button>
           </Modal.Footer>
