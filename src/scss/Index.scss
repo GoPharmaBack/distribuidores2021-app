@@ -5,6 +5,7 @@
 @import "components/formulario";
 
 @import "components/NavBar";
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
 * {
   margin: 0;
@@ -59,7 +60,7 @@ section {
     display: none !important;
   }
   @include phone {
-    padding-top: 50px !important;
+    padding: 50px 0 0 0 !important;
   }
 }
 .img-hero,
@@ -67,6 +68,9 @@ section {
   width: 100%;
   height: auto;
   max-width: 542px;
+  @include phone {
+    max-width: 280px !important;
+  }
 }
 
 .img-hero2,
@@ -74,6 +78,9 @@ section {
   width: 100%;
   height: auto;
   max-width: 464px;
+  @include phone {
+    max-width: 280px !important;
+  }
 }
 
 .btn-primary {
@@ -181,6 +188,9 @@ section {
       align-items: center;
       justify-content: center;
       width: 100%;
+      @include phone{
+        width: auto !important;
+      }
 
       .form-grupo {
         font-weight: bold;
@@ -203,9 +213,7 @@ section {
       }
     }
 
-    @include phone {
-      max-width: 265px;
-    }
+    
   }
 }
 
@@ -384,14 +392,24 @@ a {
   display: grid;
   max-width: 1080px;
   width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   span {
     font-size: 4rem;
     font-weight: bold;
     color: $app-2;
   }
-  grid-template-columns:  1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  @include tablet{
+    margin:auto !important;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  }
+  @include phone{ 
+    grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  }
 }
 
 .imparables {
@@ -531,7 +549,7 @@ a {
   outline: 0;
   @include phone {
     max-width: 320px;
-    min-height: 100vh;
+
     margin: 1rem;
     font-size: 0.4rem !important;
     overflow: scroll;
@@ -564,7 +582,7 @@ a {
 }
 
 .scrollTop {
-  position: fixed;
+  position: relative;
   width: 100%;
   bottom: 20px;
   align-items: center;
@@ -649,19 +667,14 @@ a {
 .dudas {
   text-align: center;
   margin-top: 2rem;
+ 
+
   .contenedor-personal {
     max-width: 1080px;
     display: flex;
     align-items: center;
-    justify-content: space-around !important;
-    
-  }
-
-  .contenedor-personal {
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
-    padding: 4rem;
+    padding: 1rem;
     text-align: center !important; 
     .col {
       padding: 1rem;

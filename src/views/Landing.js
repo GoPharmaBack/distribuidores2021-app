@@ -359,7 +359,8 @@ function Landing() {
           <section className="agenda">
             <h3>Agenda</h3>
             <div className="contenedor-boton-agenda">
-              <button className="btn-primary">19-oct</button><button className="btn-primary"> 20-oct </button>
+              <button className="btn-primary">19-oct</button>
+              <button className="btn-primary"> 20-oct </button>
             </div>
           </section>
           <br />
@@ -385,7 +386,7 @@ function Landing() {
           <h3>Cuidado Renal</h3>
           <Galeria />
         </div>
-      
+
         <div className="dudas">
           <p>Dudas o sugerencias</p>
           <h3>INFORMES</h3>

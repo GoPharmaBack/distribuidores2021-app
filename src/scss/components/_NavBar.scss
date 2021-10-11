@@ -1,23 +1,23 @@
 .navbar {
-  top: 0px;
-  position: absolute;
+  top: 0px !important;
+  position: absolute !important;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1% 9%;
-  background-color: $app-1;
-  color: white;
-  width: 100%;
-  z-index: 1;
-  box-sizing: border-box;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 1rem !important;
+  background-color: $app-1 !important;
+  color: white !important;
+  width: 100% !important;
+  z-index: 1 !important;
+  box-sizing: border-box !important;
 
   .navbar-icon {
-    position: relative;
-    display: none;
+    position: relative !important;
+    display: none !important;
 
     @include tablet {
-      display: block;
-      color: $app-2;
+      display: block !important;
+      color: $app-2 !important;
     }
   }
 
@@ -36,7 +36,7 @@
 
     @include phone {
       img {
-        margin-right: 6px;
+        margin-left: 1rem;
         max-height: 25px;
       }
     }
@@ -74,18 +74,19 @@
       opacity: 0;
     }
   }
+
   .nav-transparent {
     height: 65px;
     background-color: rgba(255, 255, 255, 0);
   }
+
   & .active {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     opacity: 1;
     top: 64px;
     flex-flow: column;
     position: absolute;
-    background-color: #000000;
+    background-color: $app-1;
     height: calc(100vh - 54px);
     width: 100%;
     display: flex;
@@ -97,6 +98,7 @@
     overflow: hidden;
     left: 0;
     transition: transform 0.3s ease-in-out;
+
     li {
       box-sizing: border-box;
     }
@@ -117,12 +119,12 @@
 }
 
 .nav-colored {
-  background-color: #020032c0;
+  background-color: #020032d3;
   width: 100%;
   padding: 0.5% 5%;
-  position: fixed;
+  position: fixed !important;
   top: 0;
-  height: 55px;
+
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 

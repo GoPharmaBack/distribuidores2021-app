@@ -4,12 +4,12 @@
   "component.hours": "Hours ",
   "component.minutes": "Minutes",
   "component.seconds": "Seconds",
-  "save.date":"SAVE THE DATE",
-  "footer.copy":" Baxter. All rights reserved.",
+  "save.date": "SAVE THE DATE",
+  "footer.copy": " Baxter. All rights reserved.",
   "login.email": "E-mail",
   "login.password": "password",
-  "login.title":"Login",
-  "menu.agenda":"Schedule",
-  "menu.rooms":"Room",
-  "menu.contact":"Contact "
-} 
+  "login.title": "Login",
+  "menu.agenda": "Schedule",
+  "menu.rooms": "Room",
+  "menu.contact": "Contact "
+}
