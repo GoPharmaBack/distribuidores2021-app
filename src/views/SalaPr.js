@@ -41,7 +41,7 @@ function SalaPr() {
       <Fade>
         <section className="sala">
           <div className="contenedor">
-            <h1>Sala MX</h1>
+            <h1>Sala Pr</h1>
 
             <div className="contenedor-video">
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
