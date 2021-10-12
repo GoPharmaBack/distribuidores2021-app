@@ -39,9 +39,9 @@ const LangProvider = ({ children }) => {
         localStorage.setItem("lang", "en");
         break;
       default:
-        establecerMensajes(LangEn);
-        establecerLocale("en");
-        localStorage.setItem("lang", "en");
+        establecerMensajes(LangEs);
+        establecerLocale("es");
+        localStorage.setItem("lang", "es");
     }
   };
   return (

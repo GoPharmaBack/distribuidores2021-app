@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { LangContext } from "../context/LangContext";
 import { FaArrowCircleUp } from "react-icons/fa";
 import CountDown from "../components/CountDown";
 import Cookies from "universal-cookie";
@@ -22,14 +23,13 @@ import User from "../img/Piero-Novello.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import AgendaCam from "../components/AgendaCam";
-import AgendaMx from "../components/AgendaMx"
+import AgendaMx from "../components/AgendaMx";
 const cookies = new Cookies();
 var rooms = cookies.get("rooms");
 //var rol = JSON.stringify(cookies.get("roles"));
 console.log(rooms);
 
 function Landing() {
- 
   var imageLogo;
   var EventImage;
   var Agenda;
@@ -46,8 +46,9 @@ function Landing() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   window.addEventListener("scroll", checkScrollTop);
+  const idioma = useContext(LangContext);
   const lang = localStorage.getItem("lang");
-
+console.log(idioma);
   if (lang) {
     if (lang === "es") {
       imageLogo = Imparables;
@@ -72,8 +73,6 @@ function Landing() {
       Agenda = AgendaMx;
     }
   }
-
-
 
   let [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -364,7 +363,7 @@ function Landing() {
               </div>
             </div>
           </div>
-          <Agenda/>
+          <Agenda />
           <br />
           <div className="botones-salas" id="salas">
             <h4>SALAS</h4>
@@ -415,7 +414,7 @@ function Landing() {
           </div>
         </div>
 
-        <div className="contacto">
+        <div className="contacto" id="contact">
           <p>Escríbenos</p>
           <h3>Estamos para ayudarte</h3>
           <Contacto />

@@ -39,7 +39,7 @@ body {
 }
 
 .contenedor {
-  margin-top: 7rem;
+  margin-top: 5rem;
   width: 100%;
   height: auto !important;
   display: flex;
@@ -115,7 +115,7 @@ section {
   padding: 1rem;
   font-weight: bold;
   font-size: 1.4rem;
-
+ padding-bottom: 1rem;
   background-color: $app-2 !important;
   transition: all 0.2s ease-in-out;
 
@@ -261,7 +261,7 @@ section {
   align-items: center;
   justify-content: center;
   height: auto !important;
-  margin-top: 6rem;
+
 
   .img-landing {
     width: 100%;
@@ -380,7 +380,7 @@ footer {
   justify-content: center;
 
   .contenedor {
-    margin-top: 7rem;
+   
     width: 100%;
     height: auto !important;
     display: flex;
@@ -843,6 +843,7 @@ a .jf-branding {
 }
 
 
-.form-header-group {
-  padding: 2px !important;
+form-line {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
 }

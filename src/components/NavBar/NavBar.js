@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useContext } from "react";
 import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
 import * as FaIcons from "react-icons/fa";
 import LogoNav from "../../img/logo.svg";
 import { HashLink } from "react-router-hash-link";
 import { FormattedMessage } from "react-intl";
+import { LangContext } from "../../context/LangContext";
 //import Logo from "../../img/logo.png";
 function Navbar() {
   const [click, setClick] = useState(false);
-
+  const idioma = useContext(LangContext);
+  //const lang = localStorage.getItem("lang");
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   useEffect(() => {
@@ -47,13 +49,13 @@ function Navbar() {
         <span> </span>
       </Link>
       <ul className={click ? "navbar_menu active " : "navbar_menu"}>
-        <Link
+        <HashLink
           to="#agenda"
           className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
           <li> <FormattedMessage id="menu.agenda" /></li>
-        </Link>
+        </HashLink>
         <HashLink
           to="#salas"
           className="navbar_menu_link"
@@ -77,6 +79,21 @@ function Navbar() {
       <div className="navbar-icon" onClick={handleClick}>
         {click ? <FaIcons.FaTimes /> : <FaIcons.FaBars />}
       </div>
+      <div className="idiomas">
+          <button
+            className="btn-lang"
+            onClick={() => idioma.establecerLenguaje("es")}
+          >
+            {" "}
+            🇪🇸 spa
+          </button>
+          <button
+            className="btn-lang"
+            onClick={() => idioma.establecerLenguaje("en")}
+          >
+            🇬🇧 eng
+          </button>
+        </div>
     </nav>
   );
 }
