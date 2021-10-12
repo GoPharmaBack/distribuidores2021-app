@@ -71,7 +71,7 @@ function Home() {
         <br />
         <br />
 
-        {/*  Baje la norma ISO 639-2 */}
+        
  
         <img className="img-logo" src={LogoHome} alt="Baxter" />
       </section>
