@@ -21,15 +21,20 @@ import Fade from "react-reveal/Fade";
 import User from "../img/Piero-Novello.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-image-gallery/styles/scss/image-gallery.scss";
+import AgendaCam from "../components/AgendaCam";
+import AgendaMx from "../components/AgendaMx"
 const cookies = new Cookies();
 var rooms = cookies.get("rooms");
 //var rol = JSON.stringify(cookies.get("roles"));
 console.log(rooms);
 
 function Landing() {
+ 
   var imageLogo;
   var EventImage;
+  var Agenda;
   const [showScroll, setShowScroll] = useState(false);
+
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 400) {
       setShowScroll(true);
@@ -55,6 +60,21 @@ function Landing() {
       EventImage = Event;
     }
   }
+
+  if (rooms) {
+    if (rooms[0] === "CAM") {
+      Agenda = AgendaCam;
+    } else if (rooms[0] === "PR") {
+      console.log("sala PR");
+    } else if (rooms[0] === "CAR") {
+      console.log("sala CAR");
+    } else if (rooms[0] === "MX") {
+      Agenda = AgendaMx;
+    }
+  }
+
+
+
   let [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
     return (
@@ -73,7 +93,7 @@ function Landing() {
               <p>5538880939</p>
             </Modal.Title>
           </Modal.Header>
-         
+
           <Modal.Footer>
             <Button onClick={props.onHide}>Close</Button>
           </Modal.Footer>
@@ -344,13 +364,7 @@ function Landing() {
               </div>
             </div>
           </div>
-          <section className="agenda">
-            <h3>Agenda</h3>
-            <div className="contenedor-boton-agenda">
-              <button className="btn-primary">19-oct</button>
-              <button className="btn-primary"> 20-oct </button>
-            </div>
-          </section>
+          <Agenda/>
           <br />
           <div className="botones-salas" id="salas">
             <h4>SALAS</h4>

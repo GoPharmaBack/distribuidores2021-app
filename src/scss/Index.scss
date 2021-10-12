@@ -7,13 +7,16 @@
 @import "components/NavBar";
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
+
 .app {
   position: relative;
 }
+
 a {
   text-decoration: none !important;
 }
@@ -35,6 +38,18 @@ body {
   flex-flow: column;
 }
 
+.contenedor {
+  margin-top: 7rem;
+  width: 100%;
+  height: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  max-width: 1080px;
+  box-sizing: border-box;
+}
+
 section {
   height: 100vh;
   width: 100%;
@@ -45,31 +60,35 @@ section {
   box-sizing: border-box;
   padding: 1rem;
 }
+
 .start {
-  
-  height: auto;
+
+  height: 90vh !important;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
   box-sizing: border-box;
-  padding: 7rem 1rem;
   position: relative;
 
   min-height: 86vh;
+
   .navbar {
     display: none !important;
   }
+
   @include phone {
     padding: 50px 0 0 0 !important;
   }
 }
+
 .img-hero,
 .img-inicio {
   width: 100%;
   height: auto;
-  max-width: 542px;
+  max-width: 500px;
+
   @include phone {
     max-width: 280px !important;
   }
@@ -79,7 +98,9 @@ section {
 .img-inicio2 {
   width: 100%;
   height: auto;
-  max-width: 464px;
+  max-width: 400px;
+  margin-top: 1rem;
+
   @include phone {
     max-width: 280px !important;
   }
@@ -97,6 +118,7 @@ section {
 
   background-color: $app-2 !important;
   transition: all 0.2s ease-in-out;
+
   &:hover {
     background-color: #1b1464 !important;
     color: #fff !important;
@@ -117,11 +139,13 @@ section {
   border-radius: 6px;
   border: 0.6px solid $app-2;
   transition: all 0.2s ease-in-out;
+
   li &:hover {
     background-color: $app-2;
     color: $app-1 !important;
   }
 }
+
 .btn-secondary {
   cursor: pointer;
   border: none;
@@ -134,11 +158,13 @@ section {
   color: #fff;
 
   transition: all 0.2s ease-in-out;
+
   &:hover {
     background-color: $app-2 !important;
     color: rgb(3, 5, 126) !important;
   }
 }
+
 .contador {
   display: flex;
   align-items: center;
@@ -155,16 +181,19 @@ section {
         font-size: 4.5rem;
         color: $app-2;
         margin-bottom: -8px !important;
+
         @include phone {
           font-size: 3rem;
         }
       }
+
       text-align: center;
       padding: 0.7rem;
       display: flex;
       flex-flow: column;
       color: #fff;
       text-transform: uppercase;
+
       @include phone {
         span {
           font-size: 0.75rem !important;
@@ -173,10 +202,12 @@ section {
     }
   }
 }
+
 .login {
   h1 {
     color: #fff;
   }
+
   .contenedor-login {
     background-color: #ffd12f;
     max-width: 420px;
@@ -184,13 +215,15 @@ section {
     padding: 2rem 2rem;
     margin: 1rem;
     width: 100%;
+
     .formulario {
       display: flex;
       flex-flow: column;
       align-items: center;
       justify-content: center;
       width: 100%;
-      @include phone{
+
+      @include phone {
         width: auto !important;
       }
 
@@ -215,7 +248,7 @@ section {
       }
     }
 
-    
+
   }
 }
 
@@ -232,10 +265,12 @@ section {
 
   .img-landing {
     width: 100%;
+
     @include phone {
       max-width: 310px !important;
     }
   }
+
   .contenedor {
     width: 100%;
 
@@ -246,9 +281,11 @@ section {
     justify-content: space-around;
     box-sizing: border-box;
     margin-bottom: 1rem;
+
     @include tablet {
       flex-flow: column;
     }
+
     .left {
       display: flex;
       flex-flow: column;
@@ -260,6 +297,7 @@ section {
         padding: 1rem;
         list-style-type: none;
         list-style: none;
+
         span {
           color: $app-2;
         }
@@ -270,18 +308,22 @@ section {
       display: flex;
       align-items: center;
       justify-content: center;
+
       .img-hero {
         width: 100%;
+
         @include phone {
           max-width: 320px !important;
         }
       }
     }
   }
+
   .savethedate {
     font-weight: bold;
     text-align: center;
     line-height: 1.8;
+
     h2,
     p {
       font-weight: bold;
@@ -293,6 +335,7 @@ section {
 .animation-in {
   transition: all 0.3s ease;
 }
+
 footer {
   bottom: 0;
   width: 100%;
@@ -303,24 +346,28 @@ footer {
   align-items: center;
   justify-content: center;
   flex-flow: column;
+
   hr {
     margin-top: 1rem;
     border: 1px solid white !important;
     width: 320px;
   }
+
   p {
     margin: 1rem 0 5% 0 !important;
   }
 }
+
 .idiomas {
   position: relative;
   top: 0 !important;
-  margin: auto;
+
 
   @include phone {
     .btn-lang {
       font-size: 18px;
     }
+
     position: relative;
     right: auto;
   }
@@ -331,6 +378,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+
   .contenedor {
     margin-top: 7rem;
     width: 100%;
@@ -348,6 +396,7 @@ footer {
       position: relative;
       box-sizing: border-box;
     }
+
     .video {
       position: relative;
       height: auto;
@@ -360,6 +409,7 @@ footer {
       overflow: visible;
       width: 50vw !important;
       height: 400px !important;
+
       @include phone {
         width: 100% !important;
       }
@@ -379,9 +429,11 @@ a {
 .imparables {
   margin-top: 2rem;
   text-align: center;
+
   p {
     font-size: 2rem;
   }
+
   h3 {
     color: $app-2;
     margin: none !important;
@@ -397,20 +449,23 @@ a {
   padding-top: 2rem;
   padding-bottom: 3rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
   span {
     font-size: 4rem;
     font-weight: bold;
     color: $app-2;
   }
-  @include tablet{
-    margin:auto !important;
+
+  @include tablet {
+    margin: auto !important;
     text-align: center;
     grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr auto;
   }
-  @include phone{ 
+
+  @include phone {
     grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr auto;
   }
 }
 
@@ -419,6 +474,7 @@ a {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+
   .contenedor-ponentes {
     max-width: 1080px;
     width: 100%;
@@ -427,16 +483,20 @@ a {
     grid-template-rows: auto;
     align-items: center;
     gap: 1rem;
-    @include phone{
+
+    @include phone {
       grid-template-columns: auto;
     }
+
     .ponente {
       display: flex !important;
       flex-flow: column;
       min-width: 220px;
+
       p {
         font-size: 1.2rem !important;
       }
+
       &:hover {
         cursor: pointer;
       }
@@ -453,6 +513,7 @@ a {
     }
   }
 }
+
 .contenedor-video {
   width: 100%;
 }
@@ -462,13 +523,22 @@ a {
   //border: 1px solid red;
   max-width: 1080px;
   width: 100%;
-  a { margin: auto;
+
+  a {
+    margin: auto;
     padding: 1rem;
   }
-  @include phone{
+
+  @include tablet {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
-    
+
+  }
+
+  @include phone {
+    display: grid !important;
+    grid-template-columns: 1fr;
+
   }
 }
 
@@ -477,24 +547,24 @@ a {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .sibling-fade {
   visibility: hidden;
 
-  > * {
+  >* {
     visibility: visible;
     transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
   }
 
-  &:hover > * {
+  &:hover>* {
     opacity: 0.4;
     transform: scale(0.9);
     z-index: 0;
   }
 
-  > *:hover {
+  >*:hover {
     opacity: 1;
     transform: scale(1);
     transition-delay: 0ms, 0ms;
@@ -513,7 +583,7 @@ a {
   flex-wrap: wrap;
 }
 
-.sibling-fade > * {
+.sibling-fade>* {
   padding: 1em;
   flex: auto;
   margin: 0.3em;
@@ -522,6 +592,7 @@ a {
   font-size: 1.5em;
   text-decoration: none;
   position: relative;
+
   small {
     font-size: 0.7rem;
     color: #fff !important;
@@ -549,6 +620,7 @@ a {
 
   border-radius: 0.3rem;
   outline: 0;
+
   @include phone {
     max-width: 320px;
 
@@ -562,6 +634,7 @@ a {
   box-sizing: border-box;
   min-height: 80vh !important;
   height: auto !important;
+
   @include phone {
     min-height: 130vh !important;
   }
@@ -574,7 +647,7 @@ a {
   border-radius: 20px;
   width: 100%;
 
-  @include phone{
+  @include phone {
     width: 300px;
 
   }
@@ -582,11 +655,12 @@ a {
 
 .label-group {
   display: flex;
+
   @include phone {
-    
-      flex-flow: column;
-      display: flex;
-  
+
+    flex-flow: column;
+    display: flex;
+
   }
 }
 
@@ -613,6 +687,7 @@ a {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 0.5;
   }
@@ -627,9 +702,11 @@ a {
   width: 100%;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  @include phone{
+
+  @include phone {
     flex-flow: column-reverse;
   }
+
   .texto {
     h3 {
       color: #fed100;
@@ -638,14 +715,17 @@ a {
       margin: none !important;
       line-height: 0.6 !important;
     }
+
     .ponente {
       font-size: 2.8rem;
       line-height: 0.9 !important;
     }
   }
+
   .imagen {
     margin-bottom: 1rem;
     display: flex;
+
     img {
       width: 100%;
       height: auto;
@@ -658,6 +738,7 @@ a {
   padding: 1rem;
   list-style-type: none;
   list-style: none;
+
   span {
     color: $app-2;
   }
@@ -677,7 +758,7 @@ a {
 .dudas {
   text-align: center;
   margin-top: 2rem;
- 
+
 
   .contenedor-personal {
     max-width: 1080px;
@@ -685,14 +766,16 @@ a {
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
-    text-align: center !important; 
+    text-align: center !important;
+
     .col {
       padding: 1rem;
       width: 320px;
       margin: 1rem;
       background-color: #1b1464;
     }
-    @include phone{
+
+    @include phone {
       flex-flow: column;
       padding: 0rem;
     }
@@ -702,12 +785,13 @@ a {
 .form-line {
   padding: 3px 36px !important;
 }
-.contacto{
+
+.contacto {
   text-align: center;
 }
 
-.modal-header{
-  color:white !important;
+.modal-header {
+  color: white !important;
 }
 
 .modal-content {
@@ -718,8 +802,47 @@ a {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.2);
+  border: 1px solid rgba(0, 0, 0, .2);
   border-radius: .3rem;
   outline: 0;
   max-width: 600px;
-  margin: auto;}
+  margin: auto;
+}
+
+
+a .jf-branding {
+  color: white;
+  display: none !important;
+}
+
+
+.agenda {
+  height: 100%;
+
+  .contenedor-imagen-agenda {
+    box-sizing: border-box;
+
+    img {
+      max-width: 700px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @include phone {
+    padding: 0px !important;
+  }
+}
+
+.btns {
+  margin: 0 0.3rem;
+}
+
+#toggleImage {
+  margin-top: 2rem;
+}
+
+
+.form-header-group {
+  padding: 2px !important;
+}
