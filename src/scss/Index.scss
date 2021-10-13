@@ -692,6 +692,7 @@ a {
 }
 
 .ponencia-especial {
+  cursor: pointer;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -803,7 +804,7 @@ a {
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: .3rem;
   outline: 0;
-  max-width: 600px;
+ 
   margin: auto;
 }
 
@@ -821,7 +822,7 @@ a .jf-branding {
     box-sizing: border-box;
 
     img {
-      max-width: 700px;
+      max-width: 500px;
       width: 100%;
       height: auto;
     }
@@ -864,4 +865,22 @@ div.jfThankYou-wrapper {
   text-align: center;
   color: white;
   font-size: 11px;
+}
+.cv {
+ 
+  width: 100%;
+  height: auto;
+}
+
+
+.btn-close{
+  color: white !important;
+}
+
+
+.contenedor-galeria{
+  box-sizing: border-box;
+  @include phone {
+    max-width: 280px;
+  }
 }

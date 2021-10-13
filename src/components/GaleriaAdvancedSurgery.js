@@ -16,6 +16,7 @@ const images = [
   {
     original: 'https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FADVANCEDSURGERY%2FADVANCE_TISSEL.png?alt=media&token=fb15030e-c380-4a7b-9652-5096b66ffa33',
     thumbnail: 'https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FADVANCEDSURGERY%2FADVANCE_TISSEL.png?alt=media&token=fb15030e-c380-4a7b-9652-5096b66ffa33',
+   
   }
 ];
 

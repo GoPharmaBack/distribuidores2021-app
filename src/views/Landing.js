@@ -6,7 +6,8 @@ import { FaArrowCircleUp } from "react-icons/fa";
 import CountDown from "../components/CountDown";
 import Cookies from "universal-cookie";
 import ContactosBaxter from "../components/ContactosBaxter"
-//import { Modal, Button } from "react-bootstrap";
+import PonenciaEspecial from "../components/PonenciaEspecial";
+
 import { FormattedMessage } from "react-intl";
 import GaleriaAdvancedSurgery from "../components/GaleriaAdvancedSurgery";
 import GaleriaRenal from "../components/GaleriaRenal"
@@ -19,7 +20,7 @@ import Evento from "../img/evento.png";
 import Event from "../img/event.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 //imagenes no lenguaje
-import PonenteEspecial from "../img/VICTOR_GOMEZ.png";
+
 import ImagenHero from "../img/img-hero.png";
 import Fade from "react-reveal/Fade";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -155,30 +156,7 @@ function Landing() {
             </div>
           </div>
 
-          <div className="ponencia-especial">
-            <div className="texto">
-              <h3>19 OCTUBRE</h3>
-              <small>Ponencia especial</small>
-              <p className="ponente">Víctor Gómez</p>
-              <ul className="horarios">
-                <li>
-                  09:00 h <span> Centroamérica</span>
-                </li>
-                <li>
-                  10:00 h <span> México</span>
-                </li>
-                <li>
-                  11:00 h <span> Puerto Rico</span>
-                </li>
-                <li>
-                  11:00 h <span> Puerto Rico</span>
-                </li>
-              </ul>
-            </div>
-            <div className="imagen">
-              <img src={PonenteEspecial} alt="ponencia especial" />
-            </div>
-          </div>
+         < PonenciaEspecial/>
 
           <div className="imparables">
             <p>imparables de hoy</p>
@@ -218,7 +196,7 @@ function Landing() {
         <div className="contenedor-galeria">
           <hr />
           <p>Galería</p>
-          <h3>Cuidado Renal</h3>
+          <h3>Advanced Surgery</h3>
           <GaleriaAdvancedSurgery />
         </div>
 

@@ -28,12 +28,13 @@ const images = [
   {
     original: 'https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_THERMAX_BAG201.png?alt=media&token=05c407e5-299c-45a0-a692-925adcd30f5b',
     thumbnail: 'https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_THERMAX_BAG201.png?alt=media&token=05c407e5-299c-45a0-a692-925adcd30f5b',
+    
   }
 ];
 
 function GaleriaAdvancedSurgery() {
   return (
-    <ImageGallery items={images} />
+    <ImageGallery items={images} originalTitle />
   )
 }
 
