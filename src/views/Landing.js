@@ -5,7 +5,7 @@ import { LangContext } from "../context/LangContext";
 import { FaArrowCircleUp } from "react-icons/fa";
 import CountDown from "../components/CountDown";
 import Cookies from "universal-cookie";
-import { Modal, Button } from "react-bootstrap";
+//import { Modal, Button } from "react-bootstrap";
 import { FormattedMessage } from "react-intl";
 import Galeria from "../components/Galeria";
 import Contacto from "../components/ContactForm/ContactForm.js";
