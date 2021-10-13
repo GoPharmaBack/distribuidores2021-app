@@ -12,7 +12,7 @@ function Error() {
       <div className="contenedor">
         <h1>Ups 😢</h1>
         <Link className="btn btn-primary" style={{ color: "white" }} to="/">
-          <p>regresa al inicio</p>
+          regresa al inicio
         </Link>
       </div>
     </section>

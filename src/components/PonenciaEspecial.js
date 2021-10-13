@@ -28,22 +28,26 @@ function PonenciaEspecial() {
       <div className="ponencia-especial" onClick={() => setModalShow(true)}>
         <div className="texto">
           <h3>19 OCTUBRE</h3>
-          <small>Ponencia especial</small>
-          <p className="ponente">Víctor Gómez</p>
+          <p>Ponencia especial.</p>
+          <br />
+          <h4 className="ponente">Víctor Gómez</h4>
+         
+          <small>Perspectivas Económicas de América Latina <br/> más allá del COVID-19.</small>
           <ul className="horarios">
             <li>
-              09:00 h <span> Centroamérica</span>
+            08:55 am <span> Centroamérica</span>
             </li>
             <li>
-              10:00 h <span> México</span>
+            09:55 am <span> México</span>
             </li>
             <li>
-              11:00 h <span> Puerto Rico</span>
+            10:55 am <span> Caribe</span>
             </li>
             <li>
-              11:00 h <span> Puerto Rico</span>
+            10:55 amh <span> Puerto Rico</span>
             </li>
           </ul>
+          <button className="btn-sm btn-primary">Conoce Más</button>
         </div>
         <div className="imagen">
           <img src={PonenteEspecial} alt="ponencia especial" />

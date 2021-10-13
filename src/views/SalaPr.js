@@ -30,7 +30,13 @@ function SalaPr() {
             scrolling="no"
           ></iframe>
           <br />
-          <Button onClick={props.onHide}>cerrar</Button>
+          <small className="frase-modal">
+            Es necesario finalizar el formulario antes de cerrar de lo contrario
+            no obtendra su asistencia
+          </small>
+          <Button className="mb-3" onClick={props.onHide}>
+            cerrar
+          </Button>
           <br />
         </Modal>
       </div>

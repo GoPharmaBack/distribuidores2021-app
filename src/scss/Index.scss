@@ -500,7 +500,7 @@ a {
       &:hover {
         cursor: pointer;
       }
-
+      img{max-width: 180px;}
       small,
       .small {
         margin-top: 0.3rem;
@@ -882,5 +882,47 @@ div.jfThankYou-wrapper {
   box-sizing: border-box;
   @include phone {
     max-width: 280px;
+  }
+}
+
+.welcomeMsg{
+  font-size: 10px !important;
+}
+
+.contenedor-socios {
+  max-width: 1080px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 1rem;
+
+  @include phone {
+    grid-template-columns: auto;
+  }
+
+  .ponente {
+    display: flex !important;
+    flex-flow: column;
+    min-width: 220px;
+
+    p {
+      font-size: 1.2rem !important;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+img{width: 150px !important; margin: auto !important}
+    small,
+    .small {
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+      font-size: 11px;
+      max-width: 800px;
+      font-weight: lighter !important;
+      text-align: center !important;
+    }
   }
 }

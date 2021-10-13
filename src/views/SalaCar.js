@@ -29,8 +29,14 @@ function SalaCar() {
             style={{ minWidth: "100%", height: 539, border: "none" }}
             scrolling="no"
           ></iframe>
-          <br />
-          <Button onClick={props.onHide}>cerrar</Button>
+           <br />
+          <small className="frase-modal">
+            Es necesario finalizar el formulario antes de cerrar de lo contrario
+            no obtendra su asistencia
+          </small>
+          <Button className="mb-3" onClick={props.onHide}>
+            cerrar
+          </Button>
           <br />
         </Modal>
       </div>

@@ -5,13 +5,13 @@ import { LangContext } from "../context/LangContext";
 import { FaArrowCircleUp } from "react-icons/fa";
 import CountDown from "../components/CountDown";
 import Cookies from "universal-cookie";
-import ContactosBaxter from "../components/ContactosBaxter"
+import ContactosBaxter from "../components/ContactosBaxter";
 import PonenciaEspecial from "../components/PonenciaEspecial";
-
+import Socios from "../components/Socios"
 import { FormattedMessage } from "react-intl";
 import GaleriaAdvancedSurgery from "../components/GaleriaAdvancedSurgery";
-import GaleriaRenal from "../components/GaleriaRenal"
-import GaleriaHospitalProduct from "../components/GaleriaHospitalProduct"
+import GaleriaRenal from "../components/GaleriaRenal";
+import GaleriaHospitalProduct from "../components/GaleriaHospitalProduct";
 import Contacto from "../components/ContactForm/ContactForm.js";
 //imagenes establecerLenguaje
 import Imparables from "../img/imparables.png";
@@ -34,7 +34,7 @@ var rooms = cookies.get("rooms");
 //var rol = JSON.stringify(cookies.get("roles"));
 
 console.log(rooms);
-const ponentes = Ponentes;
+
 function Landing() {
   var imageLogo;
   var EventImage;
@@ -80,7 +80,6 @@ function Landing() {
     }
   }
 
-  
   return (
     <>
       <Fade>
@@ -116,7 +115,9 @@ function Landing() {
               <FormattedMessage id="save.date" />
             </p>
 
-            <h2><FormattedMessage id="date.event" /></h2>
+            <h2>
+              <FormattedMessage id="date.event" />
+            </h2>
             <img className="img-landing" src={EventImage} alt="" />
           </div>
           <br />
@@ -147,21 +148,26 @@ function Landing() {
           <br />
           <br />
           <div className="imparables">
-            <p>imparables de hoy</p>
-            <h3>PONENTES</h3>
+            <p>Ponentes</p>
+            <h3>IMPARABLES</h3>
             <div className="contenedor-ponentes sibling-fade">
               {/* ponente */}
-              
-            <Ponentes ponentes={ponentes}/>  
+
+              <Ponentes  />
             </div>
           </div>
 
-         < PonenciaEspecial/>
+          <PonenciaEspecial />
 
-          <div className="imparables">
-            <p>imparables de hoy</p>
-            <h3>SOCIOS COMERCIALES</h3>
+          <div className="imparables socios">
+            <p>LIDERES</p>
+            <h3>COMERCIALES</h3>
             
+            <div className="contenedor-socios sibling-fade">
+              {/* ponente */}
+              <Socios/>
+             
+            </div>
           </div>
           <Agenda />
           <br />
@@ -204,14 +210,14 @@ function Landing() {
           <p>Dudas o sugerencias</p>
           <h3>INFORMES</h3>
           <div className="contenedor-personal">
-          <ContactosBaxter />
+            <ContactosBaxter />
           </div>
         </div>
 
         <div className="contacto" id="contact">
           <p>Escríbenos</p>
           <h3>Estamos para ayudarte</h3>
-         <Contacto/>
+          <Contacto />
         </div>
 
         <p>
