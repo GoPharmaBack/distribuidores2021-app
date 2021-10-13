@@ -115,7 +115,7 @@ section {
   padding: 1rem;
   font-weight: bold;
   font-size: 1.4rem;
- padding-bottom: 1rem;
+  padding-bottom: 1rem;
   background-color: $app-2 !important;
   transition: all 0.2s ease-in-out;
 
@@ -380,7 +380,7 @@ footer {
   justify-content: center;
 
   .contenedor {
-   
+
     width: 100%;
     height: auto !important;
     display: flex;
@@ -635,7 +635,7 @@ a {
   min-height: 80vh !important;
   height: auto !important;
 
-  
+
 }
 
 .contenedor-formulario {
@@ -853,3 +853,15 @@ div.jfThankYou-wrapper {
 }
 
 
+.error {
+  height: 80vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frase-modal {
+  text-align: center;
+  color: white;
+  font-size: 11px;
+}

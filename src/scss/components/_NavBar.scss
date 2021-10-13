@@ -157,6 +157,8 @@
 .contenedor-botones-lang{
   display: flex;
   li{
-    font-size: 10px;
+    cursor: pointer;
+    font-size: 11px;
+    margin-right: 8px;
   }
 }
