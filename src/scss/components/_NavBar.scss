@@ -4,13 +4,13 @@
   display: flex;
   align-items: center !important;
   justify-content: space-between !important;
-  padding: 1rem !important;
-  background-color: $app-1 !important;
+  padding: 0.3rem 2rem !important;
+  background-color:#020032d3  !important;
   color: white !important;
   width: 100% !important;
   z-index: 1 !important;
   box-sizing: border-box !important;
-
+ font-size: 13px;
   .navbar-icon {
     position: relative !important;
     display: none !important;
@@ -31,7 +31,7 @@
 
     img {
       max-height: 35px;
-      margin-right: 0.2rem;
+      margin-left: 0.2rem;
     }
 
     @include phone {
@@ -46,7 +46,7 @@
     position: relative;
     display: flex;
     list-style: none;
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -151,5 +151,12 @@
     color: $app-1 !important;
 
     background-color: $app-2;
+  }
+}
+
+.contenedor-botones-lang{
+  display: flex;
+  li{
+    font-size: 10px;
   }
 }

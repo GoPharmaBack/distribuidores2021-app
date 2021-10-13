@@ -635,9 +635,7 @@ a {
   min-height: 80vh !important;
   height: auto !important;
 
-  @include phone {
-    min-height: 130vh !important;
-  }
+  
 }
 
 .contenedor-formulario {
@@ -843,7 +841,15 @@ a .jf-branding {
 }
 
 
-form-line {
-  margin-top: 2px !important;
-  margin-bottom: 2px !important;
+div.jfThankYou-wrapper {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  padding: 0;
 }
+
+

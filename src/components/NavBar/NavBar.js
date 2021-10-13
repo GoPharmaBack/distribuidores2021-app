@@ -75,25 +75,28 @@ function Navbar() {
         <Link to="contact" onClick={logout}>
           <li className=" btn-lang"> Logout </li>
         </Link>
-      </ul>
-      <div className="navbar-icon" onClick={handleClick}>
-        {click ? <FaIcons.FaTimes /> : <FaIcons.FaBars />}
-      </div>
-      <div className="idiomas">
-          <button
-            className="btn-lang"
+
+        <div className="contenedor-botones-lang">
+        <li><button
+            
             onClick={() => idioma.establecerLenguaje("es")}
           >
             {" "}
             🇪🇸 spa
-          </button>
-          <button
-            className="btn-lang"
+          </button></li>
+
+          <li><button
+           
             onClick={() => idioma.establecerLenguaje("en")}
           >
             🇬🇧 eng
-          </button>
+          </button></li>
         </div>
+      </ul>
+      <div className="navbar-icon" onClick={handleClick}>
+        {click ? <FaIcons.FaTimes /> : <FaIcons.FaBars />}
+      </div>
+      
     </nav>
   );
 }
