@@ -29,7 +29,7 @@ function SalaCar() {
             style={{ minWidth: "100%", height: 539, border: "none" }}
             scrolling="no"
           ></iframe>
-<br />
+          <br />
           <Button onClick={props.onHide}>cerrar</Button>
           <br />
         </Modal>

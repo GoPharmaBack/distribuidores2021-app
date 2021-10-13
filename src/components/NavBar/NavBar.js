@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useContext } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
 import * as FaIcons from "react-icons/fa";
@@ -54,14 +54,20 @@ function Navbar() {
           className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> <FormattedMessage id="menu.agenda" /></li>
+          <li>
+            {" "}
+            <FormattedMessage id="menu.agenda" />
+          </li>
         </HashLink>
         <HashLink
           to="#salas"
           className="navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> <FormattedMessage id="menu.rooms" /> </li>
+          <li>
+            {" "}
+            <FormattedMessage id="menu.rooms" />{" "}
+          </li>
         </HashLink>
 
         <Link
@@ -69,7 +75,10 @@ function Navbar() {
           className="navbar_menu_button navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> <FormattedMessage id="menu.contact" /> </li>
+          <li>
+            {" "}
+            <FormattedMessage id="menu.contact" />{" "}
+          </li>
         </Link>
 
         <Link to="contact" onClick={logout}>
@@ -77,26 +86,14 @@ function Navbar() {
         </Link>
 
         <div className="contenedor-botones-lang">
-        <li><button
-            
-            onClick={() => idioma.establecerLenguaje("es")}
-          >
-            {" "}
-            🇪🇸 spa
-          </button></li>
+          <li onClick={() => idioma.establecerLenguaje("es")}> 🇲🇽 spa</li>
 
-          <li><button
-           
-            onClick={() => idioma.establecerLenguaje("en")}
-          >
-            🇬🇧 eng
-          </button></li>
+          <li onClick={() => idioma.establecerLenguaje("en")}> 🇺🇸 eng</li>
         </div>
       </ul>
       <div className="navbar-icon" onClick={handleClick}>
         {click ? <FaIcons.FaTimes /> : <FaIcons.FaBars />}
       </div>
-      
     </nav>
   );
 }

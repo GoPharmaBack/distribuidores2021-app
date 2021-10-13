@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "nombre": "Piero Novello",
+    "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FPiero_Novello.png?alt=media&token=c4fdd3c7-8e37-424f-b7ea-907151eddaf8",
+    "position": "Director General para México, Centro y Suramérica",
+    "email": "piero_novello@baxter.com",
+    "phone": "",
+    "phrase": ""
+  },
+  {
+    "id": "2",
+    "nombre": "Eric Ruiz",
+    "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FEric_R.png?alt=media&token=ea8fa467-7e88-4208-b9a0-1932abf65560",
+    "position": "Director Comercial para México, Centroamérica y Caribe",
+    "email": "eric_ruiz@baxter.com",
+    "phone": "",
+    "phrase": ""
+  },
+  {
+    "id": "3",
+    "nombre": "Inda González",
+    "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FIndia_G.png?alt=media&token=5e96c557-26a7-4db8-b8e3-98c0e8a55bd9",
+    "position": "Marketing Director México, Central America, Puerto Rico and Caribbean",
+    "email": "inda_gonzalez@baxter.com",
+    "phone": "",
+    "phrase": ""
+  }
+]

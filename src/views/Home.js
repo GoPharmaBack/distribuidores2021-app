@@ -45,34 +45,32 @@ function Home() {
         <Fade>
           <CountDown />
         </Fade>
-      
+
         <div className="idiomas">
           <button
             className="btn-lang"
             onClick={() => idioma.establecerLenguaje("es")}
           >
             {" "}
-            🇪🇸 spa
+            🇲🇽 spa
           </button>
           <button
             className="btn-lang"
             onClick={() => idioma.establecerLenguaje("en")}
           >
-            🇬🇧 eng
+            🇺🇸 eng
           </button>
         </div>
-      
+
         <Link to="/login">
-        <button className="btn-primary">
-          <FormattedMessage id="button.start" defaultMessage="Entrar" />
-        </button>
-      </Link>
+          <button className="btn-primary">
+            <FormattedMessage id="button.start" defaultMessage="Entrar" />
+          </button>
+        </Link>
         <img className="img-inicio2" src={EventImage} alt="Baxter Somos" />
         <br />
         <br />
 
-        
- 
         <img className="img-logo" src={LogoHome} alt="Baxter" />
       </section>
     </Fade>

@@ -3,6 +3,7 @@ import axios from "axios";
 import { withRouter } from "react-router";
 import Cookies from "universal-cookie";
 import { FormattedMessage } from "react-intl";
+import Logo from "../img/logo.svg";
 
 class Login extends Component {
   constructor() {
@@ -108,7 +109,9 @@ class Login extends Component {
     return (
       <React.Fragment>
         <section className="login">
-          <h1><FormattedMessage id="login.title" /></h1>
+          <h1>
+            <FormattedMessage id="login.title" />
+          </h1>
           <div className="contenedor-login">
             <form
               className="formulario"
@@ -147,6 +150,8 @@ class Login extends Component {
               </button>
             </form>
           </div>
+          <br />
+          <img src={Logo} alt="" />
         </section>
       </React.Fragment>
     );

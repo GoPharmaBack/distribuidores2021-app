@@ -19,16 +19,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import PonenteEspecial from "../img/VICTOR_GOMEZ.png";
 import ImagenHero from "../img/img-hero.png";
 import Fade from "react-reveal/Fade";
-import User from "../img/Piero-Novello.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import AgendaCam from "../components/AgendaCam";
 import AgendaMx from "../components/AgendaMx";
+import Ponentes from "../components/Ponentes";
+
 const cookies = new Cookies();
 var rooms = cookies.get("rooms");
 //var rol = JSON.stringify(cookies.get("roles"));
-console.log(rooms);
 
+console.log(rooms);
+const ponentes = Ponentes;
 function Landing() {
   var imageLogo;
   var EventImage;
@@ -48,7 +50,7 @@ function Landing() {
   window.addEventListener("scroll", checkScrollTop);
   const idioma = useContext(LangContext);
   const lang = localStorage.getItem("lang");
-console.log(idioma);
+  console.log(idioma);
   if (lang) {
     if (lang === "es") {
       imageLogo = Imparables;
@@ -74,33 +76,7 @@ console.log(idioma);
     }
   }
 
-  let [modalShow, setModalShow] = useState(false);
-  function MyVerticallyCenteredModal(props) {
-    return (
-      <div onClick={(e) => e.stopPropagation()}>
-        <Modal
-          {...props}
-          size="lg"
-          aria-labelledby="contained-modal-title-vcenter"
-          centered
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="contained-modal-title-vcenter modal-texto">
-              <small>Director General LATAM</small>
-              <p>Piero Novello</p>
-              <p>user.baxter@baxter.com</p>
-              <p>5538880939</p>
-            </Modal.Title>
-          </Modal.Header>
-
-          <Modal.Footer>
-            <Button onClick={props.onHide}>Close</Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
-    );
-  }
-
+  
   return (
     <>
       <Fade>
@@ -111,13 +87,16 @@ console.log(idioma);
 
               <ul className="horarios">
                 <li>
-                  09:00 h <span> Centroamérica</span>
+                  10:00 A.M. <span> Caribe</span>
                 </li>
                 <li>
-                  09:00 h <span> México</span>
+                  08:00 A.M. <span> Centroamérica</span>
                 </li>
                 <li>
-                  09:00 h <span> Puerto Rico</span>
+                  09:00 A.M. <span> México</span>
+                </li>
+                <li>
+                  10:00 A.M. <span> Puerto Rico</span>
                 </li>
               </ul>
 
@@ -133,7 +112,7 @@ console.log(idioma);
               <FormattedMessage id="save.date" />
             </p>
 
-            <h2>19 - 21 OCTUBRE</h2>
+            <h2><FormattedMessage id="date.event" /></h2>
             <img className="img-landing" src={EventImage} alt="" />
           </div>
           <br />
@@ -168,86 +147,8 @@ console.log(idioma);
             <h3>PONENTES</h3>
             <div className="contenedor-ponentes sibling-fade">
               {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
+              
+            <Ponentes ponentes={ponentes}/>  
             </div>
           </div>
 
@@ -278,90 +179,8 @@ console.log(idioma);
 
           <div className="imparables">
             <p>imparables de hoy</p>
-            <h3>PONENTES</h3>
-            <div className="contenedor-ponentes sibling-fade">
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-              {/* ponente */}
-              <div className="ponente" onClick={() => setModalShow(true)}>
-                <img src={User} alt="ponente" />
-                <small>Director General LATAM</small>
-                <p>Piero Novello</p>
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-            </div>
+            <h3>SOCIOS COMERCIALES</h3>
+            
           </div>
           <Agenda />
           <br />
