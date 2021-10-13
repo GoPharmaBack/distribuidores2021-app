@@ -5,9 +5,12 @@ import { LangContext } from "../context/LangContext";
 import { FaArrowCircleUp } from "react-icons/fa";
 import CountDown from "../components/CountDown";
 import Cookies from "universal-cookie";
+import ContactosBaxter from "../components/ContactosBaxter"
 //import { Modal, Button } from "react-bootstrap";
 import { FormattedMessage } from "react-intl";
-import Galeria from "../components/Galeria";
+import GaleriaAdvancedSurgery from "../components/GaleriaAdvancedSurgery";
+import GaleriaRenal from "../components/GaleriaRenal"
+import GaleriaHospitalProduct from "../components/GaleriaHospitalProduct"
 import Contacto from "../components/ContactForm/ContactForm.js";
 //imagenes establecerLenguaje
 import Imparables from "../img/imparables.png";
@@ -204,39 +207,33 @@ function Landing() {
           <hr />
           <p>Galería</p>
           <h3>Cuidado Renal</h3>
-          <Galeria />
+          <GaleriaRenal />
+        </div>
+        <div className="contenedor-galeria">
+          <hr />
+          <p>Galería</p>
+          <h3>Cuidado Renal</h3>
+          <GaleriaHospitalProduct />
+        </div>
+        <div className="contenedor-galeria">
+          <hr />
+          <p>Galería</p>
+          <h3>Cuidado Renal</h3>
+          <GaleriaAdvancedSurgery />
         </div>
 
         <div className="dudas">
           <p>Dudas o sugerencias</p>
           <h3>INFORMES</h3>
-
           <div className="contenedor-personal">
-            <div className="col">
-              <img src="" alt="personal Baxter" />
-              <div className="titulo">Nombre:</div>
-              <div className="cargo">Cargo:</div>
-              <div className="correo">Correo:</div>
-            </div>
-            <div className="col">
-              <img src="" alt="personal Baxter" />
-              <div className="titulo">Nombre:</div>
-              <div className="cargo">Cargo:</div>
-              <div className="correo">Correo:</div>
-            </div>{" "}
-            <div className="col">
-              <img src="" alt="personal Baxter" />
-              <div className="titulo">Nombre:</div>
-              <div className="cargo">Cargo:</div>
-              <div className="correo">Correo:</div>
-            </div>
+          <ContactosBaxter />
           </div>
         </div>
 
         <div className="contacto" id="contact">
           <p>Escríbenos</p>
           <h3>Estamos para ayudarte</h3>
-          <Contacto />
+         <Contacto/>
         </div>
 
         <p>
