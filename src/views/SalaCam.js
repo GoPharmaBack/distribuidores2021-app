@@ -70,7 +70,7 @@ function SalaCam() {
 
             <Iframe
               className="chat"
-              src="https://minnit.chat/MX?embed&&nickname="
+              src="https://minnit.chat/CAM?embed&&nickname="
               allowTransparency="true"
             />
 

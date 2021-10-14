@@ -70,7 +70,7 @@ function SalaPr() {
 
             <Iframe
               className="chat"
-              src="https://minnit.chat/MX?embed&&nickname="
+              src="https://minnit.chat/PRDist?embed&&nickname="
               allowTransparency="true"
             />
 

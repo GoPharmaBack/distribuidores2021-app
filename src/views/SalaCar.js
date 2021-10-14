@@ -70,7 +70,7 @@ function SalaCar() {
 
             <Iframe
               className="chat"
-              src="https://minnit.chat/MX?embed&&nickname="
+              src="https://minnit.chat/CARDist?embed&&nickname="
               allowTransparency="true"
             />
 
