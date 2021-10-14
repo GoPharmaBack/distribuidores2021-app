@@ -1,15 +1,16 @@
 .formulario {
   margin-bottom: 1rem;
 
- 
+
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-flow: column;
-  
- 
+
+
   border-radius: 6px;
   max-width: 400px;
+
   div,
   input,
   textarea {
@@ -18,12 +19,14 @@
     border-radius: 2px;
     width: 100%;
     margin: 0.1em 0 0.1em;
-    padding:4px;
+    padding: 4px;
     box-sizing: border-box;
   }
-  textarea{
+
+  textarea {
     height: 4rem;
   }
+
   label {
     width: 100%;
     display: flex;
@@ -31,18 +34,19 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  
+
   &__button {
     cursor: pointer;
     width: 100%;
-    &:hover{
-      background-color:#00a2ff;
+
+    &:hover {
+      background-color: #00a2ff;
       color: white;
     }
   }
 }
 
-small{
+small {
 
   margin-top: 0.3rem;
   margin-bottom: 1rem;
@@ -52,17 +56,22 @@ small{
   font-weight: lighter !important;
   text-align: justify;
 }
-a li{ 
-  &:hover{
+
+a li {
+  &:hover {
     color: #c300ff;
   }
 }
-.btn{
+
+.btn {
   margin: auto;
   width: 220px;
-  @include phone{
+
+  @include phone {
     width: 100% !important;
   }
 }
 
-p{margin: 0 !important;}
+p {
+  margin: 0 !important;
+}

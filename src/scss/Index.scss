@@ -500,7 +500,11 @@ a {
       &:hover {
         cursor: pointer;
       }
-      img{max-width: 180px;}
+
+      img {
+        max-width: 180px;
+      }
+
       small,
       .small {
         margin-top: 0.3rem;
@@ -767,6 +771,7 @@ a {
     padding: 1rem;
     text-align: center !important;
     flex-flow: row;
+
     .col {
       padding: 1rem;
       width: 320px;
@@ -804,7 +809,7 @@ a {
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: .3rem;
   outline: 0;
- 
+
   margin: auto;
 }
 
@@ -866,26 +871,28 @@ div.jfThankYou-wrapper {
   color: white;
   font-size: 11px;
 }
+
 .cv {
- 
+
   width: 100%;
   height: auto;
 }
 
 
-.btn-close{
+.btn-close {
   color: white !important;
 }
 
 
-.contenedor-galeria{
+.contenedor-galeria {
   box-sizing: border-box;
+
   @include phone {
     max-width: 280px;
   }
 }
 
-.welcomeMsg{
+.welcomeMsg {
   font-size: 10px !important;
 }
 
@@ -914,7 +921,12 @@ div.jfThankYou-wrapper {
     &:hover {
       cursor: pointer;
     }
-img{width: 150px !important; margin: auto !important}
+
+    img {
+      width: 150px !important;
+      margin: auto !important
+    }
+
     small,
     .small {
       margin-top: 0.3rem;
@@ -926,6 +938,3 @@ img{width: 150px !important; margin: auto !important}
     }
   }
 }
-
-
-

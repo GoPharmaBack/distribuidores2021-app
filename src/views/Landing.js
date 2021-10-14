@@ -7,7 +7,7 @@ import CountDown from "../components/CountDown";
 import Cookies from "universal-cookie";
 import ContactosBaxter from "../components/ContactosBaxter";
 import PonenciaEspecial from "../components/PonenciaEspecial";
-import Socios from "../components/Socios"
+import Socios from "../components/Socios";
 import { FormattedMessage } from "react-intl";
 import GaleriaAdvancedSurgery from "../components/GaleriaAdvancedSurgery";
 import GaleriaRenal from "../components/GaleriaRenal";
@@ -153,7 +153,7 @@ function Landing() {
             <div className="contenedor-ponentes sibling-fade">
               {/* ponente */}
 
-              <Ponentes  />
+              <Ponentes />
             </div>
           </div>
 
@@ -162,11 +162,10 @@ function Landing() {
           <div className="imparables socios">
             <p>LIDERES</p>
             <h3>COMERCIALES</h3>
-            
+
             <div className="contenedor-socios sibling-fade">
               {/* ponente */}
-              <Socios/>
-             
+              <Socios />
             </div>
           </div>
           <Agenda />

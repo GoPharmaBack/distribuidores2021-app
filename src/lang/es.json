@@ -4,13 +4,13 @@
   "component.hours": "Horas",
   "component.minutes": "Minutos",
   "component.seconds": "Segundos",
-  "save.date":"RESERVA LA FECHA",
-  "date.event":" October 19 - 20",
-  "footer.copy":" Baxter. Todos los derechos Reservados.",
+  "save.date": "RESERVA LA FECHA",
+  "date.event": " October 19 - 20",
+  "footer.copy": " Baxter. Todos los derechos Reservados.",
   "login.email": "Correo electrónico",
   "login.password": "contraseña",
-  "login.title":"Acceso",
-  "menu.agenda":"Agenda",
-  "menu.rooms":"Sala",
-  "menu.contact":"Contacto "
+  "login.title": "Acceso",
+  "menu.agenda": "Agenda",
+  "menu.rooms": "Sala",
+  "menu.contact": "Contacto "
 }

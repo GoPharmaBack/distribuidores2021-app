@@ -1,7 +1,6 @@
-import React, {useState} from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Modal, Button} from 'react-bootstrap';
-
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Modal, Button } from "react-bootstrap";
 
 export default function InfoModal() {
   const [show, setShow] = useState(false);

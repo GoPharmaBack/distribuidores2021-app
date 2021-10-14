@@ -27,17 +27,17 @@
     @content;
   }
 }
+
 @mixin mobile-landscape-only {
   @media only screen and (min-width: $mq-mobile-portrait + 1) and (max-width: $mq-mobile-landscape) {
     @content;
   }
 }
 
-@mixin scrollbars(
-  $size,
+@mixin scrollbars($size,
   $foreground-color,
-  $background-color: mix($foreground-color, white, 50%)
-) {
+  $background-color: mix($foreground-color, white, 50%)) {
+
   // For Google Chrome
   &::-webkit-scrollbar {
     width: $size;

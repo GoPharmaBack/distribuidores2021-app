@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import PonenteEspecial from "../img/VICTOR_GOMEZ.png";
-import Cv from "../img/CV_VICTOR_PONENTE–ESPECIAL.png"
+import Cv from "../img/CV_VICTOR_PONENTE–ESPECIAL.png";
 function PonenciaEspecial() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
     return (
-      <Modal className="text-light"
+      <Modal
+        className="text-light"
         {...props}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        
         <Modal.Body>
           <img src={Cv} className="cv" alt="" />
         </Modal.Body>
@@ -31,20 +31,23 @@ function PonenciaEspecial() {
           <p>Ponencia especial.</p>
           <br />
           <h4 className="ponente">Víctor Gómez</h4>
-         
-          <small>Perspectivas Económicas de América Latina <br/> más allá del COVID-19.</small>
+
+          <small>
+            Perspectivas Económicas de América Latina <br /> más allá del
+            COVID-19.
+          </small>
           <ul className="horarios">
             <li>
-            08:55 am <span> Centroamérica</span>
+              08:55 am <span> Centroamérica</span>
             </li>
             <li>
-            09:55 am <span> México</span>
+              09:55 am <span> México</span>
             </li>
             <li>
-            10:55 am <span> Caribe</span>
+              10:55 am <span> Caribe</span>
             </li>
             <li>
-            10:55 amh <span> Puerto Rico</span>
+              10:55 amh <span> Puerto Rico</span>
             </li>
           </ul>
           <button className="btn-sm btn-primary">Conoce Más</button>

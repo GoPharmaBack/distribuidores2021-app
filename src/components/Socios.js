@@ -18,8 +18,8 @@ function Socios(props) {
   ));
 
   return (
-    
-      <>{ListaSocios}
+    <>
+      {ListaSocios}
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}

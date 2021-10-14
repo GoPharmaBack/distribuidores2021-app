@@ -29,7 +29,7 @@ function SalaCar() {
             style={{ minWidth: "100%", height: 539, border: "none" }}
             scrolling="no"
           ></iframe>
-           <br />
+          <br />
           <small className="frase-modal">
             Es necesario finalizar el formulario antes de cerrar de lo contrario
             no obtendra su asistencia
