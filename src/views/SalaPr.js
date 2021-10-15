@@ -52,8 +52,8 @@ function SalaPr() {
             <div className="contenedor-video">
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
-                  title="Sala México"
-                  src="https://vimeo.com/event/1362559/embed"
+                  title="Sala PR"
+                  src="https://vimeo.com/event/1384096/embed"
                   frameBorder={0}
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen

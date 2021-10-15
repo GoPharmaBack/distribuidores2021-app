@@ -29,6 +29,7 @@ function SalaCam() {
             style={{ minWidth: "100%", height: 539, border: "none" }}
             scrolling="no"
           ></iframe>
+
           <br />
           <small className="frase-modal">
             Es necesario finalizar el formulario antes de cerrar de lo contrario
@@ -52,8 +53,8 @@ function SalaCam() {
             <div className="contenedor-video">
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
-                  title="Sala México"
-                  src="https://vimeo.com/event/1362559/embed"
+                  title="Sala Cam"
+                  src="https://vimeo.com/event/1384096/embed"
                   frameBorder={0}
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
