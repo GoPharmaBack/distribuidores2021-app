@@ -1,9 +1,9 @@
 import React from "react";
 let Agenda19 =
-  "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FCENTROAMERICA%2019.png?alt=media&token=15ccdc75-f9ee-48ca-9957-a33e12ec593a";
+  "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FCENTROAMERICA_AGENDA%20OCTUBRE_DISTRIBUIDORES_19.png?alt=media&token=c55c9a58-e08a-4ce3-a151-e755fd5128fb";
 
 let Agenda20 =
-  "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FCENTROAMERICA%2020.png?alt=media&token=d0d3f720-2b06-49ce-a816-db344dfb41b3";
+  "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FCENTROAMERICA_AGENDA%20OCTUBRE_DISTRIBUIDORES_20.png?alt=media&token=d9e4ba66-b040-49a4-b8db-75672d55c9e5";
 
 function toggleImage() {
   var img1 = Agenda19;
