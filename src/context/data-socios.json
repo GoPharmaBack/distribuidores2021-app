@@ -1,65 +1,14 @@
 [
-  {
-    "id": "1",
-    "nombre": "Eric Ruiz",
-    "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FEric_R.png?alt=media&token=ea8fa467-7e88-4208-b9a0-1932abf65560",
-    "position": "Director Comercial para México, Centroamérica y Caribe",
-    "e-mail": "eric_ruiz@baxter.com",
-    "phone": "",
-    "phrase": ""
-  },
-  {
-    "id": "2",
-    "nombre": "Astrid Cruz",
-    "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FAstrid_Cruz.png?alt=media&token=c6af4a25-5150-41e4-8c36-2c17351bb58e",
-    "position": "Gerente de ventas Caribe",
-    "e-mail": "astrid_cruz@baxter.com",
-    "phone": "",
-    "phrase": ""
-  },
-  {
-    "id": "3",
-    "nombre": "Carlos Vélez",
-    "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FCarlos_Velez.png?alt=media&token=225a1c01-a4bb-4355-b0e5-00fd4914fadd",
-    "position": "Gerente de ventas Puerto Rico",
-    "e-mail": "carlos_velez@baxter.com",
-    "phone": "",
-    "phrase": ""
-  },
-  {
-    "id": "4",
-    "nombre": "Francisco Morales",
-    "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FFrancisco_Morales.png?alt=media&token=22a142ef-2ede-48d4-a36d-1b55454fe7e9",
-    "position": "Gerente de ventas región Centro",
-    "e-mail": "francisco_morales@baxter.com",
-    "phone": "5526907306",
-    "phrase": ""
-  },
-  {
-    "id": "5",
-    "nombre": "Juan Carlos Cabral",
-    "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FJuan_Carlos_Cabral.png?alt=media&token=4fd4b176-0fc4-43ba-9690-21f0a793c5ca",
-    "position": "Gerente de ventas región Sur",
-    "e-mail": "juan_carlos_cabral@baxter.com",
-    "phone": "5539553194",
-    "phrase": ""
-  },
-  {
-    "id": "6",
-    "nombre": "Karine Toledo",
-    "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FKarine_Toledo.png?alt=media&token=8b765533-c99b-4170-8464-4ec77bb3fdc3",
-    "position": "Gerente de ventas Centro America",
-    "e-mail": "karine_toledo@baxter.com",
-    "phone": "50241492230",
-    "phrase": ""
-  },
-  {
-    "id": "7",
-    "nombre": "Mario González",
-    "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FMario_Gonzalez.png?alt=media&token=0bd0a388-fbcb-4812-aa07-ed33042d7157",
-    "position": "Gerente de ventas región Norte",
-    "e-mail": "mario_e_gonzalez@baxter.com",
-    "phone": "8115778735",
-    "phrase": ""
-  }
+{"id":"1","nombre":"Eric Ruiz","img":"https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FEric_R.png?alt=media&token=ea8fa467-7e88-4208-b9a0-1932abf65560","position":"Director Comercial para México, Centroamérica y Caribe","email":"eric_ruiz@baxter.com","phone":"","phrase":""}
+,
+{"id":"2","nombre":"Astrid Cruz","img":"https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FAstrid_Cruz.png?alt=media&token=c6af4a25-5150-41e4-8c36-2c17351bb58e","position":"Gerente de ventas Caribe","email":"astrid_cruz@baxter.com","phone":"","phrase":""},
+{"id":"3","nombre":"Carlos Vélez","img":"https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FCarlos_Velez.png?alt=media&token=225a1c01-a4bb-4355-b0e5-00fd4914fadd","position":"Gerente de ventas Puerto Rico","email":"carlos_velez@baxter.com","phone":"","phrase":""}
+,
+{"id":"4","nombre":"Francisco Morales","img":"https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FFrancisco_Morales.png?alt=media&token=22a142ef-2ede-48d4-a36d-1b55454fe7e9","position":"Gerente de ventas región Centro","email":"francisco_morales@baxter.com","phone":"5526907306","phrase":""}
+,
+{"id":"5","nombre":"Juan Carlos Cabral","img":"https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FJuan_Carlos_Cabral.png?alt=media&token=4fd4b176-0fc4-43ba-9690-21f0a793c5ca","position":"Gerente de ventas región Sur","email":"juan_carlos_cabral@baxter.com","phone":"5539553194","phrase":""}
+,
+{"id":"6","nombre":"Karine Toledo","img":"https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FKarine_Toledo.png?alt=media&token=8b765533-c99b-4170-8464-4ec77bb3fdc3","position":"Gerente de ventas Centro America","email":"karine_toledo@baxter.com","phone":"50241492230","phrase":""},
+{"id":"7","nombre":"Mario Gonzalez","img":"https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FMario_Gonzalez.png?alt=media&token=0bd0a388-fbcb-4812-aa07-ed33042d7157","position":"Gerente de ventas región Norte","email":"mario_e_gonzalez@baxter.com","phone":"8115778735","phrase":""}
+
 ]

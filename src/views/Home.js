@@ -7,10 +7,12 @@ import Event from "../img/event.png";
 import CountDown from "../components/CountDown";
 import LogoHome from "../img/logo.svg";
 import Fade from "react-reveal/Fade";
+import emoji from "react-easy-emoji";
 
 import { FormattedMessage } from "react-intl";
 import { LangContext } from "../context/LangContext";
-
+emoji("Emojis make me 😀");
+// output: ['Emojis make me ', <img src="//twemoji.maxcdn.com/2/72x72/1f604.png" ... />]
 function Home() {
   useEffect(() => {
     ocultar();
@@ -52,13 +54,13 @@ function Home() {
             onClick={() => idioma.establecerLenguaje("es")}
           >
             {" "}
-            🇲🇽 spa
+            {emoji("🇲🇽 esp")}
           </button>
           <button
             className="btn-lang"
             onClick={() => idioma.establecerLenguaje("en")}
           >
-            🇺🇸 eng
+            {emoji("🇺🇸 eng")}
           </button>
         </div>
 
