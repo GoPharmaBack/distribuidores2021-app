@@ -151,17 +151,6 @@ function Landing() {
           </div>
           <br />
           <br />
-          <div className="imparables">
-            <p>Ponentes</p>
-            <h3>IMPARABLES</h3>
-            <div className="contenedor-ponentes sibling-fade">
-              {/* ponente */}
-
-              <Ponentes />
-            </div>
-          </div>
-
-          <PonenciaEspecial />
 
           <div className="imparables socios">
             <p>LIDERES</p>
@@ -170,6 +159,17 @@ function Landing() {
             <div className="contenedor-socios sibling-fade">
               {/* ponente */}
               <Socios />
+            </div>
+          </div>
+          <PonenciaEspecial />
+
+          <div className="imparables">
+            <p>Ponentes</p>
+            <h3>IMPARABLES</h3>
+            <div className="contenedor-ponentes sibling-fade">
+              {/* ponente */}
+
+              <Ponentes />
             </div>
           </div>
           <Agenda />
