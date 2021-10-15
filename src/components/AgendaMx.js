@@ -30,7 +30,7 @@ function AgendaMx() {
         <button className="btn-primary btns" onClick={toggleImage}>
           19-oct
         </button>
-        <button className="btn-primary btns" onClick={toggleImage}>
+        <button className="btn-primary btns" onClick={toggleImage2}>
           {" "}
           20-oct{" "}
         </button>
