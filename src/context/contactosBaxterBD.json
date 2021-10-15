@@ -4,13 +4,14 @@
     "nombre": "Roxana Garduño",
     "imagen": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FRoxana_Garduno.png?alt=media&token=1ed613db-6c4b-49f5-9b51-a27e977d5810",
     "puesto": "Leader, Distributors Goverment",
-    "correo": "roxana_garduno@baxter.com"
+    "correo": "roxana_garduno@baxter.com",
+    "number":"555555555"
   },
   {
     "id": "1",
     "nombre": "Jesús Romero",
     "imagen": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FJesus_Romero.png?alt=media&token=106eda54-c96b-41aa-8a04-ed95fa751fac",
-    "puesto": "Becario",
+    "puesto": "Becario de gobierno",
     "correo": "jesus_romero@baxter.com"
   },
   {

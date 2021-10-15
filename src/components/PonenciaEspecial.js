@@ -32,10 +32,9 @@ function PonenciaEspecial() {
           <br />
           <h4 className="ponente">Víctor Gómez</h4>
 
-          <small>
-            Perspectivas Económicas de América Latina <br /> más allá del
-            COVID-19.
-          </small>
+          <p className="ponencia-especial-titulo">
+            Perspectivas Económicas de América Latina más allá del COVID-19.
+          </p>
           <ul className="horarios">
             <li>
               08:55 am <span> Centroamérica</span>

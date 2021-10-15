@@ -30,7 +30,7 @@
     "id": "4",
     "nombre": "Francisco Morales",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FFrancisco_Morales.png?alt=media&token=22a142ef-2ede-48d4-a36d-1b55454fe7e9",
-    "position": "Gerente de ventas regién Centro",
+    "position": "Gerente de ventas región Centro",
     "e-mail": "francisco_morales@baxter.com",
     "phone": "5526907306",
     "phrase": ""
@@ -39,7 +39,7 @@
     "id": "5",
     "nombre": "Juan Carlos Cabral",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FJuan_Carlos_Cabral.png?alt=media&token=4fd4b176-0fc4-43ba-9690-21f0a793c5ca",
-    "position": "Gerente de ventas regién Sur",
+    "position": "Gerente de ventas región Sur",
     "e-mail": "juan_carlos_cabral@baxter.com",
     "phone": "5539553194",
     "phrase": ""
@@ -55,9 +55,9 @@
   },
   {
     "id": "7",
-    "nombre": "Mario Gonzalez",
+    "nombre": "Mario González",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FMario_Gonzalez.png?alt=media&token=0bd0a388-fbcb-4812-aa07-ed33042d7157",
-    "position": "Gerente de ventas regién Norte",
+    "position": "Gerente de ventas región Norte",
     "e-mail": "mario_e_gonzalez@baxter.com",
     "phone": "8115778735",
     "phrase": ""

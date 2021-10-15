@@ -726,7 +726,7 @@ a {
   width: 100%;
   margin-top: 3rem;
   margin-bottom: 2rem;
-
+font-size: 18px;
   @include phone {
     flex-flow: column-reverse;
   }
@@ -754,6 +754,9 @@ a {
       width: 100%;
       height: auto;
     }
+  }
+  .ponencia-especial-titulo{
+    max-width: 430px;
   }
 }
 
