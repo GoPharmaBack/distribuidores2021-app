@@ -27,6 +27,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import AgendaCam from "../components/AgendaCam";
 import AgendaMx from "../components/AgendaMx";
+import AgendaPr from "../components/AgendaPr";
+import AgendaCar from "../components/AgendaCar";
+//import AgendaCarEng from "../components/AgendaCarEng";
+
 import Ponentes from "../components/Ponentes";
 
 const cookies = new Cookies();
@@ -72,11 +76,14 @@ function Landing() {
     if (rooms[0] === "CAM") {
       Agenda = AgendaCam;
     } else if (rooms[0] === "PR") {
-      console.log("sala PR");
+      Agenda = AgendaPr;
     } else if (rooms[0] === "CAR") {
-      console.log("sala CAR");
+      Agenda = AgendaCar;
     } else if (rooms[0] === "MX") {
       Agenda = AgendaMx;
+    }else if (rooms === rooms) {
+      Agenda = AgendaMx;
+      console.log("ADMIN")
     }
   }
 
