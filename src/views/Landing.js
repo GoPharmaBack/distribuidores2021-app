@@ -81,9 +81,6 @@ function Landing() {
       Agenda = AgendaCar;
     } else if (rooms[0] === "MX") {
       Agenda = AgendaMx;
-    }else if (rooms === rooms) {
-      Agenda = AgendaMx;
-      console.log("ADMIN")
     }
   }
 
