@@ -13,7 +13,7 @@ function Ponentes(props) {
       <img src={ponente.img} alt="ponente" />
       <br />
       <p>{ponente.nombre}</p>
-      <small>{ponente.position}</small>
+      <small className="titulo-ponente">{ponente.position}</small>
     </div>
   ));
 

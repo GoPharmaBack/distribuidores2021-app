@@ -82,7 +82,7 @@ function Navbar() {
         </Link>
 
         <Link to="contact" onClick={logout}>
-          <li className=" btn-lang"> Logout </li>
+          <li className=" btn-nav"> Logout </li>
         </Link>
 
         <div className="contenedor-botones-lang">

@@ -138,7 +138,7 @@ function Landing() {
               <p>
                 Líneas principales
                 <br />
-                de negocio.
+                de negocio
               </p>
             </div>
             <div className="col">
