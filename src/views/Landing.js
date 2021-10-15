@@ -94,16 +94,16 @@ function Landing() {
 
               <ul className="horarios">
                 <li>
-                  10:00 A.M. <span> Caribe</span>
+                  10:00 A.M. <span> Caribe (GMT-4)</span>
                 </li>
                 <li>
-                  08:00 A.M. <span> Centroamérica</span>
+                  08:00 A.M. <span> Centroámerica (GMT-6)</span>
                 </li>
                 <li>
-                  09:00 A.M. <span> México</span>
+                  09:00 A.M. <span> Mexico ( GMT-5)</span>
                 </li>
                 <li>
-                  10:00 A.M. <span> Puerto Rico</span>
+                  10:00 A.M. <span> Puerto Rico (GMT-4)</span>
                 </li>
               </ul>
 

@@ -726,7 +726,11 @@ a {
   width: 100%;
   margin-top: 3rem;
   margin-bottom: 2rem;
-font-size: 18px;
+
+  p {
+    font-size: 22px;
+  }
+
   @include phone {
     flex-flow: column-reverse;
   }
@@ -755,7 +759,8 @@ font-size: 18px;
       height: auto;
     }
   }
-  .ponencia-especial-titulo{
+
+  .ponencia-especial-titulo {
     max-width: 430px;
   }
 }
@@ -801,6 +806,24 @@ font-size: 18px;
       width: 320px;
       margin: 1rem;
       background-color: #1b1464;
+
+      .texto {
+        text-align: center;
+
+        .titulo {
+          color: #fed100;
+          font-weight: bolder;
+        }
+
+        .cargo {
+          font-size: 1rem;
+        }
+
+        .correo {
+          color: #fed100;
+         
+        }
+      }
     }
 
     @include phone {
@@ -963,6 +986,6 @@ div.jfThankYou-wrapper {
   }
 }
 
-.titulo-ponentes{
+.titulo-ponentes {
   font-size: 16px !important;
 }

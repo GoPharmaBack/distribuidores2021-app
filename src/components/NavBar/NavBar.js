@@ -6,6 +6,7 @@ import LogoNav from "../../img/logo.svg";
 import { HashLink } from "react-router-hash-link";
 import { FormattedMessage } from "react-intl";
 import { LangContext } from "../../context/LangContext";
+import emoji from "react-easy-emoji";
 //import Logo from "../../img/logo.png";
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -86,7 +87,10 @@ function Navbar() {
         </Link>
 
         <div className="contenedor-botones-lang">
-          <li onClick={() => idioma.establecerLenguaje("es")}> 🇲🇽 spa</li>
+          <li onClick={() => idioma.establecerLenguaje("es")}>
+            {" "}
+            {emoji("🇲🇽 esp")}
+          </li>
 
           <li onClick={() => idioma.establecerLenguaje("en")}> 🇺🇸 eng</li>
         </div>

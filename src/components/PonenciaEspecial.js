@@ -37,16 +37,16 @@ function PonenciaEspecial() {
           </p>
           <ul className="horarios">
             <li>
-              08:55 am <span> Centroamérica</span>
+              08:55 am <span> Centroámerica (GMT-6)</span>
             </li>
             <li>
-              09:55 am <span> México</span>
+              09:55 am <span> Mexico ( GMT-5)</span>
             </li>
             <li>
-              10:55 am <span> Caribe</span>
+              10:55 am <span> Caribe (GMT-4)</span>
             </li>
             <li>
-              10:55 amh <span> Puerto Rico</span>
+              10:55 amh <span> Puerto Rico (GMT-4)</span>
             </li>
           </ul>
           <button className="btn-sm btn-primary">Conoce Más</button>
