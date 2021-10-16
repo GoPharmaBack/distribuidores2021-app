@@ -14,6 +14,7 @@ import Pr from "../views/SalaPr";
 import ScrollToTop from "../components/ScrollToTop";
 import Cookies from "universal-cookie";
 import Sucess from "../views/Sucess";
+import Error404 from "../views/404";
 const cookies = new Cookies();
 
 function Routes() {
@@ -45,6 +46,7 @@ function Routes() {
 
         <Route exact path="/ups" component={Error} />
         <Route exact path="/sucess" component={Sucess} />
+        <Route component ={Error404}/>
       </Switch>
     </Router>
   );
