@@ -37,8 +37,6 @@ function Home() {
     }
   }
 
-
-
   return (
     <Fade>
       <section className="start">

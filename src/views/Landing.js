@@ -175,7 +175,7 @@ function Landing() {
           <Agenda />
           <br />
           <div className="botones-salas" id="salas">
-            <h4>SALAS</h4>
+            <h3>SALAS</h3>
             <p>
               <FormattedMessage id="save.date" />
             </p>

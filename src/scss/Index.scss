@@ -548,6 +548,7 @@ a {
   //border: 1px solid red;
   max-width: 1080px;
   width: 100%;
+ 
 
   a {
     margin: auto;
@@ -568,6 +569,7 @@ a {
 }
 
 .botones-salas {
+  height: 60vh;
   display: flex !important;
   flex-flow: column;
   align-items: center;
