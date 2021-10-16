@@ -21,6 +21,7 @@ const App = () => {
           console.log(res.data.description)
           setDescriptionApi();
         });
+        console.log(data)
       setLoading(true);
     } catch (e) {
       console.log(e);
