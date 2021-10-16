@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "nombre": "Eric Ruiz",
+    "nombre": "Éric Ruiz",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FEric_R.png?alt=media&token=ea8fa467-7e88-4208-b9a0-1932abf65560",
-    "position": "Director Comercial para México, Centroamérica y Caribe  (GMT-4)",
+    "position": "Director Comercial para México, Centroamérica y Caribe",
     "email": "eric_ruiz@baxter.com",
     "phone": "",
     "phrase": ""
@@ -12,7 +12,7 @@
     "id": "2",
     "nombre": "Astrid Cruz",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FAstrid_Cruz.png?alt=media&token=c6af4a25-5150-41e4-8c36-2c17351bb58e",
-    "position": "Gerente de ventas Caribe  (GMT-4)",
+    "position": "Gerente de ventas Caribe",
     "email": "astrid_cruz@baxter.com",
     "phone": "",
     "phrase": ""

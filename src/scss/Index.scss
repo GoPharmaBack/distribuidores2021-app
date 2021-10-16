@@ -1,7 +1,7 @@
 @import "libs/mixins";
 @import "libs/variables";
 @import "libs/type";
-
+@import "~bootstrap/scss/bootstrap";
 @import "components/formulario";
 
 @import "components/NavBar";
@@ -181,8 +181,8 @@ section {
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: $app-2 !important;
-    color: rgb(3, 5, 126) !important;
+   color: $app-2 !important;
+   background-color: rgb(3, 5, 126) !important;
   }
 }
 
@@ -821,7 +821,7 @@ a {
 
         .correo {
           color: #fed100;
-         
+
         }
       }
     }
@@ -988,4 +988,29 @@ div.jfThankYou-wrapper {
 
 .titulo-ponentes {
   font-size: 16px !important;
+}
+
+
+.loader {
+  position: absolute;
+
+  &::before {
+    content: "";
+    /*kosong, for it to exist*/
+    background-color: red;
+  }
+}
+
+
+
+.contenedor-loader {
+  filter: blur(1);
+  display: flex;
+position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #1b146481;
+  z-index: 20000;
 }

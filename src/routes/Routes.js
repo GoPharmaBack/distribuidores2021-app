@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 import Home from "../views/Home";
 import Login from "../views/Login";
@@ -17,18 +18,23 @@ import Sucess from "../views/Sucess";
 const cookies = new Cookies();
 
 function Routes() {
+
   let Autorizado = cookies.get("message");
   const [isAuth] = useState(Autorizado);
 
-  if (isAuth === "Auth succesful") {
-    console.log("acceso ✨");
-  } else {
-    console.log("Sin Acceso 😅");
-    localStorage.setItem("lang", "en");
-  }
+
+  useEffect(()=>{
+    if (isAuth === "Auth succesful") {
+      console.log("acceso ✨");
+    } else {
+      console.log("Sin Acceso 😅");
+      localStorage.setItem("lang", "en");
+    }
+  })
 
   return (
     <Router>
+      
       <ScrollToTop />
       <Navbar />
       <Switch>
