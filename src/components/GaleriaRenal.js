@@ -3,21 +3,21 @@ import ImageGallery from "react-image-gallery";
 const images = [
   {
     original:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_AK98_MACHINE.png?alt=media&token=f01276a4-9589-4639-9505-7c3bc6d785ca",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/RenalCare%2FRENAL_CARE_1088X618_AK98_MACHINE.png?alt=media&token=82d1799d-069b-4fd3-b79d-ecb769ee2d35",
     thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_AK98_MACHINE.png?alt=media&token=f01276a4-9589-4639-9505-7c3bc6d785ca",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/RenalCare%2FRENAL_CARE_1088X618_AK98_MACHINE.png?alt=media&token=82d1799d-069b-4fd3-b79d-ecb769ee2d35",
   },
   {
     original:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_CLARIA.png?alt=media&token=579f8ace-0c7e-4c35-a699-d22b09e8d456",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/RenalCare%2FRENAL_CARE_1088X618_OXIRIS.png?alt=media&token=af198856-a783-4979-87d8-0bd1bbd7ec18",
     thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_CLARIA.png?alt=media&token=579f8ace-0c7e-4c35-a699-d22b09e8d456",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/RenalCare%2FRENAL_CARE_1088X618_OXIRIS.png?alt=media&token=af198856-a783-4979-87d8-0bd1bbd7ec18",
   },
   {
     original:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_EMEA.png?alt=media&token=3079076a-b727-4cc0-812e-14c9028ff5c0",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/RenalCare%2FRENAL_CARE_1088X618_OXIRIS_VINIL.png?alt=media&token=edbb9bc9-c274-45cf-9936-cd40c615f332",
     thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_EMEA.png?alt=media&token=3079076a-b727-4cc0-812e-14c9028ff5c0",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/RenalCare%2FRENAL_CARE_1088X618_OXIRIS_VINIL.png?alt=media&token=edbb9bc9-c274-45cf-9936-cd40c615f332",
   },
   {
     original:
@@ -33,15 +33,15 @@ const images = [
   },
   {
     original:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_THERMAX_BAG.png?alt=media&token=8ec95042-0227-4a05-8f64-77e9fbceb6c4",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/RenalCare%2FRENAL_CARE_1088X618_PRISMAX_BAG.png?alt=media&token=d2a01bb1-9ce8-48df-a459-62453f01c0d8",
     thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_THERMAX_BAG.png?alt=media&token=8ec95042-0227-4a05-8f64-77e9fbceb6c4",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/RenalCare%2FRENAL_CARE_1088X618_PRISMAX_BAG.png?alt=media&token=d2a01bb1-9ce8-48df-a459-62453f01c0d8",
   },
   {
     original:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_THERMAX_BAG201.png?alt=media&token=05c407e5-299c-45a0-a692-925adcd30f5b",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/RenalCare%2FRENAL_CARE_1088X618_PRISMAX_BAG201.png?alt=media&token=e0ad33b4-85c5-423b-8bc3-7866013fc551",
     thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FRENAL_CARE%2FRENAL_CARE_THERMAX_BAG201.png?alt=media&token=05c407e5-299c-45a0-a692-925adcd30f5b",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/RenalCare%2FRENAL_CARE_1088X618_PRISMAX_BAG201.png?alt=media&token=e0ad33b4-85c5-423b-8bc3-7866013fc551",
   },
 ];
 

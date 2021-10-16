@@ -199,7 +199,7 @@ function Landing() {
         <div className="contenedor-galeria">
           <hr />
           <p>Galería</p>
-          <h3>Cuidado Renal</h3>
+          <h3>Hostipal Products</h3>
           <GaleriaHospitalProduct />
         </div>
         <div className="contenedor-galeria">
