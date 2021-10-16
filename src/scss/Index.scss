@@ -181,8 +181,8 @@ section {
   transition: all 0.2s ease-in-out;
 
   &:hover {
-   color: $app-2 !important;
-   background-color: rgb(3, 5, 126) !important;
+    color: $app-2 !important;
+    background-color: rgb(3, 5, 126) !important;
   }
 }
 
@@ -1006,7 +1006,7 @@ div.jfThankYou-wrapper {
 .contenedor-loader {
   filter: blur(1);
   display: flex;
-position: absolute;
+  position: absolute;
   justify-content: center;
   align-items: center;
   height: 100%;
