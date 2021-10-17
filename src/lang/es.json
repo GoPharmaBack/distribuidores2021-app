@@ -12,5 +12,16 @@
   "login.title": "Acceso",
   "menu.agenda": "Agenda",
   "menu.rooms": "Sala",
-  "menu.contact": "Contacto "
+  "menu.contact": "Contacto ",
+  "place.caribe": "Caribe ",
+  "place.cam": "Centroámerica ",
+  "place.mx": "México ",
+  "ponentes.contador":"Ponentes nacionales e internacionales",
+  "ponencias.contador":"Ponencias",
+  "lineas.contador":"Líneas principales de negocio",
+  "productos.contador":"Productos de nuestro portafolio",
+  "lidere.titulo":"Líderes",
+  "lidere.subtitulo":"COMERCIALES",
+  "ponentes.titulo":"Ponentes",
+  "ponentes.subtitulo":"COMERCIALES"
 }

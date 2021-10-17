@@ -12,5 +12,17 @@
   "login.title": "Login",
   "menu.agenda": "Schedule",
   "menu.rooms": "Room",
-  "menu.contact": "Contact "
+  "menu.contact": "Contact ",
+  "place.caribe": "Caribbean ",
+  "place.cam": "Central America ",
+  "place.mx": "Mexico ",
+  "ponentes.contador":"National and international speakers",
+  "ponencias.contador":"Presentations",
+  "lineas.contador":"Main lines of business",
+  "productos.contador":"Products of our portfolio",
+  "lidere.titulo":"Leaders",
+  "lidere.subtitulo":"COMMERCIAL",
+
+  "ponentes.titulo":"Speakers",
+  "ponentes.subtitulo":"COMMERCIAL"
 }

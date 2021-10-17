@@ -94,13 +94,13 @@ function Landing() {
 
               <ul className="horarios">
                 <li>
-                  10:00 A.M. <span> Caribe (GMT-4)</span>
+                  10:00 A.M. <span> <FormattedMessage id="place.caribe" /> (GMT-4)</span>
                 </li>
                 <li>
-                  08:00 A.M. <span> Centroámerica (GMT-6)</span>
+                  08:00 A.M. <span> <FormattedMessage id="place.cam" />  (GMT-6)</span>
                 </li>
                 <li>
-                  09:00 A.M. <span> Mexico ( GMT-5)</span>
+                  09:00 A.M. <span>  <FormattedMessage id="place.mx" />  ( GMT-5)</span>
                 </li>
                 <li>
                   10:00 A.M. <span> Puerto Rico (GMT-4)</span>
@@ -128,24 +128,21 @@ function Landing() {
           <br />
           <div className="actividades">
             <div className="col">
-              <span>20+</span> <p>Ponentes nacionales e internacionales</p>
+              <span>20+</span> <p><FormattedMessage id="ponentes.contador" /></p>
             </div>
             <div className="col">
-              <span>25+</span> <p>Ponencias</p>
+              <span>25+</span> <p><FormattedMessage id="ponencias.contador" /></p>
             </div>
             <div className="col">
               <span>6</span>{" "}
               <p>
-                Líneas principales
-                <br />
-                de negocio
+              <FormattedMessage id="lineas.contador" />
               </p>
             </div>
             <div className="col">
               <span>100+</span>{" "}
               <p>
-                Productos de <br />
-                nuestro portafolio
+              <FormattedMessage id="productos.contador" />
               </p>
             </div>
           </div>
@@ -153,8 +150,8 @@ function Landing() {
           <br />
 
           <div className="imparables socios">
-            <p>LÍDERES</p>
-            <h3>COMERCIALES</h3>
+            <p><FormattedMessage id="lidere.titulo" /></p>
+            <h3><FormattedMessage id="lidere.subtitulo" /></h3>
 
             <div className="contenedor-socios sibling-fade">
               {/* ponente */}
@@ -164,8 +161,8 @@ function Landing() {
           <PonenciaEspecial />
 
           <div className="imparables">
-            <p>Ponentes</p>
-            <h3>IMPARABLES</h3>
+          <p><FormattedMessage id="ponentes.titulo" /></p>
+            <h3><FormattedMessage id="ponentes.subtitulo" /></h3>
             <div className="contenedor-ponentes sibling-fade">
               {/* ponente */}
 
@@ -192,23 +189,29 @@ function Landing() {
 
         <div className="contenedor-galeria">
           <hr />
+          
+        <br />
           <p>Galería</p>
           <h3>Cuidado Renal</h3>
           <GaleriaRenal />
         </div>
+       
         <div className="contenedor-galeria">
           <hr />
+          <br />
           <p>Galería</p>
-          <h3>Hostipal Products</h3>
+          <h3>Productos Hospitalarios </h3>
           <GaleriaHospitalProduct />
         </div>
+        <br />
         <div className="contenedor-galeria">
           <hr />
+          <br />
           <p>Galería</p>
           <h3>Advanced Surgery</h3>
           <GaleriaAdvancedSurgery />
         </div>
-
+        <br />
         <div className="dudas">
           <p>Dudas o sugerencias</p>
           <h3>INFORMES</h3>
