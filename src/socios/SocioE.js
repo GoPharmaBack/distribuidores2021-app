@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
+import { FormattedMessage } from "react-intl";
 
 function SocioA() {
   const [modalShow, setModalShow] = useState(false);
@@ -19,7 +19,7 @@ function SocioA() {
             <div className="texto">
               <p className="nombre">Juan Carlos Cabral</p>
               <p className="titulo-ponente">
-               Gerente de ventas región Sur
+              <FormattedMessage id="socio.e" />
               </p>
 
               <p>juan_carlos_cabral@baxter.com</p>
@@ -41,7 +41,7 @@ function SocioA() {
         <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FJuan_Carlos_Cabral.png?alt=media&token=4fd4b176-0fc4-43ba-9690-21f0a793c5ca" alt="ponencia especial" />
           <p>Juan Carlos Cabral</p>
           <p className="titulo-ponente">
-           Gerente de ventas región Sur
+          <FormattedMessage id="socio.e" />
           </p>
         </div>
         <div className="imagen"></div>

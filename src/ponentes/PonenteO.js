@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
+import { FormattedMessage } from "react-intl";
 function PonenteH() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -21,7 +21,7 @@ function PonenteH() {
             <div className="texto">
               <p className="nombre">Roxana Rojas</p>
               <p className="titulo-ponente">
-                Gerente de Mercadotecnia de Hemodíalisis
+                 <FormattedMessage id="ponente.o" />
               </p>
 
               <p>roxana_rojas@baxter.com</p>
@@ -43,7 +43,7 @@ function PonenteH() {
           <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FRoxana_Rojas.png?alt=media&token=0cf19765-433a-41a3-911f-4dde4ec90240" alt="ponencia especial" />
           <p>Roxana Rojas</p>
           <p className="titulo-ponente">
-            Gerente de Mercadotecnia de Hemodíalisis
+             <FormattedMessage id="ponente.o" />
           </p>
         </div>
         <div className="imagen"></div>

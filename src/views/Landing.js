@@ -94,13 +94,25 @@ function Landing() {
 
               <ul className="horarios">
                 <li>
-                  10:00 A.M. <span> <FormattedMessage id="place.caribe" /> (GMT-4)</span>
+                  10:00 A.M.{" "}
+                  <span>
+                    {" "}
+                    <FormattedMessage id="place.caribe" /> (GMT-4)
+                  </span>
                 </li>
                 <li>
-                  08:00 A.M. <span> <FormattedMessage id="place.cam" />  (GMT-6)</span>
+                  08:00 A.M.{" "}
+                  <span>
+                    {" "}
+                    <FormattedMessage id="place.cam" /> (GMT-6)
+                  </span>
                 </li>
                 <li>
-                  09:00 A.M. <span>  <FormattedMessage id="place.mx" />  ( GMT-5)</span>
+                  09:00 A.M.{" "}
+                  <span>
+                    {" "}
+                    <FormattedMessage id="place.mx" /> ( GMT-5)
+                  </span>
                 </li>
                 <li>
                   10:00 A.M. <span> Puerto Rico (GMT-4)</span>
@@ -128,21 +140,27 @@ function Landing() {
           <br />
           <div className="actividades">
             <div className="col">
-              <span>20+</span> <p><FormattedMessage id="ponentes.contador" /></p>
+              <span>20+</span>{" "}
+              <p>
+                <FormattedMessage id="ponentes.contador" />
+              </p>
             </div>
             <div className="col">
-              <span>25+</span> <p><FormattedMessage id="ponencias.contador" /></p>
+              <span>25+</span>{" "}
+              <p>
+                <FormattedMessage id="ponencias.contador" />
+              </p>
             </div>
             <div className="col">
               <span>6</span>{" "}
               <p>
-              <FormattedMessage id="lineas.contador" />
+                <FormattedMessage id="lineas.contador" />
               </p>
             </div>
             <div className="col">
               <span>100+</span>{" "}
               <p>
-              <FormattedMessage id="productos.contador" />
+                <FormattedMessage id="productos.contador" />
               </p>
             </div>
           </div>
@@ -150,8 +168,12 @@ function Landing() {
           <br />
 
           <div className="imparables socios">
-            <p><FormattedMessage id="lidere.titulo" /></p>
-            <h3><FormattedMessage id="lidere.subtitulo" /></h3>
+            <p>
+              <FormattedMessage id="lidere.titulo" />
+            </p>
+            <h3>
+              <FormattedMessage id="lidere.subtitulo" />
+            </h3>
 
             <div className="contenedor-socios sibling-fade">
               {/* ponente */}
@@ -161,18 +183,23 @@ function Landing() {
           <PonenciaEspecial />
 
           <div className="imparables">
-          <p><FormattedMessage id="ponentes.titulo" /></p>
-            <h3><FormattedMessage id="ponentes.subtitulo" /></h3>
+            <p>
+              <FormattedMessage id="ponentes.titulo" />
+            </p>
+            <h3>
+              <FormattedMessage id="ponentes.subtitulo" />
+            </h3>
             <div className="contenedor-ponentes sibling-fade">
               {/* ponente */}
 
               <Ponentes />
             </div>
           </div>
+          <h3 id="agenda"><FormattedMessage id="title.agenda" /> </h3>
           <Agenda />
           <br />
           <div className="botones-salas" id="salas">
-            <h3>SALAS</h3>
+            <h3><FormattedMessage id="title.rooms" /></h3>
             <p>
               <FormattedMessage id="save.date" />
             </p>
@@ -189,40 +216,55 @@ function Landing() {
 
         <div className="contenedor-galeria">
           <hr />
-          
-        <br />
-          <p>Galería</p>
-          <h3>Cuidado Renal</h3>
+
+          <br />
+          <p>
+            <FormattedMessage id="galeria.title" />
+          </p>
+          <h3>
+            {" "}
+            <FormattedMessage id="renal.care" />
+          </h3>
           <GaleriaRenal />
         </div>
-       
+
         <div className="contenedor-galeria">
           <hr />
           <br />
-          <p>Galería</p>
-          <h3>Productos Hospitalarios </h3>
+          <p>
+            <FormattedMessage id="galeria.title" />
+          </p>
+          <h3>
+            <FormattedMessage id="hosp.prod" />{" "}
+          </h3>
           <GaleriaHospitalProduct />
         </div>
         <br />
         <div className="contenedor-galeria">
           <hr />
           <br />
-          <p>Galería</p>
+          <p>
+            <FormattedMessage id="galeria.title" />
+          </p>
           <h3>Advanced Surgery</h3>
           <GaleriaAdvancedSurgery />
         </div>
         <br />
         <div className="dudas">
-          <p>Dudas o sugerencias</p>
-          <h3>INFORMES</h3>
+          <p>
+            <FormattedMessage id="dudas.sugerencias" />
+          </p>
+          <h3>
+            <FormattedMessage id="dudas.info" />
+          </h3>
           <div className="contenedor-personal">
             <ContactosBaxter />
           </div>
         </div>
 
         <div className="contacto" id="contact">
-          <p>Escríbenos</p>
-          <h3>Estamos para ayudarte</h3>
+          <p><FormattedMessage id="info.footer" /></p>
+          <h3><FormattedMessage id="info.footer2" /></h3>
           <Contacto />
         </div>
 

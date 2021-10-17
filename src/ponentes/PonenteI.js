@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
+import { FormattedMessage } from "react-intl";
 
 function PonenteI() {
+  const lang = localStorage.getItem("lang");
+
+  if (lang) {
+    if (lang === "es") {
+    } else if (lang === "en") {
+    } else {
+    }
+  }
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
     return (
@@ -15,12 +23,14 @@ function PonenteI() {
       >
         <Modal.Body>
           <div className="contenedor-modal d-flex">
-            <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FJuliana_Morales.png?alt=media&token=5832e65f-ec6e-4ca3-ae81-795bcf4fb613" alt="ponencia especial" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FJuliana_Morales.png?alt=media&token=5832e65f-ec6e-4ca3-ae81-795bcf4fb613"
+              alt="ponencia especial"
+            />
             <div className="texto">
               <p className="nombre">Juliana Morales</p>
               <p className="titulo-ponente">
-                Gerente de Mercadotecnia Nutrición
-
+                <FormattedMessage id="ponente.i" />
               </p>
 
               <p>juliana_morales@baxter.com</p>
@@ -38,11 +48,13 @@ function PonenteI() {
       {" "}
       <div className="ponente" onClick={() => setModalShow(true)}>
         <div className="texto">
-        <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FJuliana_Morales.png?alt=media&token=5832e65f-ec6e-4ca3-ae81-795bcf4fb613" alt="ponented" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FJuliana_Morales.png?alt=media&token=5832e65f-ec6e-4ca3-ae81-795bcf4fb613"
+            alt="ponented"
+          />
           <p>Juliana Morales</p>
           <p className="titulo-ponente">
-            Gerente de Mercadotecnia Nutrición
-
+            <FormattedMessage id="ponente.i" />
           </p>
         </div>
         <div className="imagen"></div>

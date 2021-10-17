@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
+import { FormattedMessage } from "react-intl";
 
 function PonenteB() {
+  const lang = localStorage.getItem("lang");
+
+  if (lang) {
+    if (lang === "es") {
+    } else if (lang === "en") {
+    } else {
+    }
+  }
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
     return (
@@ -15,12 +23,15 @@ function PonenteB() {
       >
         <Modal.Body>
           <div className="contenedor-modal d-flex">
-            <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FEric_R.png?alt=media&token=ea8fa467-7e88-4208-b9a0-1932abf65560" alt="ponencia especial" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FEric_R.png?alt=media&token=ea8fa467-7e88-4208-b9a0-1932abf65560"
+              alt="ponencia especial"
+            />
             <div className="texto">
               <p className="nombre">Éric Ruiz</p>
               <p className="titulo-ponente">
-                Director Comercial para México, Centroamérica y Caribe
-
+              <FormattedMessage id="ponente.b" />
+                
               </p>
 
               <p>eric_ruiz@baxter.com</p>
@@ -38,11 +49,14 @@ function PonenteB() {
       {" "}
       <div className="ponente" onClick={() => setModalShow(true)}>
         <div className="texto">
-        <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FEric_R.png?alt=media&token=ea8fa467-7e88-4208-b9a0-1932abf65560" alt="ponencia especial" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FEric_R.png?alt=media&token=ea8fa467-7e88-4208-b9a0-1932abf65560"
+            alt="ponencia especial"
+          />
           <p>Éric Ruiz</p>
           <p className="titulo-ponente">
-            Director Comercial para México, Centroamérica y Caribe
-
+          <FormattedMessage id="ponente.b" />
+                
           </p>
         </div>
         <div className="imagen"></div>

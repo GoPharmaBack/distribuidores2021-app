@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
+import { FormattedMessage } from "react-intl";
 
 function PonenteH() {
   const [modalShow, setModalShow] = useState(false);
@@ -21,7 +22,7 @@ function PonenteH() {
             <div className="texto">
               <p className="nombre">Rhabarandhi Govindha Vielman</p>
               <p className="titulo-ponente">
-                Especialista de Mercadotecnia Medication Delivery
+               <FormattedMessage id="ponente.n" />
               </p>
 
               <p>rhabarandhi_vielman@baxter.com</p>
@@ -47,7 +48,7 @@ function PonenteH() {
           />
           <p>Rhabarandhi Govindha Vielman</p>
           <p className="titulo-ponente">
-            Especialista de Mercadotecnia Medication Delivery
+           <FormattedMessage id="ponente.n" />
           </p>
         </div>
         <div className="imagen"></div>

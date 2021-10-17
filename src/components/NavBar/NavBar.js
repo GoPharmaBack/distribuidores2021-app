@@ -92,7 +92,10 @@ function Navbar() {
             {emoji("🇲🇽 esp")}
           </li>
 
-          <li onClick={() => idioma.establecerLenguaje("en")}> 🇺🇸 eng</li>
+          <li onClick={() => idioma.establecerLenguaje("en")}>
+            {" "}
+            {emoji("🇺🇸 eng")}
+          </li>
         </div>
       </ul>
       <div className="navbar-icon" onClick={handleClick}>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
-
+import { FormattedMessage } from "react-intl";
 function SocioA() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -15,12 +14,13 @@ function SocioA() {
       >
         <Modal.Body>
           <div className="contenedor-modal d-flex">
-            <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FCarlos_Velez.png?alt=media&token=225a1c01-a4bb-4355-b0e5-00fd4914fadd" alt="ponencia especial" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FCarlos_Velez.png?alt=media&token=225a1c01-a4bb-4355-b0e5-00fd4914fadd"
+              alt="ponencia especial"
+            />
             <div className="texto">
               <p className="nombre">Carlos Vélez</p>
-              <p className="titulo-ponente">
-                Gerente de ventas Puerto Ricoa
-              </p>
+              <p className="titulo-ponente"><FormattedMessage id="socio.c" /></p>
 
               <p>carlos_velez@baxter.com</p>
             </div>
@@ -37,11 +37,12 @@ function SocioA() {
       {" "}
       <div className="ponente" onClick={() => setModalShow(true)}>
         <div className="texto">
-        <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FCarlos_Velez.png?alt=media&token=225a1c01-a4bb-4355-b0e5-00fd4914fadd" alt="ponencia especial" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FCarlos_Velez.png?alt=media&token=225a1c01-a4bb-4355-b0e5-00fd4914fadd"
+            alt="ponencia especial"
+          />
           <p>Carlos Vélez</p>
-          <p className="titulo-ponente">
-            Gerente de ventas Puerto Ricoa
-          </p>
+          <p className="titulo-ponente"><FormattedMessage id="socio.c" /></p>
         </div>
         <div className="imagen"></div>
       </div>

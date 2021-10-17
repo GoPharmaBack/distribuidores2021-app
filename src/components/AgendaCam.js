@@ -22,7 +22,7 @@ function AgendaCam() {
   }
   const [isActive, setActive] = useState(false);
   return (
-    <section id="agenda" className="agenda">
+    <section  className="agenda">
       <div className="contenedor-boton-agenda">
         <button className="btn-primary btns" onClick={toggleImage}>
           19-oct

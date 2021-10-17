@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
+import { FormattedMessage } from "react-intl";
 
 function PonenteH() {
   const [modalShow, setModalShow] = useState(false);
@@ -15,12 +15,14 @@ function PonenteH() {
       >
         <Modal.Body>
           <div className="contenedor-modal d-flex">
-            <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FYvonne.png?alt=media&token=878cac8a-10a9-463b-9106-ad91b3fd109d" alt="ponencia especial" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FYvonne.png?alt=media&token=878cac8a-10a9-463b-9106-ad91b3fd109d"
+              alt="ponencia especial"
+            />
             <div className="texto">
               <p className="nombre">Yvonne Chaluisant</p>
               <p className="titulo-ponente">
-              Especialista en ventas
-
+                <FormattedMessage id="ponente.q" />
               </p>
 
               <p>yvonne_chaluisant_fornes@baxter.com</p>
@@ -39,11 +41,13 @@ function PonenteH() {
       {" "}
       <div className="ponente" onClick={() => setModalShow(true)}>
         <div className="texto">
-        <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FYvonne.png?alt=media&token=878cac8a-10a9-463b-9106-ad91b3fd109d" alt="ponencia especial"/>
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FYvonne.png?alt=media&token=878cac8a-10a9-463b-9106-ad91b3fd109d"
+            alt="ponencia especial"
+          />
           <p>Yvonne Chaluisant</p>
           <p className="titulo-ponente">
-          Especialista en ventas
-
+            <FormattedMessage id="ponente.q" />
           </p>
         </div>
         <div className="imagen"></div>

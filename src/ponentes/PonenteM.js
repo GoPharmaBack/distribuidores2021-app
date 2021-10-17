@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
+import { FormattedMessage } from "react-intl";
 
 function PonenteH() {
   const [modalShow, setModalShow] = useState(false);
@@ -19,7 +19,7 @@ function PonenteH() {
             <div className="texto">
               <p className="nombre">Paula Ávila</p>
               <p className="titulo-ponente">
-                Gerente de Mercadotecnia Diálisis Peritoneal
+                <FormattedMessage id="ponente.m" />
 
               </p>
 
@@ -42,7 +42,7 @@ function PonenteH() {
         <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FPaula_Avila.png?alt=media&token=28c74bf0-e17c-4491-a816-45eef1141899" alt="ponencia especial"/>
           <p>Paula Ávila</p>
           <p className="titulo-ponente">
-            Gerente de Mercadotecnia Diálisis Peritoneal
+            <FormattedMessage id="ponente.m" />
 
           </p>
         </div>

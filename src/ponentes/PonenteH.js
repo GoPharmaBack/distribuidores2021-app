@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
+import { FormattedMessage } from "react-intl";
 function PonenteH() {
+  const lang = localStorage.getItem("lang");
+
+  if (lang) {
+    if (lang === "es") {
+    } else if (lang === "en") {
+    } else {
+    }
+  }
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
     return (
@@ -20,7 +28,7 @@ function PonenteH() {
             />
             <div className="texto">
               <p className="nombre">José Guillermo Salazar</p>
-              <p className="titulo-ponente">Consultor Legal</p>
+              <p className="titulo-ponente"> <FormattedMessage id="ponente.h" /></p>
 
               <p>jose_guillermo_salazar_paiz@baxter.com</p>
             </div>
@@ -42,7 +50,7 @@ function PonenteH() {
             alt="ponented"
           />
           <p>José Guillermo Salazar</p>
-          <p className="titulo-ponente">Consultor Legal</p>
+          <p className="titulo-ponente"> <FormattedMessage id="ponente.h" /></p>
         </div>
         <div className="imagen"></div>
       </div>

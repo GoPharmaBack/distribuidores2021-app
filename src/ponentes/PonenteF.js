@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
+import { FormattedMessage } from "react-intl";
 
 function PonenteF() {
+  const lang = localStorage.getItem("lang");
+
+  if (lang) {
+    if (lang === "es") {
+    } else if (lang === "en") {
+    } else {
+    }
+  }
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
     return (
@@ -19,7 +27,7 @@ function PonenteF() {
             <div className="texto">
               <p className="nombre">Carla Velázquez</p>
               <p className="titulo-ponente">
-                Gerente de ética y cumplimiento
+                 <FormattedMessage id="ponente.f" />
 
               </p>
 
@@ -41,7 +49,7 @@ function PonenteF() {
         <img src="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FCarla_Velazquez.png?alt=media&token=1bb9808f-1129-465a-9697-de7461ba2a6d"  alt="ponencia especial" />
           <p>Carla Velázquez</p>
           <p className="titulo-ponente">
-            Gerente de ética y cumplimiento
+             <FormattedMessage id="ponente.f" />
 
           </p>
         </div>

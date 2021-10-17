@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
+import { FormattedMessage } from "react-intl";
 function PonenteJ() {
+  const lang = localStorage.getItem("lang");
+
+  if (lang) {
+    if (lang === "es") {
+    } else if (lang === "en") {
+    } else {
+    }
+  }
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
     return (
@@ -21,7 +29,7 @@ function PonenteJ() {
             <div className="texto">
               <p className="nombre">María Beczalia Mendoza</p>
               <p className="titulo-ponente">
-                Gerente de Mercadotecnia Terapia de Fluidos
+                <FormattedMessage id="ponente.j" />
               </p>
 
               <p>maria_beczalia_mendoza@baxter.com</p>
@@ -50,7 +58,7 @@ function PonenteJ() {
           />
           <p>María Beczalia Mendoza</p>
           <p className="titulo-ponente">
-            Gerente de Mercadotecnia Terapia de Fluidos
+            <FormattedMessage id="ponente.j" />
           </p>
         </div>
         <div className="imagen"></div>
