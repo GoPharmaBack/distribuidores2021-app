@@ -1,31 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
+import SocioA from "../socios/SocioA";
+import SocioB from "../socios/SocioB";
+import SocioC from "../socios/SocioC";
+import SocioD from "../socios/SocioD";
+import SocioE from "../socios/SocioE";
+import SocioF from "../socios/SocioF";
+import SocioG from "../socios/SocioG";
 
-import DataSocios from "../context/data-socios.json";
 
-import MyVerticallyCenteredModal from "../components/MyVerticallyCenteredModal";
-
-function Socios(props) {
-  let [modalShow, setModalShow] = useState(false);
-
-  const socios = DataSocios;
-  const ListaSocios = socios.map((socio, index) => (
-    <div key={index} className="ponente" onClick={() => setModalShow(true)}>
-      <img src={socio.img} alt="socio" />
-      <br />
-      <p>{socio.nombre}</p>
-      <small>{socio.position}</small>
-    </div>
-  ));
-
+function Socios() {
   return (
     <>
-      {ListaSocios}
-      <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-        value={socios.nombre}
-      />
-    </>
+      <SocioA />
+      <SocioB />
+      <SocioC />
+      <SocioD />
+      <SocioE  /> 
+      <SocioF  /> 
+      <SocioG  /> 
+     
+            
+      </>
   );
 }
 

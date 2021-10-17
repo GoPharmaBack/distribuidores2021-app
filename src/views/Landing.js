@@ -153,7 +153,7 @@ function Landing() {
           <br />
 
           <div className="imparables socios">
-            <p>LIDERES</p>
+            <p>LÍDERES</p>
             <h3>COMERCIALES</h3>
 
             <div className="contenedor-socios sibling-fade">

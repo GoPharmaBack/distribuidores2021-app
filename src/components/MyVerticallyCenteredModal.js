@@ -2,7 +2,7 @@ import React from "react";
 
 import { Modal, Button } from "react-bootstrap";
 
-function MyVerticallyCenteredModal(props) {
+function MyVerticallyCenteredModal(props,children) {
   return (
     <div onClick={(e) => e.stopPropagation()}>
       <Modal
@@ -16,7 +16,7 @@ function MyVerticallyCenteredModal(props) {
             <small> {props.value}</small>
           </Modal.Title>
         </Modal.Header>
-
+             {children}
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>

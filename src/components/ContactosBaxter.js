@@ -12,6 +12,7 @@ function ContactosBaxter() {
         <div className="titulo">{contacto.nombre}:</div>
         <div className="cargo">{contacto.puesto}</div>
         <div className="correo">{contacto.correo}</div>
+        <div className="correo">{contacto.number}</div>
       </div>
     </div>
   ));

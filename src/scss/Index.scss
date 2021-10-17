@@ -526,11 +526,12 @@ a {
         max-width: 180px;
       }
 
-      small,
-      .small {
+      .titulo-ponente {
+        color: white;
+        line-height: 1.1;
         margin-top: 0.3rem;
         margin-bottom: 0.3rem;
-        font-size: 15px;
+        font-size: 12px;
         max-width: 800px;
         font-weight: lighter !important;
         text-align: center !important;
@@ -548,7 +549,7 @@ a {
   //border: 1px solid red;
   max-width: 1080px;
   width: 100%;
- 
+
 
   a {
     margin: auto;
@@ -972,15 +973,15 @@ div.jfThankYou-wrapper {
     }
 
     img {
-      width: 150px !important;
-      margin: auto !important
+      max-width: 180px;
     }
 
-    small,
-    .small {
+    .titulo-ponente {
+      color: white;
+      line-height: 1.1;
       margin-top: 0.3rem;
       margin-bottom: 0.3rem;
-      font-size: 16px;
+      font-size: 12px;
       max-width: 800px;
       font-weight: lighter !important;
       text-align: center !important;
@@ -1015,4 +1016,30 @@ div.jfThankYou-wrapper {
   width: 100%;
   background-color: #1b146481;
   z-index: 20000;
+}
+
+
+
+.contenedor-modal {
+  align-items: center;
+  justify-content: center;
+@include phone{
+  display: flex;
+  flex-flow: column;
+}
+  .texto {
+    .nombre{
+      font-size: 1.2rem;
+      font-weight: bold;
+      color:#fed100
+    }
+   p{
+      font-size:1rem;
+    }
+    padding: 1rem;
+  }
+
+  img {
+    max-width: 240px;
+  }
 }

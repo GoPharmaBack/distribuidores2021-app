@@ -3,7 +3,7 @@
     "id": "1",
     "nombre": "Piero Novello",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FPiero_Novello.png?alt=media&token=c4fdd3c7-8e37-424f-b7ea-907151eddaf8",
-    "position": "Director General para México, Centro y Suramérica",
+    "position": "Director General para México, Centro y Sudamérica",
     "email": "piero_novello@baxter.com",
     "phone": "",
     "phrase": ""
@@ -30,14 +30,14 @@
     "id": "4",
     "nombre": "Alejandro Dueñas",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FAlejandro_Duenas.png?alt=media&token=5e5e44c8-5028-4612-9998-0a7a8b2cc0d9",
-    "position": "Especialista de Mercadotecina Anestesia",
+    "position": "Especialista de MercadotecniaAnestesia",
     "email": "alejandro_duenas@baxter.com",
     "phone": "",
     "phrase": ""
   },
   {
     "id": "5",
-    "nombre": "Carhil Perez Montero",
+    "nombre": "Carhil Peréz Montero",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FCarhil.png?alt=media&token=d499f290-1fdd-4357-9be6-e2b519dbab80",
     "position": "Gerente de Mercadotecnia  Nutrición",
     "email": "carhil_perez_montero@baxter.com",
@@ -64,7 +64,7 @@
   },
   {
     "id": "8",
-    "nombre": "José Guillermo",
+    "nombre": "José Guillermo Salazar",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FGuillermo.png?alt=media&token=dbac4e36-34fd-4e17-8310-e588130cd549",
     "position": "Consultor Legal",
     "email": "jose_guillermo_salazar_paiz@baxter.com",
@@ -82,7 +82,7 @@
   },
   {
     "id": "10",
-    "nombre": "Maria Beczalia Mendoza",
+    "nombre": "María Beczalia Mendoza",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FMaria_Beczalia.png?alt=media&token=40b3dc15-b8d9-4774-978f-947bdd0fe036",
     "position": "Gerente de Mercadotecnia Terapia de Fluidos",
     "email": "maria_beczalia_mendoza@baxter.com",
@@ -93,7 +93,7 @@
     "id": "11",
     "nombre": "Miriam Cabrera",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FMiriam_Cabrera.png?alt=media&token=74fcf82d-e8f6-49b7-9f25-25ee4baf7c3b",
-    "position": "PD Clinical Education Specialist",
+    "position": "Especialista en Educación PD Clínica",
     "email": "",
     "phone": "",
     "phrase": ""
@@ -120,7 +120,7 @@
     "id": "14",
     "nombre": "Rhabarandhi Govindha Vielman",
     "img": "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PONENTES%2FGovindha_Rhabarandhi.png?alt=media&token=488c69ef-9f9e-42ed-b7aa-9760b5a57f53",
-    "position": "Líder de Marketing",
+    "position": "Especialista de Mercadotecnia Medication Delivery",
     "email": "rhabarandhi_vielman@baxter.com",
     "phone": "50255607780",
     "phrase": "!No somos productos, somos soluciones.¡"
