@@ -871,8 +871,6 @@ a .jf-branding {
 
 .agenda{
   width: 100%;
-  height:80%;
- 
   background-position: top;
   background-size: fill;
   background-repeat: no-repeat;
@@ -880,6 +878,19 @@ a .jf-branding {
   flex-flow: column;
   align-items: center;
   justify-content:center;
+  margin-bottom: 2rem;
+}
+
+.contenedor-agendas{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap:1rem;
+  margin-top: 2rem;
+@include phone {
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr auto;
+}
 }
 
 .btns {

@@ -21,6 +21,7 @@ import Event from "../img/event.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 //imagenes no lenguaje
 import AgendaMx from "../components/AgendaMx"
+import SuperAgenda from "../components/SuperAgenda"
 
 import ImagenHero from "../img/img-hero.png";
 import Fade from "react-reveal/Fade";
@@ -74,15 +75,19 @@ function Landing() {
   }
 
   if (rooms) {
-    if (rooms[0] === "CAM") {
-      Agenda = AgendaCam;
+    if (rooms.length === 4) {
+      Agenda = SuperAgenda;
     } else if (rooms[0] === "PR") {
       Agenda = AgendaPr;
     } else if (rooms[0] === "CAR") {
       Agenda = AgendaCar;
     } else if (rooms[0] === "MX") {
       Agenda = AgendaMx;
+    } else if (rooms[0] === "CAM") {
+      Agenda = AgendaCam;
     }
+    
+    
   }
 
   return (
@@ -199,7 +204,8 @@ function Landing() {
             </div>
           </div>
          <section  id="agenda">
-        
+         <img className="img-hero" src={imageLogo} alt="Baxter Somos" />
+         <br/>
           <Agenda />
          </section>
           <br />

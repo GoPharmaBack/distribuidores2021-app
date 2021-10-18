@@ -1,29 +1,16 @@
 import React, { useState, useContext } from "react";
 import { Modal, Button } from "react-bootstrap";
-import Imparables from "../img/imparables.png";
-import Unstoppable from "../img/unstoppable.png";
+
 
 import { LangContext } from "../context/LangContext";
 import { FormattedMessage } from "react-intl";
 function AgendaMx() {
 
-  var imageLogo;
+ 
  
   const idioma = useContext(LangContext);
-  const lang = localStorage.getItem("lang");
-  console.log(idioma);
-  if (lang) {
-    if (lang === "es") {
-      imageLogo = Imparables;
-      
-    } else if (lang === "en") {
-      imageLogo = Unstoppable;
-      
-    } else {
-      imageLogo = Unstoppable;
-     
-    }
-  }
+ console.log(idioma)
+
   const [modalShow1, setModalShow1] = useState(false);
   const [modalShow2, setModalShow2] = useState(false);
 
@@ -75,7 +62,7 @@ let Agenda20 =
     <>
       {" "}
       <div className="agenda" >
-      <img className="img-hero" src={imageLogo} alt="Baxter Somos" />
+      
       <h3 id="agenda"><FormattedMessage id="title.agenda" /> PR </h3>
          <div className="contenedor-botones-agenda">
          <button className="btn-sm btn-primary p-2 m-1" onClick={() => setModalShow1(true)}>

@@ -1,23 +1,22 @@
 import React, { useState, useContext } from "react";
 import { Modal, Button } from "react-bootstrap";
-import Imparables from "../img/imparables.png";
-import Unstoppable from "../img/unstoppable.png";
+
 
 import { LangContext } from "../context/LangContext";
 import { FormattedMessage } from "react-intl";
 function AgendaCar() {
   let Agenda19 =
-    "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FCENTROAMERICA_AGENDA%20OCTUBRE_DISTRIBUIDORES_19.png?alt=media&token=c55c9a58-e08a-4ce3-a151-e755fd5128fb";
+    "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FCARIBE_AGENDA%20OCTUBRE_DISTRIBUIDORES_19.png?alt=media&token=21c375b9-3eb6-48ab-b639-542aec088d0e";
 
   let Agenda20 =
-    "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FCENTROAMERICA_AGENDA%20OCTUBRE_DISTRIBUIDORES_20.png?alt=media&token=d9e4ba66-b040-49a4-b8db-75672d55c9e5";
+    "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FCARIBE_AGENDA%20OCTUBRE_DISTRIBUIDORES_20.png?alt=media&token=4dac77e1-2250-4230-99ef-4aba5bc932ce";
 
   let Agenda19eng =
     "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FCARIBBEAN_AGENDA%20OCTUBRE_DISTRIBUIDORES_19.png?alt=media&token=c5333a4b-902b-4bc4-a87a-78dcf568bd8f";
 
   let Agenda20eng =
     "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FCARIBBEAN_AGENDA%20OCTUBRE_DISTRIBUIDORES_20.png?alt=media&token=49a62290-ba1b-4dc1-b2e9-2e51ba1cb293";
-  var imageLogo; 
+  
   var  Agenda19a;
   var Agenda20b;
 
@@ -26,15 +25,15 @@ function AgendaCar() {
   console.log(idioma);
   if (lang) {
     if (lang === "es") {
-      imageLogo = Imparables;
+      
       Agenda19a = Agenda19;
       Agenda20b = Agenda20;
     } else if (lang === "en") {
-      imageLogo = Unstoppable;
+    
       Agenda19a = Agenda19eng;
       Agenda20b = Agenda20eng;
     } else {
-      imageLogo = Unstoppable;
+     
       Agenda19a = Agenda19eng;
       Agenda20b = Agenda20eng;
     }
@@ -85,7 +84,7 @@ function AgendaCar() {
     <>
       {" "}
       <div className="agenda">
-        <img className="img-hero" src={imageLogo} alt="Baxter Somos" />
+        
         <h3 id="agenda">
           <FormattedMessage id="title.agenda" /> CAR{" "}
         </h3>
