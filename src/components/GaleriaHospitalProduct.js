@@ -37,12 +37,7 @@ const images = [
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/HOSP-PROD_OLIMEL-N7E_1088x618.png?alt=media&token=78841d62-a739-4992-8f33-72d9744d8290",
   },
-  {
-    original:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FHOSPITAL%2FSpectrum_IQ.png?alt=media&token=f7b95ec1-35ca-4126-a630-fa646cd4b60e",
-    thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/PRODUCTOS%2FHOSPITAL%2FSpectrum_IQ.png?alt=media&token=f7b95ec1-35ca-4126-a630-fa646cd4b60e",
-  },
+  
   {
     original:
       "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/HOSP-PROD_OLIMEL-N9E_1088x618.png?alt=media&token=4ab790dd-a862-49c2-8b1c-8304dfb5efc2",
