@@ -16,6 +16,7 @@ import PonenteO from "../ponentes/PonenteO";
 import PonenteP from "../ponentes/PonenteP";
 import PonenteQ from "../ponentes/PonenteQ";
 import PonenteH from "../ponentes/PonenteH";
+import PonenteR from "../ponentes/PonenteR";
 
 function Ponentes() {
   return (
@@ -23,7 +24,9 @@ function Ponentes() {
       <PonenteA />
       <PonenteB />
       <PonenteC />
+      
       <PonenteD />
+      <PonenteR />
       <PonenteE  /> 
       <PonenteF  /> 
       <PonenteG  /> 
