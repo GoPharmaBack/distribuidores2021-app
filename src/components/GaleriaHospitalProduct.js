@@ -64,15 +64,21 @@ const images = [
   },
   {
     original:
-      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/HOSP-PROD_STARLING_1088x618.png?alt=media&token=36a588a8-43ad-40eb-ab27-0e04ea02d77e",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/HOSP-PROD_STARLING_1088x618.png?alt=media&token=895f38e0-a470-400b-aac2-259746349490",
     thumbnail:
-      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/HOSP-PROD_STARLING_1088x618.png?alt=media&token=36a588a8-43ad-40eb-ab27-0e04ea02d77e",
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/HOSP-PROD_STARLING_1088x618.png?alt=media&token=895f38e0-a470-400b-aac2-259746349490",
   },
   {
     original:
       "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/HOSP-PROD_SUPRANE_1088x618.png?alt=media&token=0cb6e63c-da04-47c1-b7be-9124ffae38cf",
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/HOSP-PROD_SUPRANE_1088x618.png?alt=media&token=0cb6e63c-da04-47c1-b7be-9124ffae38cf",
+  },
+  {
+    original:
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/HOSP-PROD_PRISMAX_1088x618.png?alt=media&token=7088d46c-2d57-4cd2-9c9c-dcae9af45213",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/baxterhospitalproduct.appspot.com/o/HOSP-PROD_PRISMAX_1088x618.png?alt=media&token=7088d46c-2d57-4cd2-9c9c-dcae9af45213",
   },
 ];
 
