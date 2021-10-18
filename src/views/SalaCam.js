@@ -63,7 +63,7 @@ function SalaCam() {
 
             <Iframe
               className="chat"
-              src="https://minnit.chat/CAM?embed&&nickname="
+              src="https://minnit.chat/Distribuidores2021?embed&&nickname="
               allowTransparency="true"
             />
 

@@ -75,7 +75,7 @@ function SalaCar() {
 
             <Iframe
               className="chat"
-              src="https://minnit.chat/CARDist?embed&&nickname="
+              src="https://minnit.chat/Distribuidores2021?embed&&nickname="
               allowTransparency="true"
             />
 

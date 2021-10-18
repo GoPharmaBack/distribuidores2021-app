@@ -75,7 +75,7 @@ function SalaMx() {
 
             <Iframe
               className="chat"
-              src="https://minnit.chat/MX?embed&&nickname="
+              src="https://minnit.chat/Distribuidores2021?embed&&nickname="
               allowTransparency="true"
             />
 

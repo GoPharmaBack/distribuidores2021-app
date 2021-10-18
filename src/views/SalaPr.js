@@ -75,7 +75,7 @@ function SalaPr() {
 
             <Iframe
               className="chat"
-              src="https://minnit.chat/PRDist?embed&&nickname="
+              src="https://minnit.chat/Distribuidores2021?embed&&nickname="
               allowTransparency="true"
             />
 
