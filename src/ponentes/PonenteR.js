@@ -23,13 +23,13 @@ function PonenteR() {
               <p className="nombre">Antonio Andreu
 </p>
               <p className="titulo-ponente">
-                <FormattedMessage id="ponente.q" />
+                <FormattedMessage id="ponente.r" />
               </p>
 
               <p>jose_andreu@baxter.com</p>
               <p>tel: 5548405531</p>
 
-              <p>Hemodiálisis: Terapia de soporte integral para una población en crecimiento.</p>
+            
             </div>
           </div>
         </Modal.Body>
@@ -51,7 +51,7 @@ function PonenteR() {
           <p>Antonio Andreu
 </p>
           <p className="titulo-ponente">
-            <FormattedMessage id="ponente.q" />
+            <FormattedMessage id="ponente.r" />
           </p>
         </div>
         <div className="imagen"></div>
