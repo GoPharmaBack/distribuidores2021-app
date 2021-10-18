@@ -118,7 +118,7 @@ class ContactForm extends Component {
           />
         </div>
       
-        <button className="btn-secundario" type="submit">
+        <button className="btn-secondary m-auto" type="submit">
           {buttonText}
         </button>
       </form>
