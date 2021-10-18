@@ -15,6 +15,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import Cookies from "universal-cookie";
 import Sucess from "../views/Sucess";
 import Error404 from "../views/404";
+import StarfieldAnimation from "react-starfield-animation";
 const cookies = new Cookies();
 
 function Routes() {
@@ -33,6 +34,7 @@ function Routes() {
   return (
     <Router>
       <ScrollToTop />
+
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -46,8 +48,20 @@ function Routes() {
 
         <Route exact path="/ups" component={Error} />
         <Route exact path="/sucess" component={Sucess} />
-        <Route component ={Error404}/>
+        <Route component={Error404} />
       </Switch>
+
+      <StarfieldAnimation
+        className="estrellas"
+        style={{
+        
+         
+          width: "100%",
+          height: "100%",
+          backgroundPosition: "top",
+          backgroundSize: "fill",
+        }}
+      />
     </Router>
   );
 }

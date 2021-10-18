@@ -5,7 +5,7 @@ import Unstoppable from "../img/unstoppable.png";
 
 import { LangContext } from "../context/LangContext";
 import { FormattedMessage } from "react-intl";
-function AgendaMx() {
+function Agendav2() {
 
   var imageLogo;
  
@@ -29,10 +29,10 @@ function AgendaMx() {
 
 
   let Agenda19 =
-  "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FPUERTORICO_AGENDA%20OCTUBRE_DISTRIBUIDORES_19.png?alt=media&token=dbc46e96-fec3-40c1-b5a6-fdbad35ca4e7";
+  "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FMEXICO_AGENDA%20OCTUBRE_DISTRIBUIDORES_19.png?alt=media&token=f8553243-dc4e-41b1-b734-af068b66b1f7";
 
 let Agenda20 =
-  "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FPUERTORICO_AGENDA%20OCTUBRE_DISTRIBUIDORES_20.png?alt=media&token=37c3b032-8289-43d8-a877-31f5cfa90544";
+  "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FMEXICO_AGENDA%20OCTUBRE_DISTRIBUIDORES_20.png?alt=media&token=57e9584b-6108-45e9-86b4-6d5de44fd370";
   function MyVerticallyCenteredModal(props) {
     return (
       <Modal
@@ -76,7 +76,7 @@ let Agenda20 =
       {" "}
       <div className="agenda" >
       <img className="img-hero" src={imageLogo} alt="Baxter Somos" />
-      <h3 id="agenda"><FormattedMessage id="title.agenda" /> PR </h3>
+      <h3 id="agenda"><FormattedMessage id="title.agenda" /> MX </h3>
          <div className="contenedor-botones-agenda">
          <button className="btn-sm btn-primary p-2 m-1" onClick={() => setModalShow1(true)}>
             <FormattedMessage id="diauno.agenda" />
@@ -102,4 +102,4 @@ let Agenda20 =
   );
 }
 
-export default AgendaMx;
+export default Agendav2;

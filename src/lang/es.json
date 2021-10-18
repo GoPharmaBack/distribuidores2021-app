@@ -23,7 +23,7 @@
   "lidere.titulo": "Líderes",
   "lidere.subtitulo": "COMERCIALES",
   "ponentes.titulo": "Ponentes",
-  "ponentes.subtitulo": "COMERCIALES",
+  "ponentes.subtitulo": "IMPARABLES",
   "ponente.a": "Director General para México, Centro y Sudamérica",
 
   "ponente.b": "Director Comercial para México, Centroamérica y el Caribe",
@@ -62,5 +62,8 @@
   "info.footer":"Escríbenos",
   "info.footer2":"Estamos para ayudarte",
   "title.agenda":"AGENDA",
-  "title.rooms":"SALAS"
+  "title.rooms":"SALAS",
+  "fecha.especial":"19 OCTUBRE",
+  "diauno.agenda":"19 OCTUBRE",
+  "diados.agenda":"20 OCTUBRE"
 }

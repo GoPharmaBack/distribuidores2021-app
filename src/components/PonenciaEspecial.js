@@ -28,7 +28,7 @@ function PonenciaEspecial() {
       {" "}
       <div className="ponencia-especial" onClick={() => setModalShow(true)}>
         <div className="texto">
-          <h3>19 OCTUBRE</h3>
+          <h3><FormattedMessage id="fecha.especial" /></h3>
           <p>
             <FormattedMessage id="ponencia.especial" />
           </p>

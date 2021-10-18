@@ -20,12 +20,12 @@
   "ponencias.contador": "Presentations",
   "lineas.contador": "Main lines of business",
   "productos.contador": "Products of our portfolio",
-  "lidere.titulo": "Leaders",
-  "lidere.subtitulo": "COMMERCIAL",
+  "lidere.titulo": "Commercial",
+  "lidere.subtitulo": "LEADERS",
 
-  "ponentes.titulo": "Speakers",
-  "ponentes.subtitulo": "COMMERCIAL",
-  "ponente.a": "General Director for Mexico, Central and South America",
+  "ponentes.titulo": "UNSTOPPABLE",
+  "ponentes.subtitulo": "Speakers",
+  "ponente.a": "General Manager for Mexico, Central and South America",
   "ponente.b": "Commercial Director for Mexico, Central America and the Caribbean",
   "ponente.c": "Cluster Marketing Director - Mexico, Puerto Rico, Central America and the Caribbean",
   "ponente.d": "Marketing Specialist Anesthesia",
@@ -56,11 +56,14 @@
   "hosp.prod": "Hospital Products",
   "dudas.sugerencias":"Doubts or suggestionss",
   "dudas.info":"Information",
-  "puesto.ba": "Government Leader of Distributors",
+  "puesto.ba": "Distributors Goverment Leader",
   "puesto.bb": "Distributors Government Internship",
   "puesto.bc": "Distributors Government Analyst",
   "info.footer": "Write us",
   "info.footer2":"We are here to help you",
   "title.agenda":"SCHEDULE",
-  "title.rooms":"ROOMS"
-}
+  "title.rooms":"ROOMS",
+  "fecha.especial":"OCTOBER 19",
+  "diauno.agenda":"OCTOBER 19",
+  "diados.agenda":"OCTOBER 20"
+} 

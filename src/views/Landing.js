@@ -20,13 +20,14 @@ import Evento from "../img/evento.png";
 import Event from "../img/event.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 //imagenes no lenguaje
+import AgendaMx from "../components/AgendaMx"
 
 import ImagenHero from "../img/img-hero.png";
 import Fade from "react-reveal/Fade";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import AgendaCam from "../components/AgendaCam";
-import AgendaMx from "../components/AgendaMx";
+//import AgendaMx from "../components/AgendaMx";
 import AgendaPr from "../components/AgendaPr";
 import AgendaCar from "../components/AgendaCar";
 //import AgendaCarEng from "../components/AgendaCarEng";
@@ -87,7 +88,9 @@ function Landing() {
   return (
     <>
       <Fade>
+      
         <section className="landing-hero">
+        
           <div className="contenedor">
             <div className="left">
               <img className="img-hero" src={imageLogo} alt="Baxter Somos" />
@@ -195,8 +198,10 @@ function Landing() {
               <Ponentes />
             </div>
           </div>
-          <h3 id="agenda"><FormattedMessage id="title.agenda" /> </h3>
+         <section  id="agenda">
+        
           <Agenda />
+         </section>
           <br />
           <div className="botones-salas" id="salas">
             <h3><FormattedMessage id="title.rooms" /></h3>
@@ -268,14 +273,14 @@ function Landing() {
           <Contacto />
         </div>
 
-        <p>
+        <i className="flotante">
           {" "}
           <FaArrowCircleUp
             className="scrollTop"
             onClick={scrollTop}
             style={{ display: showScroll ? "flex" : "none" }}
           />
-        </p>
+        </i>
       </Fade>
     </>
   );

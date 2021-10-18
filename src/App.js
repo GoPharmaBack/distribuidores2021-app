@@ -34,6 +34,7 @@ const App = () => {
 
   return (
     <div className="App">
+     
       <LangProvider>
         <Routes />
         <Footer />
