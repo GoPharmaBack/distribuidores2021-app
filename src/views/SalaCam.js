@@ -51,23 +51,15 @@ function SalaCam() {
             <h1>Sala CAM</h1>
 
             <div className="contenedor-video">
-              <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                <iframe
-                  title="Sala Cam"
-                  src="https://vimeo.com/event/1384096/embed"
-                  frameBorder={0}
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                  }}
-                />
-              </div>
-            </div>
+              {/* Español */}
+           <div style={{padding: '56.25% 0 0 0', position: 'relative'}}><iframe 
+             title="SalaCam"
+             src="https://vimeo.com/event/1384096/embed" frameBorder={0} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} /></div>
+           </div>
+
+           {/* Ingles */}
+
+           {/* <div style={{padding: '56.25% 0 0 0', position: 'relative'}}><iframe src="https://vimeo.com/event/1384779/embed" frameBorder={0} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} /></div> */}
 
             <Iframe
               className="chat"
