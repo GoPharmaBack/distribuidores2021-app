@@ -3,6 +3,8 @@ import Iframe from "react-iframe";
 import { Modal, Button } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
+import { FormattedMessage } from "react-intl";
+
 function SalaPr() {
   useEffect(() => {
     setModalShow(true);
@@ -30,6 +32,15 @@ function SalaPr() {
             scrolling="no"
           ></iframe>
           <br />
+          <a
+            className="btn-sm btn-primary cien"
+            rel="noreferrer"
+            href="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/ENG_TOOLKIT.zip?alt=media&token=f17de308-994a-4589-a3c6-37bd2daf8c6e"
+          >
+            
+            <FormattedMessage id="frase.modal" />{" "}
+          </a>
+          <br />
           <small className="frase-modal">
             Es necesario finalizar el formulario antes de cerrar de lo contrario
             no obtendra su asistencia
@@ -53,7 +64,7 @@ function SalaPr() {
               {/* Español */}
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
-                title="SalaPr"
+                  title="SalaPr"
                   src="https://vimeo.com/event/1384779/embed"
                   frameBorder={0}
                   allow="autoplay; fullscreen; picture-in-picture"
@@ -68,6 +79,8 @@ function SalaPr() {
                 />
               </div>
 
+              
+
               {/* Ingles */}
 
               {/* <div style={{padding: '56.25% 0 0 0', position: 'relative'}}><iframe src="https://vimeo.com/event/1384779/embed" frameBorder={0} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} /></div> */}
@@ -78,6 +91,7 @@ function SalaPr() {
               src="https://minnit.chat/Distribuidores2021?embed&&nickname="
               allowTransparency="true"
             />
+
 
             <MyVerticallyCenteredModal
               show={modalShow}
