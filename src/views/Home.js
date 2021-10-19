@@ -4,7 +4,7 @@ import Imparables from "../img/imparables.png";
 import Unstoppable from "../img/unstoppable.png";
 import Evento from "../img/evento.png";
 import Event from "../img/event.png";
-import CountDown from "../components/CountDown";
+
 import LogoHome from "../img/logo.svg";
 import Fade from "react-reveal/Fade";
 import emoji from "react-easy-emoji";
@@ -43,9 +43,7 @@ function Home() {
         <br />
         <img className="img-inicio" src={imageLogo} alt="Baxter Somos" />
         <br />
-        <Fade>
-          <CountDown />
-        </Fade>
+      
 
         <div className="idiomas">
           <button
