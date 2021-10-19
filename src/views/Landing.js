@@ -6,7 +6,7 @@ import { FaArrowCircleUp } from "react-icons/fa";
 
 import Cookies from "universal-cookie";
 import ContactosBaxter from "../components/ContactosBaxter";
-import PonenciaEspecial from "../components/PonenciaEspecial";
+
 import Socios from "../components/Socios";
 import { FormattedMessage } from "react-intl";
 import GaleriaAdvancedSurgery from "../components/GaleriaAdvancedSurgery";
@@ -188,7 +188,7 @@ function Landing() {
               <Socios />
             </div>
           </div>
-          <PonenciaEspecial />
+          
 
           <div className="imparables">
             <p>
