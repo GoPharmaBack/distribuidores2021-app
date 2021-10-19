@@ -71,7 +71,7 @@ function Navbar() {
           </li>
         </HashLink>
 
-        <Link
+        <HashLink
           to="#contact"
           className="navbar_menu_button navbar_menu_link"
           onClick={closeMobileMenu}
@@ -80,9 +80,9 @@ function Navbar() {
             {" "}
             <FormattedMessage id="menu.contact" />{" "}
           </li>
-        </Link>
+        </HashLink>
 
-        <Link to="contact" onClick={logout}>
+        <Link  onClick={logout}>
           <li className=" btn-nav"> Logout </li>
         </Link>
 
