@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { LangContext } from "../context/LangContext";
 import { FaArrowCircleUp } from "react-icons/fa";
-import CountDown from "../components/CountDown";
+
 import Cookies from "universal-cookie";
 import ContactosBaxter from "../components/ContactosBaxter";
 import PonenciaEspecial from "../components/PonenciaEspecial";
@@ -127,7 +127,7 @@ function Landing() {
                 </li>
               </ul>
 
-              <CountDown />
+            
             </div>
             <div className="right">
               <img className="img-hero" src={ImagenHero} alt="img" />
