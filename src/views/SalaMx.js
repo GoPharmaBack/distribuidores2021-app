@@ -54,7 +54,7 @@ function SalaMx() {
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
                  title="SalaMx"
-                  src="https://vimeo.com/event/1384096/embed"
+                  src="https://vimeo.com/event/1384779/embed"
                   frameBorder={0}
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
