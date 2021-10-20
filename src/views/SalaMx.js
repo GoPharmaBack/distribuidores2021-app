@@ -65,7 +65,7 @@ function SalaMx() {
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <div>
                   <iframe
-                    title="mx"
+                  title="mx"
                     src="https://player.vimeo.com/video/637221135?h=0c5090bd19"
                     width={640}
                     height={360}
@@ -73,16 +73,6 @@ function SalaMx() {
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
                   />
-                  <p>
-                    <a href="https://vimeo.com/637221135">
-                      Distribuidores MEX Safe
-                    </a>{" "}
-                    from{" "}
-                    <a href="https://vimeo.com/user126120699">
-                      GoPharma Streaming
-                    </a>{" "}
-                    on <a href="https://vimeo.com">Vimeo</a>.
-                  </p>
                 </div>
               </div>
 
