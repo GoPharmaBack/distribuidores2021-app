@@ -3,6 +3,7 @@ import Iframe from "react-iframe";
 import { Modal, Button } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
+
 function SalaCar() {
   useEffect(() => {
     setModalShow(true);
@@ -66,6 +67,15 @@ function SalaCar() {
                     height: "100%",
                   }}
                 />
+                <br />
+                <a
+                  className="btn-sm btn-primary cien"
+                  rel="noreferrer"
+                  href="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/ENG_TOOLKIT.zip?alt=media&token=f17de308-994a-4589-a3c6-37bd2daf8c6e"
+                >
+                  download our compliance tool kit{" "}
+                </a>
+                <br />
               </div>
 
               {/* Ingles */}
@@ -78,7 +88,13 @@ function SalaCar() {
               src="https://minnit.chat/CARDist?embed&&nickname="
               allowTransparency="true"
             />
-
+            <a
+              className="bnt btn-primary"
+              rel="noreferrer"
+              href="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/ENG_TOOLKIT.zip?alt=media&token=f17de308-994a-4589-a3c6-37bd2daf8c6e"
+            >
+              download our compliance tool kit{" "}
+            </a>
             <MyVerticallyCenteredModal
               show={modalShow}
               onHide={() => setModalShow(false)}

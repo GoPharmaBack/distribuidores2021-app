@@ -1,9 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
+
 import Iframe from "react-iframe";
 import { Modal, Button } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
-
+import { FormattedMessage } from "react-intl";
 function SalaCam() {
+
+
+
+
   useEffect(() => {
     setModalShow(true);
   }, []);
@@ -29,9 +34,18 @@ function SalaCam() {
             style={{ minWidth: "100%", height: 539, border: "none" }}
             scrolling="no"
           ></iframe>
-
+          <br />
+          <a
+            className="btn-sm btn-primary cien"
+            rel="noreferrer"
+            href="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/ENG_TOOLKIT.zip?alt=media&token=f17de308-994a-4589-a3c6-37bd2daf8c6e"
+          >
+              <FormattedMessage id="frase.modal" />
+          </a>
+          <br />
           <br />
           <small className="frase-modal">
+          <FormattedMessage id="lidere.titulo" />
             Es necesario finalizar el formulario antes de cerrar de lo contrario
             no obtendra su asistencia
           </small>
@@ -79,7 +93,7 @@ function SalaCam() {
               src="https://minnit.chat/CAM?embed&&nickname="
               allowTransparency="true"
             />
-
+            <div className="contenedor-botones"></div>
             <MyVerticallyCenteredModal
               show={modalShow}
               onHide={() => setModalShow(false)}

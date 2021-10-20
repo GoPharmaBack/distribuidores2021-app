@@ -43,6 +43,8 @@ class ContactForm extends Component {
     });
   }
 
+  
+
   handleChange(event) {
     const field = event.target.id;
     if (field === "firstname") {
