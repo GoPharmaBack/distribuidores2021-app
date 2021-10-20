@@ -1,26 +1,21 @@
 import React, { useState, useContext } from "react";
 import { Modal, Button } from "react-bootstrap";
 
-
 import { LangContext } from "../context/LangContext";
 import { FormattedMessage } from "react-intl";
 function AgendaMx() {
-
-  
- 
   const idioma = useContext(LangContext);
- 
+
   console.log(idioma);
 
   const [modalShow1, setModalShow1] = useState(false);
   const [modalShow2, setModalShow2] = useState(false);
 
-
   let Agenda19 =
-  "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FMEXICO_AGENDA%20OCTUBRE_DISTRIBUIDORES_19.png?alt=media&token=f8553243-dc4e-41b1-b734-af068b66b1f7";
+    "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FMEXICO_AGENDA%20OCTUBRE_DISTRIBUIDORES_19.png?alt=media&token=f8553243-dc4e-41b1-b734-af068b66b1f7";
 
-let Agenda20 =
-  "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FMEXICO_AGENDA%20OCTUBRE_DISTRIBUIDORES_20.png?alt=media&token=57e9584b-6108-45e9-86b4-6d5de44fd370";
+  let Agenda20 =
+    "https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/AGENDA%2FMEXICO_AGENDA%20OCTUBRE_DISTRIBUIDORES_20.png?alt=media&token=57e9584b-6108-45e9-86b4-6d5de44fd370";
   function MyVerticallyCenteredModal(props) {
     return (
       <Modal
@@ -39,7 +34,6 @@ let Agenda20 =
       </Modal>
     );
   }
-
 
   function MyVerticallyCenteredModalDos(props) {
     return (
@@ -62,27 +56,31 @@ let Agenda20 =
   return (
     <>
       {" "}
-      <div className="agenda" >
-     
-      <h3 id="agenda"><FormattedMessage id="title.agenda" /> MX </h3>
-         <div className="contenedor-botones-agenda">
-         <button className="btn-sm btn-primary p-2 m-1" onClick={() => setModalShow1(true)}>
+      <div className="agenda">
+        <h3 id="agenda">
+          <FormattedMessage id="title.agenda" /> MX{" "}
+        </h3>
+        <div className="contenedor-botones-agenda">
+          <button
+            className="btn-sm btn-primary p-2 m-1"
+            onClick={() => setModalShow1(true)}
+          >
             <FormattedMessage id="diauno.agenda" />
           </button>
 
-          <button className="btn-sm btn-primary p-2 m-1" onClick={() => setModalShow2(true)}>
+          <button
+            className="btn-sm btn-primary p-2 m-1"
+            onClick={() => setModalShow2(true)}
+          >
             <FormattedMessage id="diados.agenda" />
           </button>
-         </div>
-        
+        </div>
       </div>
-      
       <MyVerticallyCenteredModal
         show={modalShow1}
         onHide={() => setModalShow1(false)}
       />
-
-<MyVerticallyCenteredModalDos
+      <MyVerticallyCenteredModalDos
         show={modalShow2}
         onHide={() => setModalShow2(false)}
       />

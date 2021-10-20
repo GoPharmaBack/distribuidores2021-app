@@ -53,8 +53,8 @@ function SalaCar() {
               {/* Español */}
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
-                title="SalaCar"
-                  src="https://vimeo.com/event/1384096/embed"
+                  title="SalaCar"
+                  src="https://vimeo.com/event/1384782/embed"
                   frameBorder={0}
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
@@ -75,7 +75,7 @@ function SalaCar() {
 
             <Iframe
               className="chat"
-              src="https://minnit.chat/Distribuidores2021?embed&&nickname="
+              src="https://minnit.chat/CARDist?embed&&nickname="
               allowTransparency="true"
             />
 

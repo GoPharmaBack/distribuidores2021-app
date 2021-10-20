@@ -52,18 +52,31 @@ function SalaCam() {
 
             <div className="contenedor-video">
               {/* Español */}
-           <div style={{padding: '56.25% 0 0 0', position: 'relative'}}><iframe 
-             title="SalaCam"
-             src="https://vimeo.com/event/1384096/embed" frameBorder={0} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} /></div>
-           </div>
+              <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                <iframe
+                  title="SalaCam"
+                  src="https://vimeo.com/event/1384752/embed"
+                  frameBorder={0}
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
+              </div>
+            </div>
 
-           {/* Ingles */}
+            {/* Ingles */}
 
-           {/* <div style={{padding: '56.25% 0 0 0', position: 'relative'}}><iframe src="https://vimeo.com/event/1384779/embed" frameBorder={0} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} /></div> */}
+            {/* <div style={{padding: '56.25% 0 0 0', position: 'relative'}}><iframe src="https://vimeo.com/event/1384779/embed" frameBorder={0} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} /></div> */}
 
             <Iframe
               className="chat"
-              src="https://minnit.chat/Distribuidores2021?embed&&nickname="
+              src="https://minnit.chat/CAM?embed&&nickname="
               allowTransparency="true"
             />
 
