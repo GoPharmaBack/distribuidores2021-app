@@ -5,10 +5,7 @@ import Fade from "react-reveal/Fade";
 
 import { FormattedMessage } from "react-intl";
 
-
 function SalaMx() {
-
-  
   useEffect(() => {
     setModalShow(true);
   }, []);
@@ -40,7 +37,7 @@ function SalaMx() {
             rel="noreferrer"
             href="https://firebasestorage.googleapis.com/v0/b/distribuidores2021-d71be.appspot.com/o/ENG_TOOLKIT.zip?alt=media&token=f17de308-994a-4589-a3c6-37bd2daf8c6e"
           >
-              <FormattedMessage id="frase.modal" />{" "}
+            <FormattedMessage id="frase.modal" />{" "}
           </a>
           <br />
           <br />
@@ -66,20 +63,26 @@ function SalaMx() {
             <div className="contenedor-video">
               {/* Español */}
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                <iframe
-                  title="SalaMx"
-                  src="https://vimeo.com/637221135/embed"
-                  frameBorder={0}
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                  }}
-                />
+                <div>
+                  <iframe
+                    src="https://player.vimeo.com/video/637221135?h=0c5090bd19"
+                    width={640}
+                    height={360}
+                    frameBorder={0}
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                  />
+                  <p>
+                    <a href="https://vimeo.com/637221135">
+                      Distribuidores MEX Safe
+                    </a>{" "}
+                    from{" "}
+                    <a href="https://vimeo.com/user126120699">
+                      GoPharma Streaming
+                    </a>{" "}
+                    on <a href="https://vimeo.com">Vimeo</a>.
+                  </p>
+                </div>
               </div>
 
               {/* Ingles */}
