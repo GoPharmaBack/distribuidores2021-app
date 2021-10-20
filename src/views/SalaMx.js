@@ -63,7 +63,7 @@ function SalaMx() {
             <div className="contenedor-video">
               {/* Español */}
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                <div>
+                <div className="contenedor-video">
                   <iframe
                   title="mx"
                     src="https://player.vimeo.com/video/637221135?h=0c5090bd19"
