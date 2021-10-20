@@ -60,27 +60,32 @@ function SalaMx() {
           <div className="contenedor">
             <h1>Sala MX</h1>
 
+          
             <div className="contenedor-video">
               {/* Español */}
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                <div className="contenedor-video">
-                  <iframe
-                  title="mx"
+                <iframe
+                    title="mx"
                     src="https://player.vimeo.com/video/637221135?h=0c5090bd19"
-                    width={640}
-                    height={360}
-                    frameBorder={0}
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
+                  frameBorder={0}
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
               </div>
+
+              
 
               {/* Ingles */}
 
               {/* <div style={{padding: '56.25% 0 0 0', position: 'relative'}}><iframe src="https://vimeo.com/event/1384779/embed" frameBorder={0} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} /></div> */}
             </div>
-
             <Iframe
               className="chat"
               src="https://minnit.chat/MX?embed&&nickname="
